@@ -1,0 +1,998 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "counter",
+  "kind": "component",
+  "title": "Counter",
+  "description": "A number with − Reset + buttons (cups of water, laps, tickets left). start sets where it begins and returns to; step sets how much each press changes it. Each copy remembers its count in the viewer's browser.",
+  "tags": [],
+  "requires": [
+    "initial-from-prop",
+    "mapping-functions",
+    "pod-designer-snapshot/1",
+    "remembered-variables",
+    "runtime-variables"
+  ],
+  "props": {
+    "label": {
+      "type": "string",
+      "label": "Label",
+      "description": "Shown above the number.",
+      "defaultValue": "Count"
+    },
+    "start": {
+      "type": "number",
+      "label": "Start",
+      "description": "The number it starts from and returns to on Reset.",
+      "defaultValue": 0
+    },
+    "step": {
+      "type": "number",
+      "label": "Step",
+      "description": "How much + and − change it.",
+      "defaultValue": 1
+    }
+  },
+  "content": {
+    "title": "Counter",
+    "projectType": "component",
+    "authoringType": "component",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "rootBlockIds": [
+      "FlexContainer-counter"
+    ],
+    "blocks": {
+      "Text-counter-label": {
+        "id": "Text-counter-label",
+        "blockName": "Label",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::label",
+        "type": "Text",
+        "value": "Count",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "13px",
+          "textColor": "#64748b",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "1.4",
+          "fontWeight": "600",
+          "letterSpacing": "0.04em"
+        },
+        "parentFlexContainerId": "FlexContainer-counter"
+      },
+      "Text-counter-value": {
+        "id": "Text-counter-value",
+        "blockName": "Number",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "runtimeVariables::count",
+        "type": "Text",
+        "value": "0",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "44px",
+          "textColor": "#0f172a",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "1.1",
+          "fontWeight": "700"
+        },
+        "parentFlexContainerId": "FlexContainer-counter"
+      },
+      "Button-counter-minus": {
+        "id": "Button-counter-minus",
+        "blockName": "Decrease",
+        "mediator": {
+          "sourceMap": {
+            "Button-counter-minus": {
+              "eventMap": {
+                "onClick": {
+                  "selfReactions": [
+                    {
+                      "id": "counter-subtract",
+                      "reactionKey": "runMappingFunction",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "mappingFunctionId": "function-counter-subtract",
+                        "resultVariableKey": "count",
+                        "mappingArgument:count": "",
+                        "mappingArgument:step": "",
+                        "whenKind": "always",
+                        "_bindings": {
+                          "mappingArgument:count": {
+                            "mode": "token",
+                            "token": "$variables.count"
+                          },
+                          "mappingArgument:step": {
+                            "mode": "token",
+                            "token": "$variables.step"
+                          }
+                        }
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onClick"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "",
+        "type": "Button",
+        "value": "−",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "40px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "600",
+          "backgroundColor": "#eef2ff",
+          "textColor": "#2563eb",
+          "borderColor": "#eef2ff",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "10px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#e0e7ff"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-counter-keys"
+      },
+      "Button-counter-reset": {
+        "id": "Button-counter-reset",
+        "blockName": "Reset",
+        "mediator": {
+          "sourceMap": {
+            "Button-counter-reset": {
+              "eventMap": {
+                "onClick": {
+                  "selfReactions": [
+                    {
+                      "id": "counter-reset",
+                      "reactionKey": "setRuntimeVariable",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "variableKey": "count",
+                        "value": "",
+                        "whenKind": "always",
+                        "_bindings": {
+                          "value": {
+                            "mode": "token",
+                            "token": "$variables.startValue"
+                          }
+                        }
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onClick"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "",
+        "type": "Button",
+        "value": "Reset",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "40px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "#eef2ff",
+          "textColor": "#2563eb",
+          "borderColor": "#eef2ff",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "10px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#e0e7ff"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-counter-keys"
+      },
+      "Button-counter-plus": {
+        "id": "Button-counter-plus",
+        "blockName": "Increase",
+        "mediator": {
+          "sourceMap": {
+            "Button-counter-plus": {
+              "eventMap": {
+                "onClick": {
+                  "selfReactions": [
+                    {
+                      "id": "counter-add",
+                      "reactionKey": "runMappingFunction",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "mappingFunctionId": "function-counter-add",
+                        "resultVariableKey": "count",
+                        "mappingArgument:count": "",
+                        "mappingArgument:step": "",
+                        "whenKind": "always",
+                        "_bindings": {
+                          "mappingArgument:count": {
+                            "mode": "token",
+                            "token": "$variables.count"
+                          },
+                          "mappingArgument:step": {
+                            "mode": "token",
+                            "token": "$variables.step"
+                          }
+                        }
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onClick"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "",
+        "type": "Button",
+        "value": "+",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "40px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "600",
+          "backgroundColor": "#2563eb",
+          "textColor": "#ffffff",
+          "borderColor": "#2563eb",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "10px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#1d4ed8"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-counter-keys"
+      },
+      "FlexContainer-counter-keys": {
+        "id": "FlexContainer-counter-keys",
+        "blockName": "Buttons",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "10px",
+          "padding": "0px",
+          "wrap": false,
+          "stackOnNarrow": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-counter-minus"
+            ],
+            "flex": "1 1 0"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Button-counter-reset"
+            ],
+            "flex": "1.4 1 0"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Button-counter-plus"
+            ],
+            "flex": "1 1 0"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-counter"
+      },
+      "FlexContainer-counter": {
+        "id": "FlexContainer-counter",
+        "blockName": "Counter",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "12px",
+          "padding": "18px 20px",
+          "wrap": false,
+          "stackOnNarrow": false,
+          "backgroundColor": "#ffffff",
+          "borderRadius": "14px",
+          "borderColor": "#e2e8f0",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-counter-label"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-counter-value"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-counter-keys"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {
+      "label": {
+        "propName": "label",
+        "label": "Label",
+        "type": "string",
+        "description": "Shown above the number.",
+        "defaultValue": "Count"
+      },
+      "start": {
+        "propName": "start",
+        "label": "Start",
+        "type": "number",
+        "description": "The number it starts from and returns to on Reset.",
+        "defaultValue": 0
+      },
+      "step": {
+        "propName": "step",
+        "label": "Step",
+        "type": "number",
+        "description": "How much + and − change it.",
+        "defaultValue": 1
+      }
+    },
+    "formulas": [],
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            500,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "previewData": {
+      "activeSource": "real-data",
+      "schema": {
+        "label": {
+          "label": "Label",
+          "type": "string",
+          "defaultValue": "Count"
+        },
+        "start": {
+          "label": "Start",
+          "type": "number",
+          "defaultValue": 0
+        },
+        "step": {
+          "label": "Step",
+          "type": "number",
+          "defaultValue": 1
+        }
+      },
+      "inputContract": {
+        "version": 1,
+        "fields": {
+          "label": {
+            "key": "label",
+            "label": "Label",
+            "type": "string",
+            "required": false,
+            "description": "Shown above the number.",
+            "defaultValue": "Count"
+          },
+          "start": {
+            "key": "start",
+            "label": "Start",
+            "type": "number",
+            "required": false,
+            "description": "The number it starts from and returns to on Reset.",
+            "defaultValue": 0
+          },
+          "step": {
+            "key": "step",
+            "label": "Step",
+            "type": "number",
+            "required": false,
+            "description": "How much + and − change it.",
+            "defaultValue": 1
+          }
+        },
+        "listItemSchemas": {}
+      }
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "fullBleed": false
+    },
+    "paneDataSources": [],
+    "runtimeSettings": {
+      "version": 1,
+      "variables": {
+        "count": {
+          "key": "count",
+          "label": "Count",
+          "initialValue": "0",
+          "initialFromProp": "start",
+          "remember": true
+        },
+        "step": {
+          "key": "step",
+          "label": "Step",
+          "initialValue": "1",
+          "initialFromProp": "step"
+        },
+        "startValue": {
+          "key": "startValue",
+          "label": "Start value",
+          "initialValue": "0",
+          "initialFromProp": "start"
+        }
+      },
+      "sessionStorage": {},
+      "localStorage": {}
+    },
+    "projectMappings": {
+      "version": 1,
+      "functions": [
+        {
+          "id": "function-counter-add",
+          "kind": "function",
+          "name": "Counter add",
+          "description": "count + step",
+          "graph": {
+            "version": 1,
+            "nodes": [
+              {
+                "id": "node_input_1",
+                "type": "mapping",
+                "position": {
+                  "x": 80,
+                  "y": 200
+                },
+                "data": {
+                  "label": "Function Input",
+                  "description": "Declare the function parameters.",
+                  "icon": "input",
+                  "catalogType": "function-input",
+                  "category": "Function",
+                  "nodeKind": "input",
+                  "operation": "",
+                  "argumentName": "",
+                  "valueType": "any",
+                  "layoutId": "",
+                  "parameters": [
+                    {
+                      "id": "count",
+                      "name": "count",
+                      "valueType": "any"
+                    },
+                    {
+                      "id": "step",
+                      "name": "step",
+                      "valueType": "any"
+                    }
+                  ],
+                  "inputs": [],
+                  "outputs": [
+                    {
+                      "id": "count",
+                      "label": "count",
+                      "valueType": "any",
+                      "portKind": "function-parameter",
+                      "parameterName": "count"
+                    },
+                    {
+                      "id": "step",
+                      "label": "step",
+                      "valueType": "any",
+                      "portKind": "function-parameter",
+                      "parameterName": "step"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "node_1",
+                "type": "mapping",
+                "position": {
+                  "x": 900,
+                  "y": 150
+                },
+                "data": {
+                  "label": "Add",
+                  "description": "Add two numbers.",
+                  "icon": "add",
+                  "catalogType": "add",
+                  "category": "Math",
+                  "nodeKind": "operation",
+                  "operation": "add",
+                  "argumentName": "",
+                  "valueType": "any",
+                  "layoutId": "",
+                  "inputs": [
+                    {
+                      "id": "left",
+                      "label": "Left",
+                      "valueType": "number"
+                    },
+                    {
+                      "id": "right",
+                      "label": "Right",
+                      "valueType": "number"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "id": "value",
+                      "label": "Result",
+                      "valueType": "number"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "node_return_1",
+                "type": "mapping",
+                "position": {
+                  "x": 1120,
+                  "y": 200
+                },
+                "data": {
+                  "label": "Return",
+                  "description": "Return the final function value.",
+                  "icon": "output",
+                  "catalogType": "function-return",
+                  "category": "Function",
+                  "nodeKind": "return",
+                  "operation": "",
+                  "argumentName": "",
+                  "valueType": "any",
+                  "layoutId": "",
+                  "inputs": [
+                    {
+                      "id": "value",
+                      "label": "Value",
+                      "valueType": "any"
+                    }
+                  ],
+                  "outputs": []
+                }
+              }
+            ],
+            "edges": [
+              {
+                "id": "edge_node_input_1_count_node_1_left",
+                "source": "node_input_1",
+                "sourceHandle": "count",
+                "target": "node_1",
+                "targetHandle": "left",
+                "animated": true
+              },
+              {
+                "id": "edge_node_input_1_step_node_1_right",
+                "source": "node_input_1",
+                "sourceHandle": "step",
+                "target": "node_1",
+                "targetHandle": "right",
+                "animated": true
+              },
+              {
+                "id": "edge_return",
+                "source": "node_1",
+                "sourceHandle": "value",
+                "target": "node_return_1",
+                "targetHandle": "value",
+                "animated": true
+              }
+            ],
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "zoom": 0.8
+            }
+          },
+          "compiled": {
+            "status": "compiled",
+            "functionName": "counterAdd",
+            "arguments": [
+              "count",
+              "step"
+            ],
+            "parameters": [
+              {
+                "name": "count",
+                "valueType": "any"
+              },
+              {
+                "name": "step",
+                "valueType": "any"
+              }
+            ],
+            "source": "function counterAdd(count, step) {\n  return (Number(count) + Number(step));\n}",
+            "sourceHash": "fnv1a-76ae358a",
+            "program": {
+              "version": 1,
+              "arguments": [
+                "count",
+                "step"
+              ],
+              "parameters": [
+                {
+                  "name": "count",
+                  "valueType": "any"
+                },
+                {
+                  "name": "step",
+                  "valueType": "any"
+                }
+              ],
+              "expression": {
+                "type": "operation",
+                "operation": "add",
+                "inputs": {
+                  "left": {
+                    "type": "argument",
+                    "name": "count",
+                    "valueType": "any"
+                  },
+                  "right": {
+                    "type": "argument",
+                    "name": "step",
+                    "valueType": "any"
+                  }
+                }
+              }
+            },
+            "errors": [],
+            "compilerVersion": 1,
+            "compiledAt": "2026-09-27T00:00:00.000Z"
+          }
+        },
+        {
+          "id": "function-counter-subtract",
+          "kind": "function",
+          "name": "Counter subtract",
+          "description": "count − step",
+          "graph": {
+            "version": 1,
+            "nodes": [
+              {
+                "id": "node_input_1",
+                "type": "mapping",
+                "position": {
+                  "x": 80,
+                  "y": 200
+                },
+                "data": {
+                  "label": "Function Input",
+                  "description": "Declare the function parameters.",
+                  "icon": "input",
+                  "catalogType": "function-input",
+                  "category": "Function",
+                  "nodeKind": "input",
+                  "operation": "",
+                  "argumentName": "",
+                  "valueType": "any",
+                  "layoutId": "",
+                  "parameters": [
+                    {
+                      "id": "count",
+                      "name": "count",
+                      "valueType": "any"
+                    },
+                    {
+                      "id": "step",
+                      "name": "step",
+                      "valueType": "any"
+                    }
+                  ],
+                  "inputs": [],
+                  "outputs": [
+                    {
+                      "id": "count",
+                      "label": "count",
+                      "valueType": "any",
+                      "portKind": "function-parameter",
+                      "parameterName": "count"
+                    },
+                    {
+                      "id": "step",
+                      "label": "step",
+                      "valueType": "any",
+                      "portKind": "function-parameter",
+                      "parameterName": "step"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "node_1",
+                "type": "mapping",
+                "position": {
+                  "x": 900,
+                  "y": 150
+                },
+                "data": {
+                  "label": "Subtract",
+                  "description": "Subtract the right number.",
+                  "icon": "remove",
+                  "catalogType": "subtract",
+                  "category": "Math",
+                  "nodeKind": "operation",
+                  "operation": "subtract",
+                  "argumentName": "",
+                  "valueType": "any",
+                  "layoutId": "",
+                  "inputs": [
+                    {
+                      "id": "left",
+                      "label": "Left",
+                      "valueType": "number"
+                    },
+                    {
+                      "id": "right",
+                      "label": "Right",
+                      "valueType": "number"
+                    }
+                  ],
+                  "outputs": [
+                    {
+                      "id": "value",
+                      "label": "Result",
+                      "valueType": "number"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "node_return_1",
+                "type": "mapping",
+                "position": {
+                  "x": 1120,
+                  "y": 200
+                },
+                "data": {
+                  "label": "Return",
+                  "description": "Return the final function value.",
+                  "icon": "output",
+                  "catalogType": "function-return",
+                  "category": "Function",
+                  "nodeKind": "return",
+                  "operation": "",
+                  "argumentName": "",
+                  "valueType": "any",
+                  "layoutId": "",
+                  "inputs": [
+                    {
+                      "id": "value",
+                      "label": "Value",
+                      "valueType": "any"
+                    }
+                  ],
+                  "outputs": []
+                }
+              }
+            ],
+            "edges": [
+              {
+                "id": "edge_node_input_1_count_node_1_left",
+                "source": "node_input_1",
+                "sourceHandle": "count",
+                "target": "node_1",
+                "targetHandle": "left",
+                "animated": true
+              },
+              {
+                "id": "edge_node_input_1_step_node_1_right",
+                "source": "node_input_1",
+                "sourceHandle": "step",
+                "target": "node_1",
+                "targetHandle": "right",
+                "animated": true
+              },
+              {
+                "id": "edge_return",
+                "source": "node_1",
+                "sourceHandle": "value",
+                "target": "node_return_1",
+                "targetHandle": "value",
+                "animated": true
+              }
+            ],
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "zoom": 0.8
+            }
+          },
+          "compiled": {
+            "status": "compiled",
+            "functionName": "counterSubtract",
+            "arguments": [
+              "count",
+              "step"
+            ],
+            "parameters": [
+              {
+                "name": "count",
+                "valueType": "any"
+              },
+              {
+                "name": "step",
+                "valueType": "any"
+              }
+            ],
+            "source": "function counterSubtract(count, step) {\n  return (Number(count) - Number(step));\n}",
+            "sourceHash": "fnv1a-0ccb10a5",
+            "program": {
+              "version": 1,
+              "arguments": [
+                "count",
+                "step"
+              ],
+              "parameters": [
+                {
+                  "name": "count",
+                  "valueType": "any"
+                },
+                {
+                  "name": "step",
+                  "valueType": "any"
+                }
+              ],
+              "expression": {
+                "type": "operation",
+                "operation": "subtract",
+                "inputs": {
+                  "left": {
+                    "type": "argument",
+                    "name": "count",
+                    "valueType": "any"
+                  },
+                  "right": {
+                    "type": "argument",
+                    "name": "step",
+                    "valueType": "any"
+                  }
+                }
+              }
+            },
+            "errors": [],
+            "compilerVersion": 1,
+            "compiledAt": "2026-09-27T00:00:00.000Z"
+          }
+        }
+      ],
+      "paneLayoutMappings": []
+    }
+  }
+}

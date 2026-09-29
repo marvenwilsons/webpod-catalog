@@ -1,0 +1,4019 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "landing-restaurant",
+  "kind": "template",
+  "title": "Landing page — restaurant",
+  "description": "Complete restaurant landing page composed from the library sections: photo hero, split story, menu cards, stats, testimonials, call to action and footer, with onload and scroll animations.",
+  "tags": [
+    "landing page",
+    "restaurant",
+    "full page",
+    "animation"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "page",
+  "content": {
+    "title": "Library · Landing page — restaurant",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-landing-restaurant-eyebrow-1": {
+        "id": "Text-landing-restaurant-eyebrow-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Neighbourhood kitchen",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "700ms",
+            "delay": "0ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-7"
+      },
+      "Text-landing-restaurant-h1-2": {
+        "id": "Text-landing-restaurant-h1-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Home cooking, made for sharing",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H1",
+          "fontWeight": "700",
+          "fontSize": "68px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "18px",
+            "to": "0px",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "blur",
+            "from": "10px",
+            "to": "0px",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-7"
+      },
+      "Text-landing-restaurant-body-3": {
+        "id": "Text-landing-restaurant-body-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Family recipes, big platters and a table that always has room for one more.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "20px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.86)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "650ms",
+            "delay": "300ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "22px",
+            "to": "0px",
+            "duration": "650ms",
+            "delay": "300ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-7"
+      },
+      "Button-landing-restaurant-button-4": {
+        "id": "Button-landing-restaurant-button-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "See the menu",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#menu",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "mdi-arrow-right",
+          "iconPlacement": "right",
+          "backgroundColor": "#E0A43B",
+          "borderColor": "#E0A43B",
+          "borderWidth": "0",
+          "textColor": "#1b1b1b"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#c59034",
+              "borderColor": "#c59034"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-6"
+      },
+      "Button-landing-restaurant-button-5": {
+        "id": "Button-landing-restaurant-button-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Book a table",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#reserve",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "",
+          "iconPlacement": "right",
+          "backgroundColor": "transparent",
+          "borderColor": "rgba(255,255,255,0.7)",
+          "borderWidth": "1px",
+          "textColor": "#ffffff"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "rgba(255,255,255,0.12)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-6"
+      },
+      "FlexContainer-landing-restaurant-flex-6": {
+        "id": "FlexContainer-landing-restaurant-flex-6",
+        "blockName": "Actions",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "10px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-landing-restaurant-button-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Button-landing-restaurant-button-5"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "650ms",
+            "delay": "440ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "22px",
+            "to": "0px",
+            "duration": "650ms",
+            "delay": "440ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-7"
+      },
+      "FlexContainer-landing-restaurant-flex-7": {
+        "id": "FlexContainer-landing-restaurant-flex-7",
+        "blockName": "Hero · photo with overlay",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "20px",
+          "padding": "150px 24px",
+          "wrap": false,
+          "backgroundColor": "#9C3D2E",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px",
+          "backgroundImage": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80",
+          "backgroundImageOpacity": "0.55",
+          "backgroundImageBlendMode": "multiply",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-h1-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-3"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-6"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-restaurant-eyebrow-8": {
+        "id": "Text-landing-restaurant-eyebrow-8",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Our room",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 0,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "Text-landing-restaurant-h2-9": {
+        "id": "Text-landing-restaurant-h2-9",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "A dining room that feels like home",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 1,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "Text-landing-restaurant-body-10": {
+        "id": "Text-landing-restaurant-body-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Forty seats, warm brick and an open kitchen. Walk-ins welcome at the bar; reservations for groups of six or more.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "17px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 2,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "Icon-landing-restaurant-icon-11": {
+        "id": "Icon-landing-restaurant-icon-11",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-clock-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-13"
+      },
+      "Text-landing-restaurant-body-12": {
+        "id": "Text-landing-restaurant-body-12",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Open Tuesday to Sunday, 11 to 10",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-13"
+      },
+      "FlexContainer-landing-restaurant-flex-13": {
+        "id": "FlexContainer-landing-restaurant-flex-13",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-restaurant-icon-11"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-12"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 3,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "Icon-landing-restaurant-icon-14": {
+        "id": "Icon-landing-restaurant-icon-14",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-account-group-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-16"
+      },
+      "Text-landing-restaurant-body-15": {
+        "id": "Text-landing-restaurant-body-15",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Private room for up to 20",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-16"
+      },
+      "FlexContainer-landing-restaurant-flex-16": {
+        "id": "FlexContainer-landing-restaurant-flex-16",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-restaurant-icon-14"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-15"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "440ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "440ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 4,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "Icon-landing-restaurant-icon-17": {
+        "id": "Icon-landing-restaurant-icon-17",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-truck-delivery-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-19"
+      },
+      "Text-landing-restaurant-body-18": {
+        "id": "Text-landing-restaurant-body-18",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Pickup and local delivery",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-19"
+      },
+      "FlexContainer-landing-restaurant-flex-19": {
+        "id": "FlexContainer-landing-restaurant-flex-19",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-restaurant-icon-17"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-18"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "530ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "530ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 5,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "Button-landing-restaurant-button-20": {
+        "id": "Button-landing-restaurant-button-20",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Plan a party",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#reserve",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "",
+          "iconPlacement": "right",
+          "backgroundColor": "transparent",
+          "borderColor": "#9C3D2E",
+          "borderWidth": "1px",
+          "textColor": "#9C3D2E"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#9C3D2E14"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "620ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "620ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-1",
+            "index": 6,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-21"
+      },
+      "FlexContainer-landing-restaurant-flex-21": {
+        "id": "FlexContainer-landing-restaurant-flex-21",
+        "blockName": "Story copy",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-8"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-10"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-13"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-5",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-16"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-6",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-19"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-7",
+            "childBlockIds": [
+              "Button-landing-restaurant-button-20"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-23"
+      },
+      "FlexContainer-landing-restaurant-flex-22": {
+        "id": "FlexContainer-landing-restaurant-flex-22",
+        "blockName": "Photo",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "16px",
+          "padding": "260px 0px",
+          "wrap": false,
+          "backgroundImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+          "backgroundImageOpacity": "1",
+          "backgroundImageBlendMode": "normal",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center",
+          "backgroundColor": "#EADBC6",
+          "borderRadius": "24px"
+        },
+        "flexItems": [],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-23"
+      },
+      "FlexContainer-landing-restaurant-flex-23": {
+        "id": "FlexContainer-landing-restaurant-flex-23",
+        "blockName": "Split",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "56px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-21"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-22"
+            ],
+            "flex": "1 1 300px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-24"
+      },
+      "FlexContainer-landing-restaurant-flex-24": {
+        "id": "FlexContainer-landing-restaurant-flex-24",
+        "blockName": "Split · photo and story",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FFFDF8",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-23"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "2",
+            "gridRowEnd": "3"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Image-landing-restaurant-card-image-25": {
+        "id": "Image-landing-restaurant-card-image-25",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Image",
+        "value": "{{photo}}",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "xl",
+          "altText": "{{name}}",
+          "objectFit": "cover",
+          "borderRadius": "16px"
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "1"
+        },
+        "parentListContainerId": "ListContainer-landing-restaurant-cards-30"
+      },
+      "Text-landing-restaurant-eyebrow-26": {
+        "id": "Text-landing-restaurant-eyebrow-26",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{category}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "2"
+        },
+        "parentListContainerId": "ListContainer-landing-restaurant-cards-30"
+      },
+      "Text-landing-restaurant-h4-27": {
+        "id": "Text-landing-restaurant-h4-27",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{name}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "3"
+        },
+        "parentListContainerId": "ListContainer-landing-restaurant-cards-30"
+      },
+      "Text-landing-restaurant-body-28": {
+        "id": "Text-landing-restaurant-body-28",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{description}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "4"
+        },
+        "parentListContainerId": "ListContainer-landing-restaurant-cards-30"
+      },
+      "Text-landing-restaurant-body-29": {
+        "id": "Text-landing-restaurant-body-29",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{price}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "700",
+          "fontSize": "17px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#9C3D2E",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "5"
+        },
+        "parentListContainerId": "ListContainer-landing-restaurant-cards-30"
+      },
+      "ListContainer-landing-restaurant-cards-30": {
+        "id": "ListContainer-landing-restaurant-cards-30",
+        "blockName": "Menu",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "ListContainer",
+        "childBlockIds": [
+          "Image-landing-restaurant-card-image-25",
+          "Text-landing-restaurant-eyebrow-26",
+          "Text-landing-restaurant-h4-27",
+          "Text-landing-restaurant-body-28",
+          "Text-landing-restaurant-body-29"
+        ],
+        "listSettings": {
+          "sourceId": "landing_restaurant_menu",
+          "renderMode": "list",
+          "containerType": "row-list",
+          "itemColumns": "3",
+          "masonry": false,
+          "gap": "22px",
+          "padding": "0px",
+          "itemPadding": "24px",
+          "backgroundColor": "transparent",
+          "itemBackgroundColor": "#FFFDF8",
+          "itemHoverBackgroundColor": "#FFFDF8",
+          "itemBorderColor": "#EADBC6",
+          "itemBorderWidth": "1px",
+          "itemBorderStyle": "solid",
+          "itemBorderRadius": "20px"
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-2",
+            "index": 3,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-34"
+      },
+      "Text-landing-restaurant-eyebrow-31": {
+        "id": "Text-landing-restaurant-eyebrow-31",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "On the menu",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-2",
+            "index": 0,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-34"
+      },
+      "Text-landing-restaurant-h2-32": {
+        "id": "Text-landing-restaurant-h2-32",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Lola’s favourites",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-2",
+            "index": 1,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-34"
+      },
+      "Text-landing-restaurant-body-33": {
+        "id": "Text-landing-restaurant-body-33",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Seasonal plates cooked to order. Prices include tax.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-2",
+            "index": 2,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-34"
+      },
+      "FlexContainer-landing-restaurant-flex-34": {
+        "id": "FlexContainer-landing-restaurant-flex-34",
+        "blockName": "Lola’s favourites",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FBF3E6",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-31"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-32"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-33"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "ListContainer-landing-restaurant-cards-30"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "3",
+            "gridRowEnd": "4"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-restaurant-h2-35": {
+        "id": "Text-landing-restaurant-h2-35",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "38",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-37"
+      },
+      "Text-landing-restaurant-body-36": {
+        "id": "Text-landing-restaurant-body-36",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Years of family recipes",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-37"
+      },
+      "FlexContainer-landing-restaurant-flex-37": {
+        "id": "FlexContainer-landing-restaurant-flex-37",
+        "blockName": "Years of family recipes",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-35"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-36"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "40ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "40ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-3",
+            "index": 0,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-47"
+      },
+      "Text-landing-restaurant-h2-38": {
+        "id": "Text-landing-restaurant-h2-38",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "120",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-40"
+      },
+      "Text-landing-restaurant-body-39": {
+        "id": "Text-landing-restaurant-body-39",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Plates served nightly",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-40"
+      },
+      "FlexContainer-landing-restaurant-flex-40": {
+        "id": "FlexContainer-landing-restaurant-flex-40",
+        "blockName": "Plates served nightly",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-38"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-39"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "130ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "130ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-3",
+            "index": 1,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-47"
+      },
+      "Text-landing-restaurant-h2-41": {
+        "id": "Text-landing-restaurant-h2-41",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "4.8",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-43"
+      },
+      "Text-landing-restaurant-body-42": {
+        "id": "Text-landing-restaurant-body-42",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Neighbourhood rating",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-43"
+      },
+      "FlexContainer-landing-restaurant-flex-43": {
+        "id": "FlexContainer-landing-restaurant-flex-43",
+        "blockName": "Neighbourhood rating",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-41"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-42"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "220ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "220ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-3",
+            "index": 2,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-47"
+      },
+      "Text-landing-restaurant-h2-44": {
+        "id": "Text-landing-restaurant-h2-44",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "6",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-46"
+      },
+      "Text-landing-restaurant-body-45": {
+        "id": "Text-landing-restaurant-body-45",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Days a week",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-46"
+      },
+      "FlexContainer-landing-restaurant-flex-46": {
+        "id": "FlexContainer-landing-restaurant-flex-46",
+        "blockName": "Days a week",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-44"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-45"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "310ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "310ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-3",
+            "index": 3,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-47"
+      },
+      "FlexContainer-landing-restaurant-flex-47": {
+        "id": "FlexContainer-landing-restaurant-flex-47",
+        "blockName": "Stats",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "space-between",
+          "alignItems": "stretch",
+          "gap": "28px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-37"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-40"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-43"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-46"
+            ],
+            "flex": "1 1 180px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-48"
+      },
+      "FlexContainer-landing-restaurant-flex-48": {
+        "id": "FlexContainer-landing-restaurant-flex-48",
+        "blockName": "Stats band",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "72px 24px",
+          "wrap": false,
+          "backgroundColor": "#9C3D2E",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-47"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "4",
+            "gridRowEnd": "5"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Icon-landing-restaurant-icon-49": {
+        "id": "Icon-landing-restaurant-icon-49",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-56"
+      },
+      "Text-landing-restaurant-body-50": {
+        "id": "Text-landing-restaurant-body-50",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "The grilled platter is the best thing I have eaten this year. We come every Friday now.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-56"
+      },
+      "Avatar-landing-restaurant-avatar-51": {
+        "id": "Avatar-landing-restaurant-avatar-51",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Maya Chen",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-55"
+      },
+      "Text-landing-restaurant-h4-52": {
+        "id": "Text-landing-restaurant-h4-52",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Maya Chen",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-54"
+      },
+      "Text-landing-restaurant-caption-53": {
+        "id": "Text-landing-restaurant-caption-53",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Regular since 2021",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-54"
+      },
+      "FlexContainer-landing-restaurant-flex-54": {
+        "id": "FlexContainer-landing-restaurant-flex-54",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h4-52"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-caption-53"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-55"
+      },
+      "FlexContainer-landing-restaurant-flex-55": {
+        "id": "FlexContainer-landing-restaurant-flex-55",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-landing-restaurant-avatar-51"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-54"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-56"
+      },
+      "FlexContainer-landing-restaurant-flex-56": {
+        "id": "FlexContainer-landing-restaurant-flex-56",
+        "blockName": "Maya Chen",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FBF3E6",
+          "borderRadius": "22px",
+          "borderColor": "#EADBC6",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-restaurant-icon-49"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-50"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-55"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-5",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-75"
+      },
+      "Icon-landing-restaurant-icon-57": {
+        "id": "Icon-landing-restaurant-icon-57",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-64"
+      },
+      "Text-landing-restaurant-body-58": {
+        "id": "Text-landing-restaurant-body-58",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Warm service, generous portions and the kind of room you want to linger in.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-64"
+      },
+      "Avatar-landing-restaurant-avatar-59": {
+        "id": "Avatar-landing-restaurant-avatar-59",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Marco Reyes",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-63"
+      },
+      "Text-landing-restaurant-h4-60": {
+        "id": "Text-landing-restaurant-h4-60",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Marco Reyes",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-62"
+      },
+      "Text-landing-restaurant-caption-61": {
+        "id": "Text-landing-restaurant-caption-61",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Local food writer",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-62"
+      },
+      "FlexContainer-landing-restaurant-flex-62": {
+        "id": "FlexContainer-landing-restaurant-flex-62",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h4-60"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-caption-61"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-63"
+      },
+      "FlexContainer-landing-restaurant-flex-63": {
+        "id": "FlexContainer-landing-restaurant-flex-63",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-landing-restaurant-avatar-59"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-62"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-64"
+      },
+      "FlexContainer-landing-restaurant-flex-64": {
+        "id": "FlexContainer-landing-restaurant-flex-64",
+        "blockName": "Marco Reyes",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FBF3E6",
+          "borderRadius": "22px",
+          "borderColor": "#EADBC6",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-restaurant-icon-57"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-58"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-63"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-5",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-75"
+      },
+      "Icon-landing-restaurant-icon-65": {
+        "id": "Icon-landing-restaurant-icon-65",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-72"
+      },
+      "Text-landing-restaurant-body-66": {
+        "id": "Text-landing-restaurant-body-66",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "They made our birthday dinner for twenty feel effortless.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-72"
+      },
+      "Avatar-landing-restaurant-avatar-67": {
+        "id": "Avatar-landing-restaurant-avatar-67",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Hannah Blake",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-71"
+      },
+      "Text-landing-restaurant-h4-68": {
+        "id": "Text-landing-restaurant-h4-68",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Hannah Blake",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-70"
+      },
+      "Text-landing-restaurant-caption-69": {
+        "id": "Text-landing-restaurant-caption-69",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Private room guest",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-70"
+      },
+      "FlexContainer-landing-restaurant-flex-70": {
+        "id": "FlexContainer-landing-restaurant-flex-70",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h4-68"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-caption-69"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-71"
+      },
+      "FlexContainer-landing-restaurant-flex-71": {
+        "id": "FlexContainer-landing-restaurant-flex-71",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-landing-restaurant-avatar-67"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-70"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-72"
+      },
+      "FlexContainer-landing-restaurant-flex-72": {
+        "id": "FlexContainer-landing-restaurant-flex-72",
+        "blockName": "Hannah Blake",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FBF3E6",
+          "borderRadius": "22px",
+          "borderColor": "#EADBC6",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-restaurant-icon-65"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-66"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-71"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-5",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-75"
+      },
+      "Text-landing-restaurant-eyebrow-73": {
+        "id": "Text-landing-restaurant-eyebrow-73",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Kind words",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-4",
+            "index": 0,
+            "length": 2,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-76"
+      },
+      "Text-landing-restaurant-h2-74": {
+        "id": "Text-landing-restaurant-h2-74",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "What our guests say",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-4",
+            "index": 1,
+            "length": 2,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-76"
+      },
+      "FlexContainer-landing-restaurant-flex-75": {
+        "id": "FlexContainer-landing-restaurant-flex-75",
+        "blockName": "Quotes",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "22px",
+          "padding": "16px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-56"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-64"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-72"
+            ],
+            "flex": "1 1 300px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-76"
+      },
+      "FlexContainer-landing-restaurant-flex-76": {
+        "id": "FlexContainer-landing-restaurant-flex-76",
+        "blockName": "Testimonials with portraits",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FFFDF8",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-73"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-74"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-75"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "5",
+            "gridRowEnd": "6"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-restaurant-h2-77": {
+        "id": "Text-landing-restaurant-h2-77",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Hungry already?",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "46px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-6",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-81"
+      },
+      "Text-landing-restaurant-body-78": {
+        "id": "Text-landing-restaurant-body-78",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Order for pickup or save a table for tonight.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.85)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-6",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-81"
+      },
+      "Button-landing-restaurant-button-79": {
+        "id": "Button-landing-restaurant-button-79",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Order now",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#order",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "mdi-arrow-right",
+          "iconPlacement": "right",
+          "backgroundColor": "#E0A43B",
+          "borderColor": "#E0A43B",
+          "borderWidth": "0",
+          "textColor": "#1b1b1b"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#c59034",
+              "borderColor": "#c59034"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-80"
+      },
+      "FlexContainer-landing-restaurant-flex-80": {
+        "id": "FlexContainer-landing-restaurant-flex-80",
+        "blockName": "Actions",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "10px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-landing-restaurant-button-79"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-restaurant-6",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-81"
+      },
+      "FlexContainer-landing-restaurant-flex-81": {
+        "id": "FlexContainer-landing-restaurant-flex-81",
+        "blockName": "Call to action over photo",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "20px",
+          "padding": "110px 24px",
+          "wrap": false,
+          "backgroundColor": "#9C3D2E",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px",
+          "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+          "backgroundImageOpacity": "0.35",
+          "backgroundImageBlendMode": "multiply",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h2-77"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-78"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-80"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "6",
+            "gridRowEnd": "7"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-restaurant-h3-82": {
+        "id": "Text-landing-restaurant-h3-82",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Kusina",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H3",
+          "fontWeight": "700",
+          "fontSize": "26px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-84"
+      },
+      "Text-landing-restaurant-body-83": {
+        "id": "Text-landing-restaurant-body-83",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Family cooking in the neighbourhood.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-84"
+      },
+      "FlexContainer-landing-restaurant-flex-84": {
+        "id": "FlexContainer-landing-restaurant-flex-84",
+        "blockName": "Brand",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "10px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-h3-82"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-83"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-98"
+      },
+      "Text-landing-restaurant-eyebrow-85": {
+        "id": "Text-landing-restaurant-eyebrow-85",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Visit",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-88"
+      },
+      "Text-landing-restaurant-body-86": {
+        "id": "Text-landing-restaurant-body-86",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "12 Market Street",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-88"
+      },
+      "Text-landing-restaurant-body-87": {
+        "id": "Text-landing-restaurant-body-87",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Tue–Sun, 11am–10pm",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-88"
+      },
+      "FlexContainer-landing-restaurant-flex-88": {
+        "id": "FlexContainer-landing-restaurant-flex-88",
+        "blockName": "Visit",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-85"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-86"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-87"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-98"
+      },
+      "Text-landing-restaurant-eyebrow-89": {
+        "id": "Text-landing-restaurant-eyebrow-89",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Eat",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-93"
+      },
+      "Text-landing-restaurant-body-90": {
+        "id": "Text-landing-restaurant-body-90",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Menu",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-93"
+      },
+      "Text-landing-restaurant-body-91": {
+        "id": "Text-landing-restaurant-body-91",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Catering",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-93"
+      },
+      "Text-landing-restaurant-body-92": {
+        "id": "Text-landing-restaurant-body-92",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Gift cards",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-93"
+      },
+      "FlexContainer-landing-restaurant-flex-93": {
+        "id": "FlexContainer-landing-restaurant-flex-93",
+        "blockName": "Eat",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-89"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-90"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-91"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-92"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-98"
+      },
+      "Text-landing-restaurant-eyebrow-94": {
+        "id": "Text-landing-restaurant-eyebrow-94",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Say hello",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-97"
+      },
+      "Text-landing-restaurant-body-95": {
+        "id": "Text-landing-restaurant-body-95",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "+1 555 010 3322",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-97"
+      },
+      "Text-landing-restaurant-body-96": {
+        "id": "Text-landing-restaurant-body-96",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "hello@kusina.example",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-97"
+      },
+      "FlexContainer-landing-restaurant-flex-97": {
+        "id": "FlexContainer-landing-restaurant-flex-97",
+        "blockName": "Say hello",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-restaurant-eyebrow-94"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-95"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-restaurant-body-96"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-98"
+      },
+      "FlexContainer-landing-restaurant-flex-98": {
+        "id": "FlexContainer-landing-restaurant-flex-98",
+        "blockName": "Footer columns",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "flex-start",
+          "gap": "40px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-84"
+            ],
+            "flex": "2 1 260px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-88"
+            ],
+            "flex": "1 1 150px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-93"
+            ],
+            "flex": "1 1 150px"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-97"
+            ],
+            "flex": "1 1 150px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-100"
+      },
+      "Text-landing-restaurant-caption-99": {
+        "id": "Text-landing-restaurant-caption-99",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "© Kusina. Sample content for the WebPod layout library.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.45)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-restaurant-flex-100"
+      },
+      "FlexContainer-landing-restaurant-flex-100": {
+        "id": "FlexContainer-landing-restaurant-flex-100",
+        "blockName": "Footer · columns",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "40px",
+          "padding": "64px 24px 40px",
+          "wrap": false,
+          "backgroundColor": "#220d0a",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-restaurant-flex-98"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-restaurant-caption-99"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "7",
+            "gridRowEnd": "8"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Fraunces",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Nunito Sans",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF3E6",
+      "fullBleed": true
+    },
+    "paneDataSources": [
+      {
+        "id": "landing_restaurant_menu",
+        "label": "Menu",
+        "type": "json",
+        "config": {
+          "name": "Menu"
+        },
+        "records": [
+          {
+            "id": "dish-1",
+            "name": "Garden Salad",
+            "category": "Starters",
+            "description": "Crisp greens, radish, citrus and toasted seeds with a honey vinaigrette.",
+            "price": "$12",
+            "photo": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-2",
+            "name": "Grilled Platter",
+            "category": "To share",
+            "description": "Charred skewers, grilled vegetables and garlic rice for two.",
+            "price": "$34",
+            "photo": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-3",
+            "name": "Harvest Bowl",
+            "category": "Mains",
+            "description": "Roasted squash, chickpeas, avocado and tahini on warm grains.",
+            "price": "$18",
+            "photo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-4",
+            "name": "Wood-fired Pizza",
+            "category": "Mains",
+            "description": "Tomato, fior di latte, basil and a blistered crust.",
+            "price": "$19",
+            "photo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-5",
+            "name": "Poke Bowl",
+            "category": "Mains",
+            "description": "Marinated tofu, edamame, pickled cabbage and sesame.",
+            "price": "$17",
+            "photo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-6",
+            "name": "Stacked Pancakes",
+            "category": "Dessert",
+            "description": "Banana, caramel and a pinch of sea salt.",
+            "price": "$11",
+            "photo": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80"
+          }
+        ],
+        "data": [
+          {
+            "id": "dish-1",
+            "name": "Garden Salad",
+            "category": "Starters",
+            "description": "Crisp greens, radish, citrus and toasted seeds with a honey vinaigrette.",
+            "price": "$12",
+            "photo": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-2",
+            "name": "Grilled Platter",
+            "category": "To share",
+            "description": "Charred skewers, grilled vegetables and garlic rice for two.",
+            "price": "$34",
+            "photo": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-3",
+            "name": "Harvest Bowl",
+            "category": "Mains",
+            "description": "Roasted squash, chickpeas, avocado and tahini on warm grains.",
+            "price": "$18",
+            "photo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-4",
+            "name": "Wood-fired Pizza",
+            "category": "Mains",
+            "description": "Tomato, fior di latte, basil and a blistered crust.",
+            "price": "$19",
+            "photo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-5",
+            "name": "Poke Bowl",
+            "category": "Mains",
+            "description": "Marinated tofu, edamame, pickled cabbage and sesame.",
+            "price": "$17",
+            "photo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-6",
+            "name": "Stacked Pancakes",
+            "category": "Dessert",
+            "description": "Banana, caramel and a pinch of sea salt.",
+            "price": "$11",
+            "photo": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  }
+}

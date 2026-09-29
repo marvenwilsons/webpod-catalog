@@ -1,0 +1,785 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "split-story",
+  "kind": "template",
+  "title": "Split — photo and story",
+  "description": "Two-column band: a large photo panel beside an eyebrow, heading, paragraph, icon bullet points and a link button. The copy reveals in sequence as it scrolls into view. Stacks on phones.",
+  "tags": [
+    "split",
+    "image and text",
+    "about",
+    "feature highlight",
+    "scroll animation"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Split — photo and story",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-split-story-eyebrow-1": {
+        "id": "Text-split-story-eyebrow-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "The terrace",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 0,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "Text-split-story-h2-2": {
+        "id": "Text-split-story-h2-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Breakfast with a view of the bay",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 1,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "Text-split-story-body-3": {
+        "id": "Text-split-story-body-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Our terrace restaurant serves from sunrise to late evening, with a menu built around the morning catch and island fruit.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "17px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 2,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "Icon-split-story-icon-4": {
+        "id": "Icon-split-story-icon-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-weather-sunset",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-6"
+      },
+      "Text-split-story-body-5": {
+        "id": "Text-split-story-body-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Open-air seating on every level",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-6"
+      },
+      "FlexContainer-split-story-flex-6": {
+        "id": "FlexContainer-split-story-flex-6",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-split-story-icon-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-split-story-body-5"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 3,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "Icon-split-story-icon-7": {
+        "id": "Icon-split-story-icon-7",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-silverware-fork-knife",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-9"
+      },
+      "Text-split-story-body-8": {
+        "id": "Text-split-story-body-8",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Chef’s tasting menu on Fridays",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-9"
+      },
+      "FlexContainer-split-story-flex-9": {
+        "id": "FlexContainer-split-story-flex-9",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-split-story-icon-7"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-split-story-body-8"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "440ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "440ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 4,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "Icon-split-story-icon-10": {
+        "id": "Icon-split-story-icon-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-glass-wine",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-12"
+      },
+      "Text-split-story-body-11": {
+        "id": "Text-split-story-body-11",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sommelier-led wine pairings",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-12"
+      },
+      "FlexContainer-split-story-flex-12": {
+        "id": "FlexContainer-split-story-flex-12",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-split-story-icon-10"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-split-story-body-11"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "530ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "530ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 5,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "Button-split-story-button-13": {
+        "id": "Button-split-story-button-13",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "View the menu",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#dining",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "",
+          "iconPlacement": "right",
+          "backgroundColor": "transparent",
+          "borderColor": "#10263F",
+          "borderWidth": "1px",
+          "textColor": "#10263F"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#10263F14"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "620ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "620ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-split-story-1",
+            "index": 6,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-split-story-flex-14"
+      },
+      "FlexContainer-split-story-flex-14": {
+        "id": "FlexContainer-split-story-flex-14",
+        "blockName": "Story copy",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-split-story-eyebrow-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-split-story-h2-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-split-story-body-3"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-split-story-flex-6"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-5",
+            "childBlockIds": [
+              "FlexContainer-split-story-flex-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-6",
+            "childBlockIds": [
+              "FlexContainer-split-story-flex-12"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-7",
+            "childBlockIds": [
+              "Button-split-story-button-13"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-split-story-flex-16"
+      },
+      "FlexContainer-split-story-flex-15": {
+        "id": "FlexContainer-split-story-flex-15",
+        "blockName": "Photo",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "16px",
+          "padding": "260px 0px",
+          "wrap": false,
+          "backgroundImage": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
+          "backgroundImageOpacity": "1",
+          "backgroundImageBlendMode": "normal",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center",
+          "backgroundColor": "#E8E1D2",
+          "borderRadius": "24px"
+        },
+        "flexItems": [],
+        "parentFlexContainerId": "FlexContainer-split-story-flex-16"
+      },
+      "FlexContainer-split-story-flex-16": {
+        "id": "FlexContainer-split-story-flex-16",
+        "blockName": "Split",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "56px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-split-story-flex-15"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-split-story-flex-14"
+            ],
+            "flex": "1 1 300px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-split-story-flex-17"
+      },
+      "FlexContainer-split-story-flex-17": {
+        "id": "FlexContainer-split-story-flex-17",
+        "blockName": "Split · photo and story",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-split-story-flex-16"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Playfair Display",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF8F1",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

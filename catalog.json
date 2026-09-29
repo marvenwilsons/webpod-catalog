@@ -1,0 +1,926 @@
+{
+  "schema": "webpod-catalog/1",
+  "name": "WebPod catalog",
+  "description": "Ready-made templates, components and documents for WebPod's Pod Designer.",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "announcements",
+      "kind": "component",
+      "title": "Announcements",
+      "description": "News or notices as cards: title, tag, date, author and summary. Data-agnostic: cards arrive through the items list prop.",
+      "tags": [],
+      "requires": [
+        "list-props",
+        "pod-designer-snapshot/1"
+      ],
+      "props": {
+        "title": {
+          "type": "string",
+          "label": "Title",
+          "defaultValue": "Announcements"
+        },
+        "items": {
+          "type": "list",
+          "label": "Announcements",
+          "description": "One card per announcement: title, summary, publishedOn (ISO date or text), author and an optional tag."
+        }
+      },
+      "file": "components/announcements.json",
+      "bytes": 13485,
+      "sha256": "ca25c6e72e4904a30f568adb4ef5b268ab4484de594523a4b82b1ef6214c0a7d"
+    },
+    {
+      "id": "calculator",
+      "kind": "component",
+      "title": "Calculator",
+      "description": "A working keypad calculator: + − × ÷, %, ± and C, with a pending-operator line.",
+      "tags": [],
+      "requires": [
+        "mapping-functions",
+        "pod-designer-snapshot/1",
+        "runtime-variables"
+      ],
+      "props": {
+        "title": {
+          "type": "string",
+          "label": "Title",
+          "description": "Shown above the keypad.",
+          "defaultValue": "CALCULATOR"
+        }
+      },
+      "file": "components/calculator.json",
+      "bytes": 224318,
+      "sha256": "1818de94f8036d8d62d9c597437ab13c2b4155d861805d9da0e73f53f27aec4f"
+    },
+    {
+      "id": "counter",
+      "kind": "component",
+      "title": "Counter",
+      "description": "A number with − Reset + buttons (cups of water, laps, tickets left). start sets where it begins and returns to; step sets how much each press changes it. Each copy remembers its count in the viewer's browser.",
+      "tags": [],
+      "requires": [
+        "initial-from-prop",
+        "mapping-functions",
+        "pod-designer-snapshot/1",
+        "remembered-variables",
+        "runtime-variables"
+      ],
+      "props": {
+        "label": {
+          "type": "string",
+          "label": "Label",
+          "description": "Shown above the number.",
+          "defaultValue": "Count"
+        },
+        "start": {
+          "type": "number",
+          "label": "Start",
+          "description": "The number it starts from and returns to on Reset.",
+          "defaultValue": 0
+        },
+        "step": {
+          "type": "number",
+          "label": "Step",
+          "description": "How much + and − change it.",
+          "defaultValue": 1
+        }
+      },
+      "file": "components/counter.json",
+      "bytes": 29697,
+      "sha256": "0f7afd99f182c7c533155de1dc9a691a6c7ba72881df27d6e519898ca355fabf"
+    },
+    {
+      "id": "pay-stub",
+      "kind": "component",
+      "title": "Pay stub",
+      "description": "An employee pay stub: name, pay period, earnings and deductions as line items, gross, deductions and net pay. Data-agnostic: connect it to your own payroll data through its props.",
+      "tags": [],
+      "requires": [
+        "list-props",
+        "pod-designer-snapshot/1"
+      ],
+      "props": {
+        "employeeName": {
+          "type": "string",
+          "label": "Employee name",
+          "defaultValue": "Jordan Rivera"
+        },
+        "employeeId": {
+          "type": "string",
+          "label": "Employee number",
+          "defaultValue": "E-10482"
+        },
+        "department": {
+          "type": "string",
+          "label": "Department",
+          "defaultValue": "Facilities"
+        },
+        "payPeriod": {
+          "type": "string",
+          "label": "Pay period",
+          "defaultValue": "Sep 1 – Sep 15, 2026"
+        },
+        "payDate": {
+          "type": "string",
+          "label": "Pay date",
+          "defaultValue": "Sep 19, 2026"
+        },
+        "earnings": {
+          "type": "list",
+          "label": "Earnings",
+          "description": "One row per earning: label, detail (such as hours × rate) and amount."
+        },
+        "deductions": {
+          "type": "list",
+          "label": "Deductions",
+          "description": "One row per deduction: label and amount."
+        },
+        "grossPay": {
+          "type": "string",
+          "label": "Gross pay",
+          "defaultValue": "$2,321.70"
+        },
+        "totalDeductions": {
+          "type": "string",
+          "label": "Total deductions",
+          "defaultValue": "$576.53"
+        },
+        "netPay": {
+          "type": "string",
+          "label": "Net pay",
+          "defaultValue": "$1,745.17"
+        }
+      },
+      "file": "components/pay-stub.json",
+      "bytes": 30554,
+      "sha256": "d44fd329a53355c838d89b6e4e9816f729bde784db626f3f039cfc9b17ceb2ff"
+    },
+    {
+      "id": "rating",
+      "kind": "component",
+      "title": "Rating",
+      "description": "Five clickable stars with \"n of 5\". value sets the stars it starts with. Each copy remembers the viewer's rating in their browser.",
+      "tags": [],
+      "requires": [
+        "initial-from-prop",
+        "pod-designer-snapshot/1",
+        "remembered-variables",
+        "runtime-variables"
+      ],
+      "props": {
+        "label": {
+          "type": "string",
+          "label": "Label",
+          "description": "The question or thing being rated.",
+          "defaultValue": "Your rating"
+        },
+        "value": {
+          "type": "number",
+          "label": "Value",
+          "description": "The rating it starts with (0 to 5).",
+          "defaultValue": 0
+        }
+      },
+      "file": "components/rating.json",
+      "bytes": 10399,
+      "sha256": "57c942f505f8fc2ddb5e3216196e4c31ed3beba96632fbbd86eab727dce9a11b"
+    },
+    {
+      "id": "schedule",
+      "kind": "component",
+      "title": "Schedule",
+      "description": "Upcoming shifts, classes or bookings, one row each: day, title, time and location. Data-agnostic: rows arrive through the shifts list prop (starts/ends as ISO date-times or text).",
+      "tags": [],
+      "requires": [
+        "list-props",
+        "pod-designer-snapshot/1"
+      ],
+      "props": {
+        "title": {
+          "type": "string",
+          "label": "Title",
+          "defaultValue": "My schedule"
+        },
+        "subtitle": {
+          "type": "string",
+          "label": "Subtitle",
+          "defaultValue": "Your next shifts"
+        },
+        "shifts": {
+          "type": "list",
+          "label": "Shifts",
+          "description": "One row per shift: title, starts and ends (ISO date-time or text), location and an optional note."
+        }
+      },
+      "file": "components/schedule.json",
+      "bytes": 15337,
+      "sha256": "c57c37b5e36a347daf83b2167366d43ce29938e5718f25a0b24da5f71f65d97c"
+    },
+    {
+      "id": "tabs",
+      "kind": "component",
+      "title": "Tabs",
+      "description": "Three tabs of text (tab1Label/tab1Body … tab3Label/tab3Body); openTab (1, 2 or 3) sets the tab it opens on.",
+      "tags": [],
+      "requires": [
+        "initial-from-prop",
+        "pod-designer-snapshot/1",
+        "runtime-variables"
+      ],
+      "props": {
+        "tab1Label": {
+          "type": "string",
+          "label": "Tab 1 label",
+          "description": "Title of tab 1.",
+          "defaultValue": "Overview"
+        },
+        "tab1Body": {
+          "type": "string",
+          "label": "Tab 1 text",
+          "description": "What tab 1 shows.",
+          "defaultValue": "A short summary of what this is about."
+        },
+        "tab2Label": {
+          "type": "string",
+          "label": "Tab 2 label",
+          "description": "Title of tab 2.",
+          "defaultValue": "Details"
+        },
+        "tab2Body": {
+          "type": "string",
+          "label": "Tab 2 text",
+          "description": "What tab 2 shows.",
+          "defaultValue": "The finer points, steps or numbers."
+        },
+        "tab3Label": {
+          "type": "string",
+          "label": "Tab 3 label",
+          "description": "Title of tab 3.",
+          "defaultValue": "Notes"
+        },
+        "tab3Body": {
+          "type": "string",
+          "label": "Tab 3 text",
+          "description": "What tab 3 shows.",
+          "defaultValue": "Anything else worth knowing."
+        },
+        "openTab": {
+          "type": "string",
+          "label": "Open tab",
+          "description": "The tab it opens on: 1, 2 or 3.",
+          "defaultValue": "1"
+        }
+      },
+      "file": "components/tabs.json",
+      "bytes": 30770,
+      "sha256": "74f6b45a910ee39cb6b81494fe89b0c186fbd45a34a8b676fe6e537d0ab98b2b"
+    },
+    {
+      "id": "cta-photo",
+      "kind": "template",
+      "title": "Call to action over photo",
+      "description": "Centred call to action on a photo darkened by the brand colour, with one strong button.",
+      "tags": [
+        "call to action",
+        "banner",
+        "background image",
+        "overlay"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-cta-photo-flex-5",
+          "background": "#9C3D2E",
+          "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+          "imageOpacity": 0.35,
+          "color": "#ffffff",
+          "align": "center",
+          "heading": {
+            "text": "Hungry already?",
+            "font": "Fraunces, Georgia, serif",
+            "color": "#ffffff",
+            "align": "center"
+          },
+          "lines": 1,
+          "buttons": [
+            {
+              "background": "#E0A43B",
+              "color": "#1b1b1b"
+            }
+          ],
+          "photos": [],
+          "cards": 0,
+          "columns": 1,
+          "height": 3.142857142857143
+        }
+      ],
+      "file": "templates/cta-photo.json",
+      "bytes": 9240,
+      "sha256": "b62d3a68b3f6d2258acc0995a29568ce911a287512b5a2df127486b2e5569722"
+    },
+    {
+      "id": "feature-cards",
+      "kind": "template",
+      "title": "Feature cards with icons",
+      "description": "Centred heading over three bordered cards, each with a tinted icon tile, title and description. Cards reveal in sequence on scroll and lift with an accent border on hover.",
+      "tags": [
+        "features",
+        "cards",
+        "icons",
+        "how it works",
+        "hover",
+        "scroll animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-feature-cards-flex-17",
+          "background": "#F6F7FB",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "Built around the way you already work",
+            "font": "Space Grotesk, Georgia, serif",
+            "color": "#111827",
+            "align": "center"
+          },
+          "lines": 3,
+          "buttons": [],
+          "photos": [],
+          "cards": 0,
+          "columns": 3,
+          "height": 2.5142857142857142
+        }
+      ],
+      "file": "templates/feature-cards.json",
+      "bytes": 23222,
+      "sha256": "88eb0b4adfdf82a3d22f9f2ff8aab6d96e26b05217c3259b129b4858988883a3"
+    },
+    {
+      "id": "footer-columns",
+      "kind": "template",
+      "title": "Footer — brand and link columns",
+      "description": "Dark footer with the brand and tagline, three link or contact columns and a legal line. Wraps on phones.",
+      "tags": [
+        "footer",
+        "links",
+        "contact"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-footer-columns-flex-21",
+          "background": "#04080e",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "#ffffff",
+          "align": "left",
+          "heading": {
+            "text": "LuxeVanta",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#ffffff",
+            "align": "left"
+          },
+          "lines": 3,
+          "buttons": [],
+          "photos": [],
+          "cards": 0,
+          "columns": 4,
+          "height": 1.4857142857142858
+        }
+      ],
+      "file": "templates/footer-columns.json",
+      "bytes": 20995,
+      "sha256": "e2b2d4f64a014ea6c93c1bd718e597b1a8b4035acb80b117d6960d485b4f2810"
+    },
+    {
+      "id": "hero-gradient",
+      "kind": "template",
+      "title": "Hero — gradient with two actions",
+      "description": "Full-width hero on a dark gradient: eyebrow, large serif headline, supporting line, primary and outlined buttons. Onload reveal: fade, blur-rise and rise with staggered delays; buttons lift on hover.",
+      "tags": [
+        "hero",
+        "banner",
+        "gradient",
+        "call to action",
+        "animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-hero-gradient-flex-7",
+          "background": "linear-gradient(135deg, #10263F 0%, #07111c 100%)",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "#ffffff",
+          "align": "left",
+          "heading": {
+            "text": "An unhurried escape on the coast",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#ffffff",
+            "align": "left"
+          },
+          "lines": 1,
+          "buttons": [
+            {
+              "background": "#CBA55D",
+              "color": "#1b1b1b"
+            },
+            {
+              "background": "transparent",
+              "color": "#ffffff",
+              "border": "rgba(255,255,255,0.7)"
+            }
+          ],
+          "photos": [],
+          "cards": 0,
+          "columns": 2,
+          "height": 3.5428571428571427
+        }
+      ],
+      "file": "templates/hero-gradient.json",
+      "bytes": 11377,
+      "sha256": "7177bd682a35e364c526012a057678e05afeb2942431fc7dbd6ae85796c236d1"
+    },
+    {
+      "id": "hero-photo",
+      "kind": "template",
+      "title": "Hero — photo with overlay",
+      "description": "Centred hero over a full-bleed photo darkened with a colour overlay (background image + multiply blend) so white text stays readable. Staggered onload reveal.",
+      "tags": [
+        "hero",
+        "banner",
+        "background image",
+        "overlay",
+        "animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-hero-photo-flex-7",
+          "background": "#10263F",
+          "image": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1600&q=80",
+          "imageOpacity": 0.55,
+          "color": "#ffffff",
+          "align": "center",
+          "heading": {
+            "text": "Evenings made for slowing down",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#ffffff",
+            "align": "center"
+          },
+          "lines": 1,
+          "buttons": [
+            {
+              "background": "#CBA55D",
+              "color": "#1b1b1b"
+            },
+            {
+              "background": "transparent",
+              "color": "#ffffff",
+              "border": "rgba(255,255,255,0.7)"
+            }
+          ],
+          "photos": [],
+          "cards": 0,
+          "columns": 2,
+          "height": 4
+        }
+      ],
+      "file": "templates/hero-photo.json",
+      "bytes": 11493,
+      "sha256": "029744a64b489dceb1f199e85d3b7703a559012498855af06d04fe0197f3a933"
+    },
+    {
+      "id": "landing-resort",
+      "kind": "template",
+      "title": "Landing page — resort",
+      "description": "Complete resort landing page: photo hero, feature cards, split story, stats, gallery, testimonials, call to action over photo and footer, with onload and scroll animations.",
+      "tags": [
+        "landing page",
+        "hotel",
+        "full page",
+        "animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "page",
+      "preview": [
+        {
+          "id": "FlexContainer-landing-resort-flex-7",
+          "background": "#10263F",
+          "image": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1600&q=80",
+          "imageOpacity": 0.55,
+          "color": "#ffffff",
+          "align": "center",
+          "heading": {
+            "text": "Evenings made for slowing down",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#ffffff",
+            "align": "center"
+          },
+          "lines": 1,
+          "buttons": [
+            {
+              "background": "#CBA55D",
+              "color": "#1b1b1b"
+            },
+            {
+              "background": "transparent",
+              "color": "#ffffff",
+              "border": "rgba(255,255,255,0.7)"
+            }
+          ],
+          "photos": [],
+          "cards": 0,
+          "columns": 2,
+          "height": 4
+        },
+        {
+          "id": "FlexContainer-landing-resort-flex-24",
+          "background": "#FBF8F1",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "Everything arranged before you ask",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#1F2D3D",
+            "align": "center"
+          },
+          "lines": 3,
+          "buttons": [],
+          "photos": [],
+          "cards": 0,
+          "columns": 3,
+          "height": 2.5142857142857142
+        },
+        {
+          "id": "FlexContainer-landing-resort-flex-41",
+          "background": "#FFFFFF",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "Breakfast with a view of the bay",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#1F2D3D",
+            "align": "left"
+          },
+          "lines": 3,
+          "buttons": [
+            {
+              "background": "transparent",
+              "color": "#10263F",
+              "border": "#10263F"
+            }
+          ],
+          "photos": [
+            "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "cards": 0,
+          "columns": 2,
+          "height": 3.5142857142857142
+        }
+      ],
+      "file": "templates/landing-resort.json",
+      "bytes": 133233,
+      "sha256": "e111d048360da516dcca1e1bba872077cf581e2418dbace6b29e0e9797a29ff5"
+    },
+    {
+      "id": "landing-restaurant",
+      "kind": "template",
+      "title": "Landing page — restaurant",
+      "description": "Complete restaurant landing page composed from the library sections: photo hero, split story, menu cards, stats, testimonials, call to action and footer, with onload and scroll animations.",
+      "tags": [
+        "landing page",
+        "restaurant",
+        "full page",
+        "animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "page",
+      "preview": [
+        {
+          "id": "FlexContainer-landing-restaurant-flex-7",
+          "background": "#9C3D2E",
+          "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80",
+          "imageOpacity": 0.55,
+          "color": "#ffffff",
+          "align": "center",
+          "heading": {
+            "text": "Home cooking, made for sharing",
+            "font": "Fraunces, Georgia, serif",
+            "color": "#ffffff",
+            "align": "center"
+          },
+          "lines": 1,
+          "buttons": [
+            {
+              "background": "#E0A43B",
+              "color": "#1b1b1b"
+            },
+            {
+              "background": "transparent",
+              "color": "#ffffff",
+              "border": "rgba(255,255,255,0.7)"
+            }
+          ],
+          "photos": [],
+          "cards": 0,
+          "columns": 2,
+          "height": 4
+        },
+        {
+          "id": "FlexContainer-landing-restaurant-flex-24",
+          "background": "#FFFDF8",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "A dining room that feels like home",
+            "font": "Fraunces, Georgia, serif",
+            "color": "#2A1D17",
+            "align": "left"
+          },
+          "lines": 3,
+          "buttons": [
+            {
+              "background": "transparent",
+              "color": "#9C3D2E",
+              "border": "#9C3D2E"
+            }
+          ],
+          "photos": [
+            "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "cards": 0,
+          "columns": 2,
+          "height": 3.5142857142857142
+        },
+        {
+          "id": "FlexContainer-landing-restaurant-flex-34",
+          "background": "#FBF3E6",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "Lola’s favourites",
+            "font": "Fraunces, Georgia, serif",
+            "color": "#2A1D17",
+            "align": "left"
+          },
+          "lines": 1,
+          "buttons": [],
+          "photos": [],
+          "cards": 3,
+          "columns": 0,
+          "height": 3.914285714285714
+        }
+      ],
+      "file": "templates/landing-restaurant.json",
+      "bytes": 121840,
+      "sha256": "92a7f4ba74d2b841b9a6d7029a4691c460d77cd600066d8ce6e7c4c8c985c526"
+    },
+    {
+      "id": "menu-cards",
+      "kind": "template",
+      "title": "Menu with photos and prices",
+      "description": "Menu grid bound to a data source: each card shows a photo, category, dish name, description and price.",
+      "tags": [
+        "menu",
+        "products",
+        "cards",
+        "price list",
+        "data-bound list"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-menu-cards-flex-10",
+          "background": "#FBF3E6",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "Lola’s favourites",
+            "font": "Fraunces, Georgia, serif",
+            "color": "#2A1D17",
+            "align": "left"
+          },
+          "lines": 1,
+          "buttons": [],
+          "photos": [],
+          "cards": 3,
+          "columns": 0,
+          "height": 3.914285714285714
+        }
+      ],
+      "file": "templates/menu-cards.json",
+      "bytes": 18758,
+      "sha256": "52fb6b032b271bf307d816f7b8f737416c536d85d8095457da5f0763ba318310"
+    },
+    {
+      "id": "photo-gallery",
+      "kind": "template",
+      "title": "Photo gallery",
+      "description": "Three-column image gallery with captions and zoom, under a centred heading.",
+      "tags": [
+        "gallery",
+        "photos",
+        "portfolio"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-photo-gallery-flex-4",
+          "background": "#FBF8F1",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "A look around the resort",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#1F2D3D",
+            "align": "center"
+          },
+          "lines": 0,
+          "buttons": [],
+          "photos": [],
+          "cards": 3,
+          "columns": 0,
+          "height": 3.914285714285714
+        }
+      ],
+      "file": "templates/photo-gallery.json",
+      "bytes": 8101,
+      "sha256": "46d469ca7616ca41b076ca8821b601f411c31164318130aac11884eaab90aa93"
+    },
+    {
+      "id": "split-story",
+      "kind": "template",
+      "title": "Split — photo and story",
+      "description": "Two-column band: a large photo panel beside an eyebrow, heading, paragraph, icon bullet points and a link button. The copy reveals in sequence as it scrolls into view. Stacks on phones.",
+      "tags": [
+        "split",
+        "image and text",
+        "about",
+        "feature highlight",
+        "scroll animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-split-story-flex-17",
+          "background": "#FFFFFF",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "Breakfast with a view of the bay",
+            "font": "Playfair Display, Georgia, serif",
+            "color": "#1F2D3D",
+            "align": "left"
+          },
+          "lines": 3,
+          "buttons": [
+            {
+              "background": "transparent",
+              "color": "#10263F",
+              "border": "#10263F"
+            }
+          ],
+          "photos": [
+            "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "cards": 0,
+          "columns": 2,
+          "height": 3.5142857142857142
+        }
+      ],
+      "file": "templates/split-story.json",
+      "bytes": 22425,
+      "sha256": "dbe769989bf22d96070d2d2a0faa5f04bff990c033f9224569a26305d4a4ddd4"
+    },
+    {
+      "id": "stats-band",
+      "kind": "template",
+      "title": "Stats band",
+      "description": "Dark band of four large accent-coloured numbers with short labels that pop in one after another on scroll.",
+      "tags": [
+        "stats",
+        "metrics",
+        "numbers",
+        "social proof",
+        "scroll animation"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-stats-band-flex-14",
+          "background": "#3B4CCA",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "#ffffff",
+          "align": "left",
+          "heading": {
+            "text": "12k",
+            "font": "Space Grotesk, Georgia, serif",
+            "color": "#14B8A6",
+            "align": "center"
+          },
+          "lines": 3,
+          "buttons": [],
+          "photos": [],
+          "cards": 0,
+          "columns": 4,
+          "height": 2.057142857142857
+        }
+      ],
+      "file": "templates/stats-band.json",
+      "bytes": 16878,
+      "sha256": "d747eaac2732da1b36e7120ec19fb286a1e5573c3937b3c54c0df04e01afaa5e"
+    },
+    {
+      "id": "testimonials",
+      "kind": "template",
+      "title": "Testimonials with portraits",
+      "description": "Three quote cards with a quote icon, italic quote and an author row with a round portrait, revealed in sequence.",
+      "tags": [
+        "testimonials",
+        "reviews",
+        "quotes",
+        "social proof"
+      ],
+      "requires": [
+        "pod-designer-snapshot/1"
+      ],
+      "templateKind": "section",
+      "preview": [
+        {
+          "id": "FlexContainer-testimonials-flex-28",
+          "background": "#FBF3E6",
+          "image": "",
+          "imageOpacity": 1,
+          "color": "",
+          "align": "left",
+          "heading": {
+            "text": "What our guests say",
+            "font": "Fraunces, Georgia, serif",
+            "color": "#2A1D17",
+            "align": "center"
+          },
+          "lines": 3,
+          "buttons": [],
+          "photos": [],
+          "cards": 0,
+          "columns": 3,
+          "height": 2.5142857142857142
+        }
+      ],
+      "file": "templates/testimonials.json",
+      "bytes": 29824,
+      "sha256": "8449af70225470418124da9c5366df550322a03719ca0194c1144c6f9db5d412"
+    }
+  ]
+}

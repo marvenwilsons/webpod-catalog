@@ -1,0 +1,405 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "hero-photo",
+  "kind": "template",
+  "title": "Hero — photo with overlay",
+  "description": "Centred hero over a full-bleed photo darkened with a colour overlay (background image + multiply blend) so white text stays readable. Staggered onload reveal.",
+  "tags": [
+    "hero",
+    "banner",
+    "background image",
+    "overlay",
+    "animation"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Hero — photo with overlay",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-hero-photo-eyebrow-1": {
+        "id": "Text-hero-photo-eyebrow-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Five-star coastal resort",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "700ms",
+            "delay": "0ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-hero-photo-flex-7"
+      },
+      "Text-hero-photo-h1-2": {
+        "id": "Text-hero-photo-h1-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Evenings made for slowing down",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H1",
+          "fontWeight": "700",
+          "fontSize": "68px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "18px",
+            "to": "0px",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "blur",
+            "from": "10px",
+            "to": "0px",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-hero-photo-flex-7"
+      },
+      "Text-hero-photo-body-3": {
+        "id": "Text-hero-photo-body-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Watch the sun set from a private terrace, then let the kitchen take care of the rest.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "20px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.86)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "650ms",
+            "delay": "300ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "22px",
+            "to": "0px",
+            "duration": "650ms",
+            "delay": "300ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-hero-photo-flex-7"
+      },
+      "Button-hero-photo-button-4": {
+        "id": "Button-hero-photo-button-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Plan your stay",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#reserve",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "mdi-arrow-right",
+          "iconPlacement": "right",
+          "backgroundColor": "#CBA55D",
+          "borderColor": "#CBA55D",
+          "borderWidth": "0",
+          "textColor": "#1b1b1b"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#b39152",
+              "borderColor": "#b39152"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-hero-photo-flex-6"
+      },
+      "Button-hero-photo-button-5": {
+        "id": "Button-hero-photo-button-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "See the resort",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#gallery",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "",
+          "iconPlacement": "right",
+          "backgroundColor": "transparent",
+          "borderColor": "rgba(255,255,255,0.7)",
+          "borderWidth": "1px",
+          "textColor": "#ffffff"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "rgba(255,255,255,0.12)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-hero-photo-flex-6"
+      },
+      "FlexContainer-hero-photo-flex-6": {
+        "id": "FlexContainer-hero-photo-flex-6",
+        "blockName": "Actions",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "10px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-hero-photo-button-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Button-hero-photo-button-5"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "650ms",
+            "delay": "440ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "22px",
+            "to": "0px",
+            "duration": "650ms",
+            "delay": "440ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-hero-photo-flex-7"
+      },
+      "FlexContainer-hero-photo-flex-7": {
+        "id": "FlexContainer-hero-photo-flex-7",
+        "blockName": "Hero · photo with overlay",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "20px",
+          "padding": "150px 24px",
+          "wrap": false,
+          "backgroundColor": "#10263F",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px",
+          "backgroundImage": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1600&q=80",
+          "backgroundImageOpacity": "0.55",
+          "backgroundImageBlendMode": "multiply",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-hero-photo-eyebrow-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-hero-photo-h1-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-hero-photo-body-3"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-hero-photo-flex-6"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Playfair Display",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF8F1",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

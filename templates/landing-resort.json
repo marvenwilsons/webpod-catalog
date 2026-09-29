@@ -1,0 +1,4477 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "landing-resort",
+  "kind": "template",
+  "title": "Landing page — resort",
+  "description": "Complete resort landing page: photo hero, feature cards, split story, stats, gallery, testimonials, call to action over photo and footer, with onload and scroll animations.",
+  "tags": [
+    "landing page",
+    "hotel",
+    "full page",
+    "animation"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "page",
+  "content": {
+    "title": "Library · Landing page — resort",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-landing-resort-eyebrow-1": {
+        "id": "Text-landing-resort-eyebrow-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Five-star coastal resort",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "700ms",
+            "delay": "0ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-7"
+      },
+      "Text-landing-resort-h1-2": {
+        "id": "Text-landing-resort-h1-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Evenings made for slowing down",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H1",
+          "fontWeight": "700",
+          "fontSize": "68px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "18px",
+            "to": "0px",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "blur",
+            "from": "10px",
+            "to": "0px",
+            "duration": "780ms",
+            "delay": "200ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-7"
+      },
+      "Text-landing-resort-body-3": {
+        "id": "Text-landing-resort-body-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Watch the sun set from a private terrace, then let the kitchen take care of the rest.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "20px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.86)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "650ms",
+            "delay": "300ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "22px",
+            "to": "0px",
+            "duration": "650ms",
+            "delay": "300ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-7"
+      },
+      "Button-landing-resort-button-4": {
+        "id": "Button-landing-resort-button-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Plan your stay",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#reserve",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "mdi-arrow-right",
+          "iconPlacement": "right",
+          "backgroundColor": "#CBA55D",
+          "borderColor": "#CBA55D",
+          "borderWidth": "0",
+          "textColor": "#1b1b1b"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#b39152",
+              "borderColor": "#b39152"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-6"
+      },
+      "Button-landing-resort-button-5": {
+        "id": "Button-landing-resort-button-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "See the resort",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#gallery",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "",
+          "iconPlacement": "right",
+          "backgroundColor": "transparent",
+          "borderColor": "rgba(255,255,255,0.7)",
+          "borderWidth": "1px",
+          "textColor": "#ffffff"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "rgba(255,255,255,0.12)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-6"
+      },
+      "FlexContainer-landing-resort-flex-6": {
+        "id": "FlexContainer-landing-resort-flex-6",
+        "blockName": "Actions",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "10px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-landing-resort-button-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Button-landing-resort-button-5"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "onloadAnimations": [
+          {
+            "target": "opacity",
+            "from": "0",
+            "to": "1",
+            "duration": "650ms",
+            "delay": "440ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          },
+          {
+            "target": "position",
+            "from": "22px",
+            "to": "0px",
+            "duration": "650ms",
+            "delay": "440ms",
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-7"
+      },
+      "FlexContainer-landing-resort-flex-7": {
+        "id": "FlexContainer-landing-resort-flex-7",
+        "blockName": "Hero · photo with overlay",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "20px",
+          "padding": "150px 24px",
+          "wrap": false,
+          "backgroundColor": "#10263F",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px",
+          "backgroundImage": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1600&q=80",
+          "backgroundImageOpacity": "0.55",
+          "backgroundImageBlendMode": "multiply",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h1-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-3"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-6"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Icon-landing-resort-icon-8": {
+        "id": "Icon-landing-resort-icon-8",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-room-service-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#10263F",
+          "backgroundColor": "#CBA55D33",
+          "borderRadius": "14px",
+          "padding": "10px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-11"
+      },
+      "Text-landing-resort-h4-9": {
+        "id": "Text-landing-resort-h4-9",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Private host",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-11"
+      },
+      "Text-landing-resort-body-10": {
+        "id": "Text-landing-resort-body-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "One person who knows your plans and your coffee order.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-11"
+      },
+      "FlexContainer-landing-resort-flex-11": {
+        "id": "FlexContainer-landing-resort-flex-11",
+        "blockName": "Private host",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "30px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "22px",
+          "borderColor": "#E8E1D2",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-8"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h4-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-10"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "flexContainerSettings": {
+              "borderColor": "#CBA55D",
+              "shadow": "0 18px 40px rgba(15, 23, 42, 0.10)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-2",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-23"
+      },
+      "Icon-landing-resort-icon-12": {
+        "id": "Icon-landing-resort-icon-12",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-spa-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#10263F",
+          "backgroundColor": "#CBA55D33",
+          "borderRadius": "14px",
+          "padding": "10px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-15"
+      },
+      "Text-landing-resort-h4-13": {
+        "id": "Text-landing-resort-h4-13",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Cliffside spa",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-15"
+      },
+      "Text-landing-resort-body-14": {
+        "id": "Text-landing-resort-body-14",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Treatments in rooms carved into the rock above the sea.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-15"
+      },
+      "FlexContainer-landing-resort-flex-15": {
+        "id": "FlexContainer-landing-resort-flex-15",
+        "blockName": "Cliffside spa",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "30px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "22px",
+          "borderColor": "#E8E1D2",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-12"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h4-13"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-14"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "flexContainerSettings": {
+              "borderColor": "#CBA55D",
+              "shadow": "0 18px 40px rgba(15, 23, 42, 0.10)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-2",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-23"
+      },
+      "Icon-landing-resort-icon-16": {
+        "id": "Icon-landing-resort-icon-16",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-sail-boat",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#10263F",
+          "backgroundColor": "#CBA55D33",
+          "borderRadius": "14px",
+          "padding": "10px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-19"
+      },
+      "Text-landing-resort-h4-17": {
+        "id": "Text-landing-resort-h4-17",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sunset sailing",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-19"
+      },
+      "Text-landing-resort-body-18": {
+        "id": "Text-landing-resort-body-18",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Daily departures from our jetty, crew and canapés included.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-19"
+      },
+      "FlexContainer-landing-resort-flex-19": {
+        "id": "FlexContainer-landing-resort-flex-19",
+        "blockName": "Sunset sailing",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "30px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "22px",
+          "borderColor": "#E8E1D2",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-16"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h4-17"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-18"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "flexContainerSettings": {
+              "borderColor": "#CBA55D",
+              "shadow": "0 18px 40px rgba(15, 23, 42, 0.10)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-2",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-23"
+      },
+      "Text-landing-resort-eyebrow-20": {
+        "id": "Text-landing-resort-eyebrow-20",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Why guests return",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-1",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-24"
+      },
+      "Text-landing-resort-h2-21": {
+        "id": "Text-landing-resort-h2-21",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Everything arranged before you ask",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-1",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-24"
+      },
+      "Text-landing-resort-body-22": {
+        "id": "Text-landing-resort-body-22",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "A dedicated host looks after each suite, from airport pickup to the last late checkout.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-1",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-24"
+      },
+      "FlexContainer-landing-resort-flex-23": {
+        "id": "FlexContainer-landing-resort-flex-23",
+        "blockName": "Feature grid",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "22px",
+          "padding": "18px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-11"
+            ],
+            "flex": "1 1 260px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-15"
+            ],
+            "flex": "1 1 260px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-19"
+            ],
+            "flex": "1 1 260px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-24"
+      },
+      "FlexContainer-landing-resort-flex-24": {
+        "id": "FlexContainer-landing-resort-flex-24",
+        "blockName": "Feature cards with icons",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FBF8F1",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-20"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h2-21"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-22"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-23"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "2",
+            "gridRowEnd": "3"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-resort-eyebrow-25": {
+        "id": "Text-landing-resort-eyebrow-25",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "The terrace",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 0,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "Text-landing-resort-h2-26": {
+        "id": "Text-landing-resort-h2-26",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Breakfast with a view of the bay",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 1,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "Text-landing-resort-body-27": {
+        "id": "Text-landing-resort-body-27",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Our terrace restaurant serves from sunrise to late evening, with a menu built around the morning catch and island fruit.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "17px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 2,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "Icon-landing-resort-icon-28": {
+        "id": "Icon-landing-resort-icon-28",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-weather-sunset",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-30"
+      },
+      "Text-landing-resort-body-29": {
+        "id": "Text-landing-resort-body-29",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Open-air seating on every level",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-30"
+      },
+      "FlexContainer-landing-resort-flex-30": {
+        "id": "FlexContainer-landing-resort-flex-30",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-28"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-29"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 3,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "Icon-landing-resort-icon-31": {
+        "id": "Icon-landing-resort-icon-31",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-silverware-fork-knife",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-33"
+      },
+      "Text-landing-resort-body-32": {
+        "id": "Text-landing-resort-body-32",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Chef’s tasting menu on Fridays",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-33"
+      },
+      "FlexContainer-landing-resort-flex-33": {
+        "id": "FlexContainer-landing-resort-flex-33",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-31"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-32"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "440ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "440ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 4,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "Icon-landing-resort-icon-34": {
+        "id": "Icon-landing-resort-icon-34",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-glass-wine",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "md",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-36"
+      },
+      "Text-landing-resort-body-35": {
+        "id": "Text-landing-resort-body-35",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sommelier-led wine pairings",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-36"
+      },
+      "FlexContainer-landing-resort-flex-36": {
+        "id": "FlexContainer-landing-resort-flex-36",
+        "blockName": "Point",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-34"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-35"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "530ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "530ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 5,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "Button-landing-resort-button-37": {
+        "id": "Button-landing-resort-button-37",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "View the menu",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#dining",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "",
+          "iconPlacement": "right",
+          "backgroundColor": "transparent",
+          "borderColor": "#10263F",
+          "borderWidth": "1px",
+          "textColor": "#10263F"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#10263F14"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "620ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "620ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-3",
+            "index": 6,
+            "length": 7,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-38"
+      },
+      "FlexContainer-landing-resort-flex-38": {
+        "id": "FlexContainer-landing-resort-flex-38",
+        "blockName": "Story copy",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-25"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h2-26"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-27"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-30"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-5",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-33"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-6",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-36"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-7",
+            "childBlockIds": [
+              "Button-landing-resort-button-37"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-40"
+      },
+      "FlexContainer-landing-resort-flex-39": {
+        "id": "FlexContainer-landing-resort-flex-39",
+        "blockName": "Photo",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "16px",
+          "padding": "260px 0px",
+          "wrap": false,
+          "backgroundImage": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
+          "backgroundImageOpacity": "1",
+          "backgroundImageBlendMode": "normal",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center",
+          "backgroundColor": "#E8E1D2",
+          "borderRadius": "24px"
+        },
+        "flexItems": [],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-40"
+      },
+      "FlexContainer-landing-resort-flex-40": {
+        "id": "FlexContainer-landing-resort-flex-40",
+        "blockName": "Split",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "56px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-39"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-38"
+            ],
+            "flex": "1 1 300px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-41"
+      },
+      "FlexContainer-landing-resort-flex-41": {
+        "id": "FlexContainer-landing-resort-flex-41",
+        "blockName": "Split · photo and story",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-40"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "3",
+            "gridRowEnd": "4"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-resort-h2-42": {
+        "id": "Text-landing-resort-h2-42",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "4.9",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-44"
+      },
+      "Text-landing-resort-body-43": {
+        "id": "Text-landing-resort-body-43",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Average guest rating",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-44"
+      },
+      "FlexContainer-landing-resort-flex-44": {
+        "id": "FlexContainer-landing-resort-flex-44",
+        "blockName": "Average guest rating",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h2-42"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-43"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "40ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "40ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-4",
+            "index": 0,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-54"
+      },
+      "Text-landing-resort-h2-45": {
+        "id": "Text-landing-resort-h2-45",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "62",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-47"
+      },
+      "Text-landing-resort-body-46": {
+        "id": "Text-landing-resort-body-46",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sea-view suites",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-47"
+      },
+      "FlexContainer-landing-resort-flex-47": {
+        "id": "FlexContainer-landing-resort-flex-47",
+        "blockName": "Sea-view suites",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h2-45"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-46"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "130ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "130ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-4",
+            "index": 1,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-54"
+      },
+      "Text-landing-resort-h2-48": {
+        "id": "Text-landing-resort-h2-48",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "3",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-50"
+      },
+      "Text-landing-resort-body-49": {
+        "id": "Text-landing-resort-body-49",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Restaurants on site",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-50"
+      },
+      "FlexContainer-landing-resort-flex-50": {
+        "id": "FlexContainer-landing-resort-flex-50",
+        "blockName": "Restaurants on site",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h2-48"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-49"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "220ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "220ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-4",
+            "index": 2,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-54"
+      },
+      "Text-landing-resort-h2-51": {
+        "id": "Text-landing-resort-h2-51",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "24/7",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-53"
+      },
+      "Text-landing-resort-body-52": {
+        "id": "Text-landing-resort-body-52",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Concierge service",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-53"
+      },
+      "FlexContainer-landing-resort-flex-53": {
+        "id": "FlexContainer-landing-resort-flex-53",
+        "blockName": "Concierge service",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h2-51"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-52"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "310ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "310ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-4",
+            "index": 3,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-54"
+      },
+      "FlexContainer-landing-resort-flex-54": {
+        "id": "FlexContainer-landing-resort-flex-54",
+        "blockName": "Stats",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "space-between",
+          "alignItems": "stretch",
+          "gap": "28px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-44"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-47"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-50"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-53"
+            ],
+            "flex": "1 1 180px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-55"
+      },
+      "FlexContainer-landing-resort-flex-55": {
+        "id": "FlexContainer-landing-resort-flex-55",
+        "blockName": "Stats band",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "72px 24px",
+          "wrap": false,
+          "backgroundColor": "#10263F",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-54"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "4",
+            "gridRowEnd": "5"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-resort-eyebrow-56": {
+        "id": "Text-landing-resort-eyebrow-56",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Gallery",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-5",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-59"
+      },
+      "Text-landing-resort-h2-57": {
+        "id": "Text-landing-resort-h2-57",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "A look around the resort",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-5",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-59"
+      },
+      "ImageGallery-landing-resort-gallery-58": {
+        "id": "ImageGallery-landing-resort-gallery-58",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "ImageGallery",
+        "imageGallerySettings": {
+          "imagesText": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1000&q=80|Sunset over the bay|Sunset over the bay\nhttps://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80|Terrace restaurant|Terrace restaurant\nhttps://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80|Chef’s tasting menu|Chef’s tasting menu\nhttps://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=80|Garden villas|Garden villas\nhttps://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80|Morning coffee|Morning coffee\nhttps://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1000&q=80|Evenings on the beach|Evenings on the beach",
+          "columns": "3",
+          "gap": "14px",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "zoomEnabled": true,
+          "borderRadius": "18px"
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-5",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-59"
+      },
+      "FlexContainer-landing-resort-flex-59": {
+        "id": "FlexContainer-landing-resort-flex-59",
+        "blockName": "Photo gallery",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FBF8F1",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-56"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h2-57"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "ImageGallery-landing-resort-gallery-58"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "5",
+            "gridRowEnd": "6"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Icon-landing-resort-icon-60": {
+        "id": "Icon-landing-resort-icon-60",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-67"
+      },
+      "Text-landing-resort-body-61": {
+        "id": "Text-landing-resort-body-61",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "The staff remembered our anniversary before we mentioned it. We are already planning our return.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-67"
+      },
+      "Avatar-landing-resort-avatar-62": {
+        "id": "Avatar-landing-resort-avatar-62",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Amelia Hart",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-66"
+      },
+      "Text-landing-resort-h4-63": {
+        "id": "Text-landing-resort-h4-63",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Amelia Hart",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-65"
+      },
+      "Text-landing-resort-caption-64": {
+        "id": "Text-landing-resort-caption-64",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Stayed in the Horizon Suite",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-65"
+      },
+      "FlexContainer-landing-resort-flex-65": {
+        "id": "FlexContainer-landing-resort-flex-65",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h4-63"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-caption-64"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-66"
+      },
+      "FlexContainer-landing-resort-flex-66": {
+        "id": "FlexContainer-landing-resort-flex-66",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-landing-resort-avatar-62"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-65"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-67"
+      },
+      "FlexContainer-landing-resort-flex-67": {
+        "id": "FlexContainer-landing-resort-flex-67",
+        "blockName": "Amelia Hart",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FBF8F1",
+          "borderRadius": "22px",
+          "borderColor": "#E8E1D2",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-60"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-61"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-66"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-7",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-86"
+      },
+      "Icon-landing-resort-icon-68": {
+        "id": "Icon-landing-resort-icon-68",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-75"
+      },
+      "Text-landing-resort-body-69": {
+        "id": "Text-landing-resort-body-69",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Quiet, generous and beautifully run. The sunset sail was the highlight of our year.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-75"
+      },
+      "Avatar-landing-resort-avatar-70": {
+        "id": "Avatar-landing-resort-avatar-70",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Daniel Okafor",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-74"
+      },
+      "Text-landing-resort-h4-71": {
+        "id": "Text-landing-resort-h4-71",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Daniel Okafor",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-73"
+      },
+      "Text-landing-resort-caption-72": {
+        "id": "Text-landing-resort-caption-72",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Travelled with family",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-73"
+      },
+      "FlexContainer-landing-resort-flex-73": {
+        "id": "FlexContainer-landing-resort-flex-73",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h4-71"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-caption-72"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-74"
+      },
+      "FlexContainer-landing-resort-flex-74": {
+        "id": "FlexContainer-landing-resort-flex-74",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-landing-resort-avatar-70"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-73"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-75"
+      },
+      "FlexContainer-landing-resort-flex-75": {
+        "id": "FlexContainer-landing-resort-flex-75",
+        "blockName": "Daniel Okafor",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FBF8F1",
+          "borderRadius": "22px",
+          "borderColor": "#E8E1D2",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-68"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-69"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-74"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-7",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-86"
+      },
+      "Icon-landing-resort-icon-76": {
+        "id": "Icon-landing-resort-icon-76",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#CBA55D",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-83"
+      },
+      "Text-landing-resort-body-77": {
+        "id": "Text-landing-resort-body-77",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Every detail felt considered, from the pillow menu to breakfast on the terrace.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-83"
+      },
+      "Avatar-landing-resort-avatar-78": {
+        "id": "Avatar-landing-resort-avatar-78",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Sofia Laurent",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-82"
+      },
+      "Text-landing-resort-h4-79": {
+        "id": "Text-landing-resort-h4-79",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sofia Laurent",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-81"
+      },
+      "Text-landing-resort-caption-80": {
+        "id": "Text-landing-resort-caption-80",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Returning guest",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6573",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-81"
+      },
+      "FlexContainer-landing-resort-flex-81": {
+        "id": "FlexContainer-landing-resort-flex-81",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h4-79"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-caption-80"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-82"
+      },
+      "FlexContainer-landing-resort-flex-82": {
+        "id": "FlexContainer-landing-resort-flex-82",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-landing-resort-avatar-78"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-81"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-83"
+      },
+      "FlexContainer-landing-resort-flex-83": {
+        "id": "FlexContainer-landing-resort-flex-83",
+        "blockName": "Sofia Laurent",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FBF8F1",
+          "borderRadius": "22px",
+          "borderColor": "#E8E1D2",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-landing-resort-icon-76"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-77"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-82"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-7",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-86"
+      },
+      "Text-landing-resort-eyebrow-84": {
+        "id": "Text-landing-resort-eyebrow-84",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Guest stories",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-6",
+            "index": 0,
+            "length": 2,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-87"
+      },
+      "Text-landing-resort-h2-85": {
+        "id": "Text-landing-resort-h2-85",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Why guests come back",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#1F2D3D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-6",
+            "index": 1,
+            "length": 2,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-87"
+      },
+      "FlexContainer-landing-resort-flex-86": {
+        "id": "FlexContainer-landing-resort-flex-86",
+        "blockName": "Quotes",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "22px",
+          "padding": "16px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-67"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-75"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-83"
+            ],
+            "flex": "1 1 300px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-87"
+      },
+      "FlexContainer-landing-resort-flex-87": {
+        "id": "FlexContainer-landing-resort-flex-87",
+        "blockName": "Testimonials with portraits",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-84"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-h2-85"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-86"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "6",
+            "gridRowEnd": "7"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-resort-h2-88": {
+        "id": "Text-landing-resort-h2-88",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Your suite is waiting",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "46px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-8",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-92"
+      },
+      "Text-landing-resort-body-89": {
+        "id": "Text-landing-resort-body-89",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Book directly for a complimentary sunset sail and late checkout.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.85)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-8",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-92"
+      },
+      "Button-landing-resort-button-90": {
+        "id": "Button-landing-resort-button-90",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Reserve now",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#reserve",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "mdi-arrow-right",
+          "iconPlacement": "right",
+          "backgroundColor": "#CBA55D",
+          "borderColor": "#CBA55D",
+          "borderWidth": "0",
+          "textColor": "#1b1b1b"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#b39152",
+              "borderColor": "#b39152"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-91"
+      },
+      "FlexContainer-landing-resort-flex-91": {
+        "id": "FlexContainer-landing-resort-flex-91",
+        "blockName": "Actions",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "10px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-landing-resort-button-90"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-landing-resort-8",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-92"
+      },
+      "FlexContainer-landing-resort-flex-92": {
+        "id": "FlexContainer-landing-resort-flex-92",
+        "blockName": "Call to action over photo",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "20px",
+          "padding": "110px 24px",
+          "wrap": false,
+          "backgroundColor": "#10263F",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px",
+          "backgroundImage": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1600&q=80",
+          "backgroundImageOpacity": "0.35",
+          "backgroundImageBlendMode": "multiply",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h2-88"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-89"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-91"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "7",
+            "gridRowEnd": "8"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      },
+      "Text-landing-resort-h3-93": {
+        "id": "Text-landing-resort-h3-93",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "LuxeVanta",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H3",
+          "fontWeight": "700",
+          "fontSize": "26px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-95"
+      },
+      "Text-landing-resort-body-94": {
+        "id": "Text-landing-resort-body-94",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "A five-star coastal resort.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-95"
+      },
+      "FlexContainer-landing-resort-flex-95": {
+        "id": "FlexContainer-landing-resort-flex-95",
+        "blockName": "Brand",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "10px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-h3-93"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-94"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-111"
+      },
+      "Text-landing-resort-eyebrow-96": {
+        "id": "Text-landing-resort-eyebrow-96",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Stay",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-100"
+      },
+      "Text-landing-resort-body-97": {
+        "id": "Text-landing-resort-body-97",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Suites",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-100"
+      },
+      "Text-landing-resort-body-98": {
+        "id": "Text-landing-resort-body-98",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Villas",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-100"
+      },
+      "Text-landing-resort-body-99": {
+        "id": "Text-landing-resort-body-99",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Offers",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-100"
+      },
+      "FlexContainer-landing-resort-flex-100": {
+        "id": "FlexContainer-landing-resort-flex-100",
+        "blockName": "Stay",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-96"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-97"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-98"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-landing-resort-body-99"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-111"
+      },
+      "Text-landing-resort-eyebrow-101": {
+        "id": "Text-landing-resort-eyebrow-101",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Experience",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-105"
+      },
+      "Text-landing-resort-body-102": {
+        "id": "Text-landing-resort-body-102",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Dining",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-105"
+      },
+      "Text-landing-resort-body-103": {
+        "id": "Text-landing-resort-body-103",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Spa",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-105"
+      },
+      "Text-landing-resort-body-104": {
+        "id": "Text-landing-resort-body-104",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sailing",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-105"
+      },
+      "FlexContainer-landing-resort-flex-105": {
+        "id": "FlexContainer-landing-resort-flex-105",
+        "blockName": "Experience",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-101"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-102"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-103"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-landing-resort-body-104"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-111"
+      },
+      "Text-landing-resort-eyebrow-106": {
+        "id": "Text-landing-resort-eyebrow-106",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Contact",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-110"
+      },
+      "Text-landing-resort-body-107": {
+        "id": "Text-landing-resort-body-107",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "+1 555 010 2040",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-110"
+      },
+      "Text-landing-resort-body-108": {
+        "id": "Text-landing-resort-body-108",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "stay@luxevanta.example",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-110"
+      },
+      "Text-landing-resort-body-109": {
+        "id": "Text-landing-resort-body-109",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Bay Road, Coastline",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-110"
+      },
+      "FlexContainer-landing-resort-flex-110": {
+        "id": "FlexContainer-landing-resort-flex-110",
+        "blockName": "Contact",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-landing-resort-eyebrow-106"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-body-107"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-landing-resort-body-108"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-landing-resort-body-109"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-111"
+      },
+      "FlexContainer-landing-resort-flex-111": {
+        "id": "FlexContainer-landing-resort-flex-111",
+        "blockName": "Footer columns",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "flex-start",
+          "gap": "40px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-95"
+            ],
+            "flex": "2 1 260px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-100"
+            ],
+            "flex": "1 1 150px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-105"
+            ],
+            "flex": "1 1 150px"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-110"
+            ],
+            "flex": "1 1 150px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-113"
+      },
+      "Text-landing-resort-caption-112": {
+        "id": "Text-landing-resort-caption-112",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "© LuxeVanta Grand Resort. Sample content for the WebPod layout library.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.45)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-landing-resort-flex-113"
+      },
+      "FlexContainer-landing-resort-flex-113": {
+        "id": "FlexContainer-landing-resort-flex-113",
+        "blockName": "Footer · columns",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "40px",
+          "padding": "64px 24px 40px",
+          "wrap": false,
+          "backgroundColor": "#04080e",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-landing-resort-flex-111"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-landing-resort-caption-112"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "8",
+            "gridRowEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Playfair Display",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF8F1",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

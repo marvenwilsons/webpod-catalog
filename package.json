@@ -1,0 +1,13 @@
+{
+  "name": "webpod-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ready-made templates, components and documents for WebPod's Pod Designer.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

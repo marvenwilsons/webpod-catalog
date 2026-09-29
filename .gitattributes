@@ -1,0 +1,4 @@
+# Items are verified byte for byte (sha256), so line endings must never change.
+*.json text eol=lf -diff
+catalog.json text eol=lf diff
+*.mjs text eol=lf

@@ -1,0 +1,539 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "schedule",
+  "kind": "component",
+  "title": "Schedule",
+  "description": "Upcoming shifts, classes or bookings, one row each: day, title, time and location. Data-agnostic: rows arrive through the shifts list prop (starts/ends as ISO date-times or text).",
+  "tags": [],
+  "requires": [
+    "list-props",
+    "pod-designer-snapshot/1"
+  ],
+  "props": {
+    "title": {
+      "type": "string",
+      "label": "Title",
+      "defaultValue": "My schedule"
+    },
+    "subtitle": {
+      "type": "string",
+      "label": "Subtitle",
+      "defaultValue": "Your next shifts"
+    },
+    "shifts": {
+      "type": "list",
+      "label": "Shifts",
+      "description": "One row per shift: title, starts and ends (ISO date-time or text), location and an optional note."
+    }
+  },
+  "content": {
+    "title": "Schedule",
+    "authoringType": "component",
+    "projectType": "component",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "12px"
+    },
+    "rootBlockIds": [
+      "Text-schedule-title-1",
+      "Text-schedule-subtitle-2",
+      "ListContainer-schedule-shifts-list-8"
+    ],
+    "blocks": {
+      "Text-schedule-title-1": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Schedule",
+        "fieldBinding": "__project_inputs__::title",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "22px",
+          "lineHeight": "1.15",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-schedule-title-1"
+      },
+      "Text-schedule-subtitle-2": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{projectInputs.subtitle}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "2",
+            "gridRowEnd": "3"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-schedule-subtitle-2"
+      },
+      "Text-schedule-shifts-day-3": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{starts | date}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "700",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 3,
+          "listContainerPlacement": {
+            "columnStart": 1,
+            "columnEnd": 4,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-schedule-shifts-list-8",
+        "id": "Text-schedule-shifts-day-3"
+      },
+      "Text-schedule-shifts-title-4": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{title}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "600",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 6,
+          "listContainerPlacement": {
+            "columnStart": 4,
+            "columnEnd": 10,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-schedule-shifts-list-8",
+        "id": "Text-schedule-shifts-title-4"
+      },
+      "Text-schedule-shifts-location-5": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{location}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 3,
+          "listContainerPlacement": {
+            "columnStart": 10,
+            "columnEnd": 13,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-schedule-shifts-list-8",
+        "id": "Text-schedule-shifts-location-5"
+      },
+      "Text-schedule-shifts-time-6": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{starts | time}} – {{ends | time}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 6,
+          "listContainerPlacement": {
+            "columnStart": 4,
+            "columnEnd": 10,
+            "rowStart": 2,
+            "rowEnd": 3
+          }
+        },
+        "parentListContainerId": "ListContainer-schedule-shifts-list-8",
+        "id": "Text-schedule-shifts-time-6"
+      },
+      "Text-schedule-shifts-note-7": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{note}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 9,
+          "listContainerPlacement": {
+            "columnStart": 4,
+            "columnEnd": 13,
+            "rowStart": 3,
+            "rowEnd": 4
+          }
+        },
+        "parentListContainerId": "ListContainer-schedule-shifts-list-8",
+        "id": "Text-schedule-shifts-note-7"
+      },
+      "ListContainer-schedule-shifts-list-8": {
+        "type": "ListContainer",
+        "blockName": "Shift rows",
+        "childBlockIds": [
+          "Text-schedule-shifts-day-3",
+          "Text-schedule-shifts-title-4",
+          "Text-schedule-shifts-location-5",
+          "Text-schedule-shifts-time-6",
+          "Text-schedule-shifts-note-7"
+        ],
+        "mediator": {
+          "sourceMap": {}
+        },
+        "listSettings": {
+          "sourceId": "__project_inputs__.shifts",
+          "renderMode": "list",
+          "containerType": "row-list",
+          "itemColumns": "1",
+          "masonry": false,
+          "gap": "6px",
+          "padding": "0px",
+          "itemPadding": "10px 14px",
+          "maxHeight": "",
+          "cursorPointer": false,
+          "rippleOnClick": false,
+          "backgroundColor": "transparent",
+          "itemBackgroundColor": "#ffffff",
+          "itemBorderColor": "#e3e4e7",
+          "itemBorderWidth": "1px",
+          "itemBorderStyle": "solid",
+          "itemBorderRadius": "10px",
+          "itemHoverBackgroundColor": "#eef3fd",
+          "shadow": "",
+          "borderColor": "",
+          "borderWidth": "",
+          "borderStyle": "",
+          "borderRadius": "",
+          "emptyText": "No shifts scheduled."
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "3",
+            "gridRowEnd": "4"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "ListContainer-schedule-shifts-list-8"
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {
+      "title": {
+        "propName": "title",
+        "label": "Title",
+        "type": "string",
+        "defaultValue": "My schedule"
+      },
+      "subtitle": {
+        "propName": "subtitle",
+        "label": "Subtitle",
+        "type": "string",
+        "defaultValue": "Your next shifts"
+      },
+      "shifts": {
+        "propName": "shifts",
+        "label": "Shifts",
+        "type": "list",
+        "description": "One row per shift: title, starts and ends (ISO date-time or text), location and an optional note.",
+        "list": {
+          "itemKind": "schema",
+          "itemSchemaId": "schedule-shift"
+        },
+        "defaultValue": [
+          {
+            "title": "Front desk",
+            "starts": "2026-10-05T09:00:00",
+            "ends": "2026-10-05T17:00:00",
+            "location": "Main branch",
+            "note": ""
+          },
+          {
+            "title": "Evening program",
+            "starts": "2026-10-06T14:00:00",
+            "ends": "2026-10-06T19:00:00",
+            "location": "Youth hub",
+            "note": "Bring the sign-in sheet"
+          },
+          {
+            "title": "Front desk",
+            "starts": "2026-10-08T09:00:00",
+            "ends": "2026-10-08T17:00:00",
+            "location": "Main branch",
+            "note": ""
+          }
+        ]
+      }
+    },
+    "previewData": {
+      "activeSource": "real-data",
+      "schema": {
+        "title": {
+          "label": "Title",
+          "type": "string",
+          "defaultValue": "My schedule"
+        },
+        "subtitle": {
+          "label": "Subtitle",
+          "type": "string",
+          "defaultValue": "Your next shifts"
+        },
+        "shifts": {
+          "label": "Shifts",
+          "type": "list",
+          "defaultValue": [
+            {
+              "title": "Front desk",
+              "starts": "2026-10-05T09:00:00",
+              "ends": "2026-10-05T17:00:00",
+              "location": "Main branch",
+              "note": ""
+            },
+            {
+              "title": "Evening program",
+              "starts": "2026-10-06T14:00:00",
+              "ends": "2026-10-06T19:00:00",
+              "location": "Youth hub",
+              "note": "Bring the sign-in sheet"
+            },
+            {
+              "title": "Front desk",
+              "starts": "2026-10-08T09:00:00",
+              "ends": "2026-10-08T17:00:00",
+              "location": "Main branch",
+              "note": ""
+            }
+          ]
+        }
+      },
+      "inputContract": {
+        "version": 1,
+        "fields": {
+          "title": {
+            "key": "title",
+            "label": "Title",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "My schedule"
+          },
+          "subtitle": {
+            "key": "subtitle",
+            "label": "Subtitle",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "Your next shifts"
+          },
+          "shifts": {
+            "key": "shifts",
+            "label": "Shifts",
+            "type": "list",
+            "required": false,
+            "description": "One row per shift: title, starts and ends (ISO date-time or text), location and an optional note.",
+            "defaultValue": [
+              {
+                "title": "Front desk",
+                "starts": "2026-10-05T09:00:00",
+                "ends": "2026-10-05T17:00:00",
+                "location": "Main branch",
+                "note": ""
+              },
+              {
+                "title": "Evening program",
+                "starts": "2026-10-06T14:00:00",
+                "ends": "2026-10-06T19:00:00",
+                "location": "Youth hub",
+                "note": "Bring the sign-in sheet"
+              },
+              {
+                "title": "Front desk",
+                "starts": "2026-10-08T09:00:00",
+                "ends": "2026-10-08T17:00:00",
+                "location": "Main branch",
+                "note": ""
+              }
+            ],
+            "list": {
+              "itemKind": "schema",
+              "itemSchemaId": "schedule-shift",
+              "primitiveType": ""
+            }
+          }
+        },
+        "listItemSchemas": {
+          "schedule-shift": {
+            "id": "schedule-shift",
+            "label": "Shift",
+            "fields": {
+              "title": {
+                "key": "title",
+                "label": "Shift",
+                "type": "string"
+              },
+              "starts": {
+                "key": "starts",
+                "label": "Starts",
+                "type": "string"
+              },
+              "ends": {
+                "key": "ends",
+                "label": "Ends",
+                "type": "string"
+              },
+              "location": {
+                "key": "location",
+                "label": "Location",
+                "type": "string"
+              },
+              "note": {
+                "key": "note",
+                "label": "Note",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-lg",
+      "backgroundColor": "#ffffff"
+    },
+    "paneDataSources": [],
+    "runtimeSettings": {
+      "variables": {}
+    }
+  }
+}

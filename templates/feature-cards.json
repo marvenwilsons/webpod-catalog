@@ -1,0 +1,806 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "feature-cards",
+  "kind": "template",
+  "title": "Feature cards with icons",
+  "description": "Centred heading over three bordered cards, each with a tinted icon tile, title and description. Cards reveal in sequence on scroll and lift with an accent border on hover.",
+  "tags": [
+    "features",
+    "cards",
+    "icons",
+    "how it works",
+    "hover",
+    "scroll animation"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Feature cards with icons",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Icon-feature-cards-icon-1": {
+        "id": "Icon-feature-cards-icon-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-view-dashboard-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#3B4CCA",
+          "backgroundColor": "#14B8A633",
+          "borderRadius": "14px",
+          "padding": "10px"
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-4"
+      },
+      "Text-feature-cards-h4-2": {
+        "id": "Text-feature-cards-h4-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Role dashboards",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#111827",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-4"
+      },
+      "Text-feature-cards-body-3": {
+        "id": "Text-feature-cards-body-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Each person lands on the numbers and tasks that are theirs.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6475",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-4"
+      },
+      "FlexContainer-feature-cards-flex-4": {
+        "id": "FlexContainer-feature-cards-flex-4",
+        "blockName": "Role dashboards",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "30px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "22px",
+          "borderColor": "#E3E6EF",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-feature-cards-icon-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-feature-cards-h4-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-feature-cards-body-3"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "flexContainerSettings": {
+              "borderColor": "#14B8A6",
+              "shadow": "0 18px 40px rgba(15, 23, 42, 0.10)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-feature-cards-2",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-16"
+      },
+      "Icon-feature-cards-icon-5": {
+        "id": "Icon-feature-cards-icon-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-shield-check-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#3B4CCA",
+          "backgroundColor": "#14B8A633",
+          "borderRadius": "14px",
+          "padding": "10px"
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-8"
+      },
+      "Text-feature-cards-h4-6": {
+        "id": "Text-feature-cards-h4-6",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Access by design",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#111827",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-8"
+      },
+      "Text-feature-cards-body-7": {
+        "id": "Text-feature-cards-body-7",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Rules decide who sees and changes what, checked on every request.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6475",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-8"
+      },
+      "FlexContainer-feature-cards-flex-8": {
+        "id": "FlexContainer-feature-cards-flex-8",
+        "blockName": "Access by design",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "30px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "22px",
+          "borderColor": "#E3E6EF",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-feature-cards-icon-5"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-feature-cards-h4-6"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-feature-cards-body-7"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "flexContainerSettings": {
+              "borderColor": "#14B8A6",
+              "shadow": "0 18px 40px rgba(15, 23, 42, 0.10)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-feature-cards-2",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-16"
+      },
+      "Icon-feature-cards-icon-9": {
+        "id": "Icon-feature-cards-icon-9",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-lightning-bolt-outline",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#3B4CCA",
+          "backgroundColor": "#14B8A633",
+          "borderRadius": "14px",
+          "padding": "10px"
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-12"
+      },
+      "Text-feature-cards-h4-10": {
+        "id": "Text-feature-cards-h4-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Automations",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#111827",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-12"
+      },
+      "Text-feature-cards-body-11": {
+        "id": "Text-feature-cards-body-11",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Approvals and notifications fire when records change.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#5B6475",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-12"
+      },
+      "FlexContainer-feature-cards-flex-12": {
+        "id": "FlexContainer-feature-cards-flex-12",
+        "blockName": "Automations",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "30px",
+          "wrap": false,
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "22px",
+          "borderColor": "#E3E6EF",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-feature-cards-icon-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-feature-cards-h4-10"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-feature-cards-body-11"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "flexContainerSettings": {
+              "borderColor": "#14B8A6",
+              "shadow": "0 18px 40px rgba(15, 23, 42, 0.10)"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-4px)"
+          }
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-feature-cards-2",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-16"
+      },
+      "Text-feature-cards-eyebrow-13": {
+        "id": "Text-feature-cards-eyebrow-13",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "How it works",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#14B8A6",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-feature-cards-1",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-17"
+      },
+      "Text-feature-cards-h2-14": {
+        "id": "Text-feature-cards-h2-14",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Built around the way you already work",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#111827",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-feature-cards-1",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-17"
+      },
+      "Text-feature-cards-body-15": {
+        "id": "Text-feature-cards-body-15",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Start with your records and roles; the screens follow.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#5B6475",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-feature-cards-1",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-17"
+      },
+      "FlexContainer-feature-cards-flex-16": {
+        "id": "FlexContainer-feature-cards-flex-16",
+        "blockName": "Feature grid",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "22px",
+          "padding": "18px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-feature-cards-flex-4"
+            ],
+            "flex": "1 1 260px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-feature-cards-flex-8"
+            ],
+            "flex": "1 1 260px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-feature-cards-flex-12"
+            ],
+            "flex": "1 1 260px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-feature-cards-flex-17"
+      },
+      "FlexContainer-feature-cards-flex-17": {
+        "id": "FlexContainer-feature-cards-flex-17",
+        "blockName": "Feature cards with icons",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#F6F7FB",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-feature-cards-eyebrow-13"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-feature-cards-h2-14"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-feature-cards-body-15"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-feature-cards-flex-16"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Space Grotesk",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#F6F7FB",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

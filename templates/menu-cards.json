@@ -1,0 +1,618 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "menu-cards",
+  "kind": "template",
+  "title": "Menu with photos and prices",
+  "description": "Menu grid bound to a data source: each card shows a photo, category, dish name, description and price.",
+  "tags": [
+    "menu",
+    "products",
+    "cards",
+    "price list",
+    "data-bound list"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Menu with photos and prices",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Image-menu-cards-card-image-1": {
+        "id": "Image-menu-cards-card-image-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Image",
+        "value": "{{photo}}",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "xl",
+          "altText": "{{name}}",
+          "objectFit": "cover",
+          "borderRadius": "16px"
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "1"
+        },
+        "parentListContainerId": "ListContainer-menu-cards-cards-6"
+      },
+      "Text-menu-cards-eyebrow-2": {
+        "id": "Text-menu-cards-eyebrow-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{category}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "2"
+        },
+        "parentListContainerId": "ListContainer-menu-cards-cards-6"
+      },
+      "Text-menu-cards-h4-3": {
+        "id": "Text-menu-cards-h4-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{name}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "3"
+        },
+        "parentListContainerId": "ListContainer-menu-cards-cards-6"
+      },
+      "Text-menu-cards-body-4": {
+        "id": "Text-menu-cards-body-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{description}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "4"
+        },
+        "parentListContainerId": "ListContainer-menu-cards-cards-6"
+      },
+      "Text-menu-cards-body-5": {
+        "id": "Text-menu-cards-body-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "{{price}}",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "700",
+          "fontSize": "17px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#9C3D2E",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "gridColumnStart": "1",
+          "gridRowStart": "5"
+        },
+        "parentListContainerId": "ListContainer-menu-cards-cards-6"
+      },
+      "ListContainer-menu-cards-cards-6": {
+        "id": "ListContainer-menu-cards-cards-6",
+        "blockName": "Menu",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "ListContainer",
+        "childBlockIds": [
+          "Image-menu-cards-card-image-1",
+          "Text-menu-cards-eyebrow-2",
+          "Text-menu-cards-h4-3",
+          "Text-menu-cards-body-4",
+          "Text-menu-cards-body-5"
+        ],
+        "listSettings": {
+          "sourceId": "menu_cards_menu",
+          "renderMode": "list",
+          "containerType": "row-list",
+          "itemColumns": "3",
+          "masonry": false,
+          "gap": "22px",
+          "padding": "0px",
+          "itemPadding": "24px",
+          "backgroundColor": "transparent",
+          "itemBackgroundColor": "#FFFDF8",
+          "itemHoverBackgroundColor": "#FFFDF8",
+          "itemBorderColor": "#EADBC6",
+          "itemBorderWidth": "1px",
+          "itemBorderStyle": "solid",
+          "itemBorderRadius": "20px"
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "350ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-menu-cards-1",
+            "index": 3,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-menu-cards-flex-10"
+      },
+      "Text-menu-cards-eyebrow-7": {
+        "id": "Text-menu-cards-eyebrow-7",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "On the menu",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-menu-cards-1",
+            "index": 0,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-menu-cards-flex-10"
+      },
+      "Text-menu-cards-h2-8": {
+        "id": "Text-menu-cards-h2-8",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Lola’s favourites",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-menu-cards-1",
+            "index": 1,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-menu-cards-flex-10"
+      },
+      "Text-menu-cards-body-9": {
+        "id": "Text-menu-cards-body-9",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Seasonal plates cooked to order. Prices include tax.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-menu-cards-1",
+            "index": 2,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-menu-cards-flex-10"
+      },
+      "FlexContainer-menu-cards-flex-10": {
+        "id": "FlexContainer-menu-cards-flex-10",
+        "blockName": "Lola’s favourites",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FBF3E6",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-menu-cards-eyebrow-7"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-menu-cards-h2-8"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-menu-cards-body-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "ListContainer-menu-cards-cards-6"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Fraunces",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Nunito Sans",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF3E6",
+      "fullBleed": true
+    },
+    "paneDataSources": [
+      {
+        "id": "menu_cards_menu",
+        "label": "Menu",
+        "type": "json",
+        "config": {
+          "name": "Menu"
+        },
+        "records": [
+          {
+            "id": "dish-1",
+            "name": "Garden Salad",
+            "category": "Starters",
+            "description": "Crisp greens, radish, citrus and toasted seeds with a honey vinaigrette.",
+            "price": "$12",
+            "photo": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-2",
+            "name": "Grilled Platter",
+            "category": "To share",
+            "description": "Charred skewers, grilled vegetables and garlic rice for two.",
+            "price": "$34",
+            "photo": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-3",
+            "name": "Harvest Bowl",
+            "category": "Mains",
+            "description": "Roasted squash, chickpeas, avocado and tahini on warm grains.",
+            "price": "$18",
+            "photo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-4",
+            "name": "Wood-fired Pizza",
+            "category": "Mains",
+            "description": "Tomato, fior di latte, basil and a blistered crust.",
+            "price": "$19",
+            "photo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-5",
+            "name": "Poke Bowl",
+            "category": "Mains",
+            "description": "Marinated tofu, edamame, pickled cabbage and sesame.",
+            "price": "$17",
+            "photo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-6",
+            "name": "Stacked Pancakes",
+            "category": "Dessert",
+            "description": "Banana, caramel and a pinch of sea salt.",
+            "price": "$11",
+            "photo": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80"
+          }
+        ],
+        "data": [
+          {
+            "id": "dish-1",
+            "name": "Garden Salad",
+            "category": "Starters",
+            "description": "Crisp greens, radish, citrus and toasted seeds with a honey vinaigrette.",
+            "price": "$12",
+            "photo": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-2",
+            "name": "Grilled Platter",
+            "category": "To share",
+            "description": "Charred skewers, grilled vegetables and garlic rice for two.",
+            "price": "$34",
+            "photo": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-3",
+            "name": "Harvest Bowl",
+            "category": "Mains",
+            "description": "Roasted squash, chickpeas, avocado and tahini on warm grains.",
+            "price": "$18",
+            "photo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-4",
+            "name": "Wood-fired Pizza",
+            "category": "Mains",
+            "description": "Tomato, fior di latte, basil and a blistered crust.",
+            "price": "$19",
+            "photo": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-5",
+            "name": "Poke Bowl",
+            "category": "Mains",
+            "description": "Marinated tofu, edamame, pickled cabbage and sesame.",
+            "price": "$17",
+            "photo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "dish-6",
+            "name": "Stacked Pancakes",
+            "category": "Dessert",
+            "description": "Banana, caramel and a pinch of sea salt.",
+            "price": "$11",
+            "photo": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  }
+}

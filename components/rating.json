@@ -1,0 +1,382 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "rating",
+  "kind": "component",
+  "title": "Rating",
+  "description": "Five clickable stars with \"n of 5\". value sets the stars it starts with. Each copy remembers the viewer's rating in their browser.",
+  "tags": [],
+  "requires": [
+    "initial-from-prop",
+    "pod-designer-snapshot/1",
+    "remembered-variables",
+    "runtime-variables"
+  ],
+  "props": {
+    "label": {
+      "type": "string",
+      "label": "Label",
+      "description": "The question or thing being rated.",
+      "defaultValue": "Your rating"
+    },
+    "value": {
+      "type": "number",
+      "label": "Value",
+      "description": "The rating it starts with (0 to 5).",
+      "defaultValue": 0
+    }
+  },
+  "content": {
+    "title": "Rating",
+    "projectType": "component",
+    "authoringType": "component",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "rootBlockIds": [
+      "FlexContainer-rating"
+    ],
+    "blocks": {
+      "Text-rating-label": {
+        "id": "Text-rating-label",
+        "blockName": "Label",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::label",
+        "type": "Text",
+        "value": "Your rating",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "15px",
+          "textColor": "#0f172a",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "1.4",
+          "fontWeight": "600"
+        },
+        "parentFlexContainerId": "FlexContainer-rating"
+      },
+      "Rating-rating-stars": {
+        "id": "Rating-rating-stars",
+        "blockName": "Stars",
+        "mediator": {
+          "sourceMap": {
+            "Rating-rating-stars": {
+              "eventMap": {
+                "onChange": {
+                  "selfReactions": [
+                    {
+                      "id": "rating-set",
+                      "reactionKey": "setRuntimeVariable",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "variableKey": "rating",
+                        "value": "",
+                        "whenKind": "always",
+                        "_bindings": {
+                          "value": {
+                            "mode": "token",
+                            "token": "$payload.value"
+                          }
+                        }
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onChange"
+              ]
+            },
+            "__global__": {
+              "eventMap": {
+                "runtimevariablechange": {
+                  "runtimeVariableKey": "rating",
+                  "selfReactions": [
+                    {
+                      "id": "rating-show",
+                      "reactionKey": "setValue",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "value": "",
+                        "whenKind": "always",
+                        "_bindings": {
+                          "value": {
+                            "mode": "token",
+                            "token": "$payload.value"
+                          }
+                        }
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "runtimevariablechange"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "__project_inputs__::value",
+        "type": "Rating",
+        "value": "0",
+        "ratingSettings": {
+          "max": "5",
+          "size": "2em",
+          "color": "#f59e0b",
+          "inactiveColor": "#cbd5e1",
+          "alignment": "left"
+        },
+        "parentFlexContainerId": "FlexContainer-rating-row"
+      },
+      "Text-rating-score": {
+        "id": "Text-rating-score",
+        "blockName": "Score",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "runtimeVariables::rating",
+        "type": "Text",
+        "value": "0",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "textColor": "#0f172a",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "2",
+          "fontWeight": "700"
+        },
+        "parentFlexContainerId": "FlexContainer-rating-row"
+      },
+      "Text-rating-out-of": {
+        "id": "Text-rating-out-of",
+        "blockName": "Out of",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "Text",
+        "value": "of 5",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "textColor": "#64748b",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "2"
+        },
+        "parentFlexContainerId": "FlexContainer-rating-row"
+      },
+      "FlexContainer-rating-row": {
+        "id": "FlexContainer-rating-row",
+        "blockName": "Stars row",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false,
+          "stackOnNarrow": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Rating-rating-stars"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-rating-score"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-rating-out-of"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-rating"
+      },
+      "FlexContainer-rating": {
+        "id": "FlexContainer-rating",
+        "blockName": "Rating",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "12px",
+          "padding": "18px 20px",
+          "wrap": false,
+          "stackOnNarrow": false,
+          "backgroundColor": "#ffffff",
+          "borderRadius": "14px",
+          "borderColor": "#e2e8f0",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-rating-label"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-rating-row"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {
+      "label": {
+        "propName": "label",
+        "label": "Label",
+        "type": "string",
+        "description": "The question or thing being rated.",
+        "defaultValue": "Your rating"
+      },
+      "value": {
+        "propName": "value",
+        "label": "Value",
+        "type": "number",
+        "description": "The rating it starts with (0 to 5).",
+        "defaultValue": 0
+      }
+    },
+    "formulas": [],
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            500,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "previewData": {
+      "activeSource": "real-data",
+      "schema": {
+        "label": {
+          "label": "Label",
+          "type": "string",
+          "defaultValue": "Your rating"
+        },
+        "value": {
+          "label": "Value",
+          "type": "number",
+          "defaultValue": 0
+        }
+      },
+      "inputContract": {
+        "version": 1,
+        "fields": {
+          "label": {
+            "key": "label",
+            "label": "Label",
+            "type": "string",
+            "required": false,
+            "description": "The question or thing being rated.",
+            "defaultValue": "Your rating"
+          },
+          "value": {
+            "key": "value",
+            "label": "Value",
+            "type": "number",
+            "required": false,
+            "description": "The rating it starts with (0 to 5).",
+            "defaultValue": 0
+          }
+        },
+        "listItemSchemas": {}
+      }
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "fullBleed": false
+    },
+    "paneDataSources": [],
+    "runtimeSettings": {
+      "version": 1,
+      "variables": {
+        "rating": {
+          "key": "rating",
+          "label": "Rating",
+          "initialValue": "0",
+          "initialFromProp": "value",
+          "remember": true
+        }
+      },
+      "sessionStorage": {},
+      "localStorage": {}
+    }
+  }
+}

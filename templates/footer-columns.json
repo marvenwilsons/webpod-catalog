@@ -1,0 +1,725 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "footer-columns",
+  "kind": "template",
+  "title": "Footer — brand and link columns",
+  "description": "Dark footer with the brand and tagline, three link or contact columns and a legal line. Wraps on phones.",
+  "tags": [
+    "footer",
+    "links",
+    "contact"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Footer — brand and link columns",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-footer-columns-h3-1": {
+        "id": "Text-footer-columns-h3-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "LuxeVanta",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H3",
+          "fontWeight": "700",
+          "fontSize": "26px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Playfair Display, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-3"
+      },
+      "Text-footer-columns-body-2": {
+        "id": "Text-footer-columns-body-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "A five-star coastal resort.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-3"
+      },
+      "FlexContainer-footer-columns-flex-3": {
+        "id": "FlexContainer-footer-columns-flex-3",
+        "blockName": "Brand",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "10px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-footer-columns-h3-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-footer-columns-body-2"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-19"
+      },
+      "Text-footer-columns-eyebrow-4": {
+        "id": "Text-footer-columns-eyebrow-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Stay",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-8"
+      },
+      "Text-footer-columns-body-5": {
+        "id": "Text-footer-columns-body-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Suites",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-8"
+      },
+      "Text-footer-columns-body-6": {
+        "id": "Text-footer-columns-body-6",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Villas",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-8"
+      },
+      "Text-footer-columns-body-7": {
+        "id": "Text-footer-columns-body-7",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Offers",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-8"
+      },
+      "FlexContainer-footer-columns-flex-8": {
+        "id": "FlexContainer-footer-columns-flex-8",
+        "blockName": "Stay",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-footer-columns-eyebrow-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-footer-columns-body-5"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-footer-columns-body-6"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-footer-columns-body-7"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-19"
+      },
+      "Text-footer-columns-eyebrow-9": {
+        "id": "Text-footer-columns-eyebrow-9",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Experience",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-13"
+      },
+      "Text-footer-columns-body-10": {
+        "id": "Text-footer-columns-body-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Dining",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-13"
+      },
+      "Text-footer-columns-body-11": {
+        "id": "Text-footer-columns-body-11",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Spa",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-13"
+      },
+      "Text-footer-columns-body-12": {
+        "id": "Text-footer-columns-body-12",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Sailing",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-13"
+      },
+      "FlexContainer-footer-columns-flex-13": {
+        "id": "FlexContainer-footer-columns-flex-13",
+        "blockName": "Experience",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-footer-columns-eyebrow-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-footer-columns-body-10"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-footer-columns-body-11"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-footer-columns-body-12"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-19"
+      },
+      "Text-footer-columns-eyebrow-14": {
+        "id": "Text-footer-columns-eyebrow-14",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Contact",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#CBA55D",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-18"
+      },
+      "Text-footer-columns-body-15": {
+        "id": "Text-footer-columns-body-15",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "+1 555 010 2040",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-18"
+      },
+      "Text-footer-columns-body-16": {
+        "id": "Text-footer-columns-body-16",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "stay@luxevanta.example",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-18"
+      },
+      "Text-footer-columns-body-17": {
+        "id": "Text-footer-columns-body-17",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Bay Road, Coastline",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.68)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-18"
+      },
+      "FlexContainer-footer-columns-flex-18": {
+        "id": "FlexContainer-footer-columns-flex-18",
+        "blockName": "Contact",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "8px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-footer-columns-eyebrow-14"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-footer-columns-body-15"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-footer-columns-body-16"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "Text-footer-columns-body-17"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-19"
+      },
+      "FlexContainer-footer-columns-flex-19": {
+        "id": "FlexContainer-footer-columns-flex-19",
+        "blockName": "Footer columns",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "flex-start",
+          "gap": "40px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-footer-columns-flex-3"
+            ],
+            "flex": "2 1 260px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-footer-columns-flex-8"
+            ],
+            "flex": "1 1 150px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-footer-columns-flex-13"
+            ],
+            "flex": "1 1 150px"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-footer-columns-flex-18"
+            ],
+            "flex": "1 1 150px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-21"
+      },
+      "Text-footer-columns-caption-20": {
+        "id": "Text-footer-columns-caption-20",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "© LuxeVanta Grand Resort. Sample content for the WebPod layout library.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.45)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-footer-columns-flex-21"
+      },
+      "FlexContainer-footer-columns-flex-21": {
+        "id": "FlexContainer-footer-columns-flex-21",
+        "blockName": "Footer · columns",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "40px",
+          "padding": "64px 24px 40px",
+          "wrap": false,
+          "backgroundColor": "#04080e",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-footer-columns-flex-19"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-footer-columns-caption-20"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Playfair Display",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF8F1",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

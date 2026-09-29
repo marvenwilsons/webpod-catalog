@@ -1,0 +1,1091 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "pay-stub",
+  "kind": "component",
+  "title": "Pay stub",
+  "description": "An employee pay stub: name, pay period, earnings and deductions as line items, gross, deductions and net pay. Data-agnostic: connect it to your own payroll data through its props.",
+  "tags": [],
+  "requires": [
+    "list-props",
+    "pod-designer-snapshot/1"
+  ],
+  "props": {
+    "employeeName": {
+      "type": "string",
+      "label": "Employee name",
+      "defaultValue": "Jordan Rivera"
+    },
+    "employeeId": {
+      "type": "string",
+      "label": "Employee number",
+      "defaultValue": "E-10482"
+    },
+    "department": {
+      "type": "string",
+      "label": "Department",
+      "defaultValue": "Facilities"
+    },
+    "payPeriod": {
+      "type": "string",
+      "label": "Pay period",
+      "defaultValue": "Sep 1 – Sep 15, 2026"
+    },
+    "payDate": {
+      "type": "string",
+      "label": "Pay date",
+      "defaultValue": "Sep 19, 2026"
+    },
+    "earnings": {
+      "type": "list",
+      "label": "Earnings",
+      "description": "One row per earning: label, detail (such as hours × rate) and amount."
+    },
+    "deductions": {
+      "type": "list",
+      "label": "Deductions",
+      "description": "One row per deduction: label and amount."
+    },
+    "grossPay": {
+      "type": "string",
+      "label": "Gross pay",
+      "defaultValue": "$2,321.70"
+    },
+    "totalDeductions": {
+      "type": "string",
+      "label": "Total deductions",
+      "defaultValue": "$576.53"
+    },
+    "netPay": {
+      "type": "string",
+      "label": "Net pay",
+      "defaultValue": "$1,745.17"
+    }
+  },
+  "content": {
+    "title": "Pay stub",
+    "authoringType": "component",
+    "projectType": "component",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "12px"
+    },
+    "rootBlockIds": [
+      "Text-paystub-eyebrow-1",
+      "Text-paystub-net-label-2",
+      "Text-paystub-employee-3",
+      "Text-paystub-net-pay-4",
+      "Text-paystub-employee-meta-5",
+      "Text-paystub-period-6",
+      "Text-paystub-earnings-title-7",
+      "ListContainer-paystub-earnings-list-11",
+      "Text-paystub-deductions-title-12",
+      "ListContainer-paystub-deductions-list-15",
+      "Text-paystub-gross-16",
+      "Text-paystub-deductions-total-17",
+      "Text-paystub-net-total-18"
+    ],
+    "blocks": {
+      "Text-paystub-eyebrow-1": {
+        "type": "Text",
+        "blockName": "",
+        "value": "PAY STUB",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 8
+        },
+        "id": "Text-paystub-eyebrow-1"
+      },
+      "Text-paystub-net-label-2": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Net pay",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "600",
+          "fontSize": "12px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "9",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 4
+        },
+        "id": "Text-paystub-net-label-2"
+      },
+      "Text-paystub-employee-3": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Employee",
+        "fieldBinding": "__project_inputs__::employeeName",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "24px",
+          "lineHeight": "1.15",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9",
+            "gridRowStart": "2",
+            "gridRowEnd": "3"
+          },
+          "classes": [],
+          "gridSpan": 8
+        },
+        "id": "Text-paystub-employee-3"
+      },
+      "Text-paystub-net-pay-4": {
+        "type": "Text",
+        "blockName": "",
+        "value": "$0.00",
+        "fieldBinding": "__project_inputs__::netPay",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H1",
+          "fontWeight": "800",
+          "fontSize": "30px",
+          "lineHeight": "1.15",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#2563eb",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "9",
+            "gridColumnEnd": "13",
+            "gridRowStart": "2",
+            "gridRowEnd": "3"
+          },
+          "classes": [],
+          "gridSpan": 4
+        },
+        "id": "Text-paystub-net-pay-4"
+      },
+      "Text-paystub-employee-meta-5": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{projectInputs.employeeId}}  ·  {{projectInputs.department}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "3",
+            "gridRowEnd": "4"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-paystub-employee-meta-5"
+      },
+      "Text-paystub-period-6": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Pay period {{projectInputs.payPeriod}}   ·   Pay date {{projectInputs.payDate | date}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "4",
+            "gridRowEnd": "5"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-paystub-period-6"
+      },
+      "Text-paystub-earnings-title-7": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Earnings",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.15",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "5",
+            "gridRowEnd": "6"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-paystub-earnings-title-7"
+      },
+      "Text-paystub-earnings-label-8": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{label}}",
+        "fieldBinding": "label",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 5,
+          "listContainerPlacement": {
+            "columnStart": 1,
+            "columnEnd": 6,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-paystub-earnings-list-11",
+        "id": "Text-paystub-earnings-label-8"
+      },
+      "Text-paystub-earnings-detail-9": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{detail}}",
+        "fieldBinding": "detail",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 4,
+          "listContainerPlacement": {
+            "columnStart": 6,
+            "columnEnd": 10,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-paystub-earnings-list-11",
+        "id": "Text-paystub-earnings-detail-9"
+      },
+      "Text-paystub-earnings-amount-10": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{amount}}",
+        "fieldBinding": "amount",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 3,
+          "listContainerPlacement": {
+            "columnStart": 10,
+            "columnEnd": 13,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-paystub-earnings-list-11",
+        "id": "Text-paystub-earnings-amount-10"
+      },
+      "ListContainer-paystub-earnings-list-11": {
+        "type": "ListContainer",
+        "blockName": "Earnings lines",
+        "childBlockIds": [
+          "Text-paystub-earnings-label-8",
+          "Text-paystub-earnings-detail-9",
+          "Text-paystub-earnings-amount-10"
+        ],
+        "mediator": {
+          "sourceMap": {}
+        },
+        "listSettings": {
+          "sourceId": "__project_inputs__.earnings",
+          "renderMode": "list",
+          "containerType": "row-list",
+          "itemColumns": "1",
+          "masonry": false,
+          "gap": "6px",
+          "padding": "0px",
+          "itemPadding": "10px 14px",
+          "maxHeight": "",
+          "cursorPointer": false,
+          "rippleOnClick": false,
+          "backgroundColor": "transparent",
+          "itemBackgroundColor": "#ffffff",
+          "itemBorderColor": "#e3e4e7",
+          "itemBorderWidth": "1px",
+          "itemBorderStyle": "solid",
+          "itemBorderRadius": "10px",
+          "itemHoverBackgroundColor": "#eef3fd",
+          "shadow": "",
+          "borderColor": "",
+          "borderWidth": "",
+          "borderStyle": "",
+          "borderRadius": "",
+          "emptyText": "No earnings this period."
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "6",
+            "gridRowEnd": "7"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "ListContainer-paystub-earnings-list-11"
+      },
+      "Text-paystub-deductions-title-12": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Deductions",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.15",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "7",
+            "gridRowEnd": "8"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-paystub-deductions-title-12"
+      },
+      "Text-paystub-deductions-label-13": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{label}}",
+        "fieldBinding": "label",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 9,
+          "listContainerPlacement": {
+            "columnStart": 1,
+            "columnEnd": 10,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-paystub-deductions-list-15",
+        "id": "Text-paystub-deductions-label-13"
+      },
+      "Text-paystub-deductions-amount-14": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{amount}}",
+        "fieldBinding": "amount",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 3,
+          "listContainerPlacement": {
+            "columnStart": 10,
+            "columnEnd": 13,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-paystub-deductions-list-15",
+        "id": "Text-paystub-deductions-amount-14"
+      },
+      "ListContainer-paystub-deductions-list-15": {
+        "type": "ListContainer",
+        "blockName": "Deductions lines",
+        "childBlockIds": [
+          "Text-paystub-deductions-label-13",
+          "Text-paystub-deductions-amount-14"
+        ],
+        "mediator": {
+          "sourceMap": {}
+        },
+        "listSettings": {
+          "sourceId": "__project_inputs__.deductions",
+          "renderMode": "list",
+          "containerType": "row-list",
+          "itemColumns": "1",
+          "masonry": false,
+          "gap": "6px",
+          "padding": "0px",
+          "itemPadding": "10px 14px",
+          "maxHeight": "",
+          "cursorPointer": false,
+          "rippleOnClick": false,
+          "backgroundColor": "transparent",
+          "itemBackgroundColor": "#ffffff",
+          "itemBorderColor": "#e3e4e7",
+          "itemBorderWidth": "1px",
+          "itemBorderStyle": "solid",
+          "itemBorderRadius": "10px",
+          "itemHoverBackgroundColor": "#eef3fd",
+          "shadow": "",
+          "borderColor": "",
+          "borderWidth": "",
+          "borderStyle": "",
+          "borderRadius": "",
+          "emptyText": "No deductions this period."
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "8",
+            "gridRowEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "ListContainer-paystub-deductions-list-15"
+      },
+      "Text-paystub-gross-16": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Gross {{projectInputs.grossPay}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "600",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "5",
+            "gridRowStart": "9",
+            "gridRowEnd": "10"
+          },
+          "classes": [],
+          "gridSpan": 4
+        },
+        "id": "Text-paystub-gross-16"
+      },
+      "Text-paystub-deductions-total-17": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Deductions {{projectInputs.totalDeductions}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "600",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "5",
+            "gridColumnEnd": "9",
+            "gridRowStart": "9",
+            "gridRowEnd": "10"
+          },
+          "classes": [],
+          "gridSpan": 4
+        },
+        "id": "Text-paystub-deductions-total-17"
+      },
+      "Text-paystub-net-total-18": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Net {{projectInputs.netPay}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "800",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#2563eb",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "9",
+            "gridColumnEnd": "13",
+            "gridRowStart": "9",
+            "gridRowEnd": "10"
+          },
+          "classes": [],
+          "gridSpan": 4
+        },
+        "id": "Text-paystub-net-total-18"
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {
+      "employeeName": {
+        "propName": "employeeName",
+        "label": "Employee name",
+        "type": "string",
+        "defaultValue": "Jordan Rivera"
+      },
+      "employeeId": {
+        "propName": "employeeId",
+        "label": "Employee number",
+        "type": "string",
+        "defaultValue": "E-10482"
+      },
+      "department": {
+        "propName": "department",
+        "label": "Department",
+        "type": "string",
+        "defaultValue": "Facilities"
+      },
+      "payPeriod": {
+        "propName": "payPeriod",
+        "label": "Pay period",
+        "type": "string",
+        "defaultValue": "Sep 1 – Sep 15, 2026"
+      },
+      "payDate": {
+        "propName": "payDate",
+        "label": "Pay date",
+        "type": "string",
+        "defaultValue": "Sep 19, 2026"
+      },
+      "earnings": {
+        "propName": "earnings",
+        "label": "Earnings",
+        "type": "list",
+        "description": "One row per earning: label, detail (such as hours × rate) and amount.",
+        "list": {
+          "itemKind": "schema",
+          "itemSchemaId": "pay-stub-earning"
+        },
+        "defaultValue": [
+          {
+            "label": "Regular hours",
+            "detail": "75.0 h × $28.40",
+            "amount": "$2,130.00"
+          },
+          {
+            "label": "Overtime",
+            "detail": "4.5 h × $42.60",
+            "amount": "$191.70"
+          }
+        ]
+      },
+      "deductions": {
+        "propName": "deductions",
+        "label": "Deductions",
+        "type": "list",
+        "description": "One row per deduction: label and amount.",
+        "list": {
+          "itemKind": "schema",
+          "itemSchemaId": "pay-stub-deduction"
+        },
+        "defaultValue": [
+          {
+            "label": "Income tax",
+            "amount": "$412.35"
+          },
+          {
+            "label": "Pension plan",
+            "amount": "$126.11"
+          },
+          {
+            "label": "Employment insurance",
+            "amount": "$38.07"
+          }
+        ]
+      },
+      "grossPay": {
+        "propName": "grossPay",
+        "label": "Gross pay",
+        "type": "string",
+        "defaultValue": "$2,321.70"
+      },
+      "totalDeductions": {
+        "propName": "totalDeductions",
+        "label": "Total deductions",
+        "type": "string",
+        "defaultValue": "$576.53"
+      },
+      "netPay": {
+        "propName": "netPay",
+        "label": "Net pay",
+        "type": "string",
+        "defaultValue": "$1,745.17"
+      }
+    },
+    "previewData": {
+      "activeSource": "real-data",
+      "schema": {
+        "employeeName": {
+          "label": "Employee name",
+          "type": "string",
+          "defaultValue": "Jordan Rivera"
+        },
+        "employeeId": {
+          "label": "Employee number",
+          "type": "string",
+          "defaultValue": "E-10482"
+        },
+        "department": {
+          "label": "Department",
+          "type": "string",
+          "defaultValue": "Facilities"
+        },
+        "payPeriod": {
+          "label": "Pay period",
+          "type": "string",
+          "defaultValue": "Sep 1 – Sep 15, 2026"
+        },
+        "payDate": {
+          "label": "Pay date",
+          "type": "string",
+          "defaultValue": "Sep 19, 2026"
+        },
+        "earnings": {
+          "label": "Earnings",
+          "type": "list",
+          "defaultValue": [
+            {
+              "label": "Regular hours",
+              "detail": "75.0 h × $28.40",
+              "amount": "$2,130.00"
+            },
+            {
+              "label": "Overtime",
+              "detail": "4.5 h × $42.60",
+              "amount": "$191.70"
+            }
+          ]
+        },
+        "deductions": {
+          "label": "Deductions",
+          "type": "list",
+          "defaultValue": [
+            {
+              "label": "Income tax",
+              "amount": "$412.35"
+            },
+            {
+              "label": "Pension plan",
+              "amount": "$126.11"
+            },
+            {
+              "label": "Employment insurance",
+              "amount": "$38.07"
+            }
+          ]
+        },
+        "grossPay": {
+          "label": "Gross pay",
+          "type": "string",
+          "defaultValue": "$2,321.70"
+        },
+        "totalDeductions": {
+          "label": "Total deductions",
+          "type": "string",
+          "defaultValue": "$576.53"
+        },
+        "netPay": {
+          "label": "Net pay",
+          "type": "string",
+          "defaultValue": "$1,745.17"
+        }
+      },
+      "inputContract": {
+        "version": 1,
+        "fields": {
+          "employeeName": {
+            "key": "employeeName",
+            "label": "Employee name",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "Jordan Rivera"
+          },
+          "employeeId": {
+            "key": "employeeId",
+            "label": "Employee number",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "E-10482"
+          },
+          "department": {
+            "key": "department",
+            "label": "Department",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "Facilities"
+          },
+          "payPeriod": {
+            "key": "payPeriod",
+            "label": "Pay period",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "Sep 1 – Sep 15, 2026"
+          },
+          "payDate": {
+            "key": "payDate",
+            "label": "Pay date",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "Sep 19, 2026"
+          },
+          "earnings": {
+            "key": "earnings",
+            "label": "Earnings",
+            "type": "list",
+            "required": false,
+            "description": "One row per earning: label, detail (such as hours × rate) and amount.",
+            "defaultValue": [
+              {
+                "label": "Regular hours",
+                "detail": "75.0 h × $28.40",
+                "amount": "$2,130.00"
+              },
+              {
+                "label": "Overtime",
+                "detail": "4.5 h × $42.60",
+                "amount": "$191.70"
+              }
+            ],
+            "list": {
+              "itemKind": "schema",
+              "itemSchemaId": "pay-stub-earning",
+              "primitiveType": ""
+            }
+          },
+          "deductions": {
+            "key": "deductions",
+            "label": "Deductions",
+            "type": "list",
+            "required": false,
+            "description": "One row per deduction: label and amount.",
+            "defaultValue": [
+              {
+                "label": "Income tax",
+                "amount": "$412.35"
+              },
+              {
+                "label": "Pension plan",
+                "amount": "$126.11"
+              },
+              {
+                "label": "Employment insurance",
+                "amount": "$38.07"
+              }
+            ],
+            "list": {
+              "itemKind": "schema",
+              "itemSchemaId": "pay-stub-deduction",
+              "primitiveType": ""
+            }
+          },
+          "grossPay": {
+            "key": "grossPay",
+            "label": "Gross pay",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "$2,321.70"
+          },
+          "totalDeductions": {
+            "key": "totalDeductions",
+            "label": "Total deductions",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "$576.53"
+          },
+          "netPay": {
+            "key": "netPay",
+            "label": "Net pay",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "$1,745.17"
+          }
+        },
+        "listItemSchemas": {
+          "pay-stub-earning": {
+            "id": "pay-stub-earning",
+            "label": "Earning",
+            "fields": {
+              "label": {
+                "key": "label",
+                "label": "Label",
+                "type": "string"
+              },
+              "detail": {
+                "key": "detail",
+                "label": "Detail",
+                "type": "string"
+              },
+              "amount": {
+                "key": "amount",
+                "label": "Amount",
+                "type": "string"
+              }
+            }
+          },
+          "pay-stub-deduction": {
+            "id": "pay-stub-deduction",
+            "label": "Deduction",
+            "fields": {
+              "label": {
+                "key": "label",
+                "label": "Label",
+                "type": "string"
+              },
+              "amount": {
+                "key": "amount",
+                "label": "Amount",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-lg",
+      "backgroundColor": "#ffffff"
+    },
+    "paneDataSources": [],
+    "runtimeSettings": {
+      "variables": {}
+    }
+  }
+}

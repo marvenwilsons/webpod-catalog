@@ -1,0 +1,333 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "cta-photo",
+  "kind": "template",
+  "title": "Call to action over photo",
+  "description": "Centred call to action on a photo darkened by the brand colour, with one strong button.",
+  "tags": [
+    "call to action",
+    "banner",
+    "background image",
+    "overlay"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Call to action over photo",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-cta-photo-h2-1": {
+        "id": "Text-cta-photo-h2-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Hungry already?",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "46px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#ffffff",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-cta-photo-1",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-cta-photo-flex-5"
+      },
+      "Text-cta-photo-body-2": {
+        "id": "Text-cta-photo-body-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Order for pickup or save a table for tonight.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.85)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-cta-photo-1",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-cta-photo-flex-5"
+      },
+      "Button-cta-photo-button-3": {
+        "id": "Button-cta-photo-button-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Button",
+        "value": "Order now",
+        "fieldBinding": "",
+        "buttonSettings": {
+          "alignment": "left",
+          "href": "#order",
+          "textDecoration": "none",
+          "fontWeight": "600",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "padding": "14px 26px",
+          "borderRadius": "999px",
+          "borderStyle": "solid",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "iconName": "mdi-arrow-right",
+          "iconPlacement": "right",
+          "backgroundColor": "#E0A43B",
+          "borderColor": "#E0A43B",
+          "borderWidth": "0",
+          "textColor": "#1b1b1b"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#c59034",
+              "borderColor": "#c59034"
+            }
+          },
+          "transition": {
+            "durationMs": 220,
+            "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-cta-photo-flex-4"
+      },
+      "FlexContainer-cta-photo-flex-4": {
+        "id": "FlexContainer-cta-photo-flex-4",
+        "blockName": "Actions",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "14px",
+          "padding": "10px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-cta-photo-button-3"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-cta-photo-1",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-cta-photo-flex-5"
+      },
+      "FlexContainer-cta-photo-flex-5": {
+        "id": "FlexContainer-cta-photo-flex-5",
+        "blockName": "Call to action over photo",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "20px",
+          "padding": "110px 24px",
+          "wrap": false,
+          "backgroundColor": "#9C3D2E",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px",
+          "backgroundImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+          "backgroundImageOpacity": "0.35",
+          "backgroundImageBlendMode": "multiply",
+          "backgroundImageSize": "cover",
+          "backgroundImagePosition": "center center"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-cta-photo-h2-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-cta-photo-body-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-cta-photo-flex-4"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Fraunces",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Nunito Sans",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF3E6",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

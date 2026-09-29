@@ -1,0 +1,1034 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "testimonials",
+  "kind": "template",
+  "title": "Testimonials with portraits",
+  "description": "Three quote cards with a quote icon, italic quote and an author row with a round portrait, revealed in sequence.",
+  "tags": [
+    "testimonials",
+    "reviews",
+    "quotes",
+    "social proof"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Testimonials with portraits",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Icon-testimonials-icon-1": {
+        "id": "Icon-testimonials-icon-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-8"
+      },
+      "Text-testimonials-body-2": {
+        "id": "Text-testimonials-body-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "The grilled platter is the best thing I have eaten this year. We come every Friday now.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-8"
+      },
+      "Avatar-testimonials-avatar-3": {
+        "id": "Avatar-testimonials-avatar-3",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Maya Chen",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-7"
+      },
+      "Text-testimonials-h4-4": {
+        "id": "Text-testimonials-h4-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Maya Chen",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-6"
+      },
+      "Text-testimonials-caption-5": {
+        "id": "Text-testimonials-caption-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Regular since 2021",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-6"
+      },
+      "FlexContainer-testimonials-flex-6": {
+        "id": "FlexContainer-testimonials-flex-6",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-testimonials-h4-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-caption-5"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-7"
+      },
+      "FlexContainer-testimonials-flex-7": {
+        "id": "FlexContainer-testimonials-flex-7",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-testimonials-avatar-3"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-6"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-8"
+      },
+      "FlexContainer-testimonials-flex-8": {
+        "id": "FlexContainer-testimonials-flex-8",
+        "blockName": "Maya Chen",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FFFDF8",
+          "borderRadius": "22px",
+          "borderColor": "#EADBC6",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-testimonials-icon-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-body-2"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-7"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-testimonials-2",
+            "index": 0,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-27"
+      },
+      "Icon-testimonials-icon-9": {
+        "id": "Icon-testimonials-icon-9",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-16"
+      },
+      "Text-testimonials-body-10": {
+        "id": "Text-testimonials-body-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Warm service, generous portions and the kind of room you want to linger in.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-16"
+      },
+      "Avatar-testimonials-avatar-11": {
+        "id": "Avatar-testimonials-avatar-11",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Marco Reyes",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-15"
+      },
+      "Text-testimonials-h4-12": {
+        "id": "Text-testimonials-h4-12",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Marco Reyes",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-14"
+      },
+      "Text-testimonials-caption-13": {
+        "id": "Text-testimonials-caption-13",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Local food writer",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-14"
+      },
+      "FlexContainer-testimonials-flex-14": {
+        "id": "FlexContainer-testimonials-flex-14",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-testimonials-h4-12"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-caption-13"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-15"
+      },
+      "FlexContainer-testimonials-flex-15": {
+        "id": "FlexContainer-testimonials-flex-15",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-testimonials-avatar-11"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-14"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-16"
+      },
+      "FlexContainer-testimonials-flex-16": {
+        "id": "FlexContainer-testimonials-flex-16",
+        "blockName": "Marco Reyes",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FFFDF8",
+          "borderRadius": "22px",
+          "borderColor": "#EADBC6",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-testimonials-icon-9"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-body-10"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-15"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-testimonials-2",
+            "index": 1,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-27"
+      },
+      "Icon-testimonials-icon-17": {
+        "id": "Icon-testimonials-icon-17",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Icon",
+        "value": "mdi-format-quote-open",
+        "fieldBinding": "",
+        "iconSettings": {
+          "alignment": "left",
+          "size": "lg",
+          "textColor": "#E0A43B",
+          "backgroundColor": "",
+          "borderRadius": "",
+          "padding": ""
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-24"
+      },
+      "Text-testimonials-body-18": {
+        "id": "Text-testimonials-body-18",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "They made our birthday dinner for twenty feel effortless.",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "18px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": true
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-24"
+      },
+      "Avatar-testimonials-avatar-19": {
+        "id": "Avatar-testimonials-avatar-19",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Avatar",
+        "value": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80&h=160",
+        "fieldBinding": "",
+        "imageSettings": {
+          "alignment": "left",
+          "size": "sm",
+          "altText": "Hannah Blake",
+          "objectFit": "cover",
+          "borderRadius": "999px"
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-23"
+      },
+      "Text-testimonials-h4-20": {
+        "id": "Text-testimonials-h4-20",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Hannah Blake",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H5",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-22"
+      },
+      "Text-testimonials-caption-21": {
+        "id": "Text-testimonials-caption-21",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Private room guest",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#6E5D52",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-22"
+      },
+      "FlexContainer-testimonials-flex-22": {
+        "id": "FlexContainer-testimonials-flex-22",
+        "blockName": "Who",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "2px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-testimonials-h4-20"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-caption-21"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-23"
+      },
+      "FlexContainer-testimonials-flex-23": {
+        "id": "FlexContainer-testimonials-flex-23",
+        "blockName": "Author",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "14px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Avatar-testimonials-avatar-19"
+            ],
+            "flex": "0 0 56px",
+            "maxWidth": "56px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-22"
+            ],
+            "flex": "1 1 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-24"
+      },
+      "FlexContainer-testimonials-flex-24": {
+        "id": "FlexContainer-testimonials-flex-24",
+        "blockName": "Hannah Blake",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "18px",
+          "padding": "32px",
+          "wrap": false,
+          "backgroundColor": "#FFFDF8",
+          "borderRadius": "22px",
+          "borderColor": "#EADBC6",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Icon-testimonials-icon-17"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-body-18"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-23"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "260ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-testimonials-2",
+            "index": 2,
+            "length": 3,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-27"
+      },
+      "Text-testimonials-eyebrow-25": {
+        "id": "Text-testimonials-eyebrow-25",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Kind words",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-overline",
+          "fontWeight": "700",
+          "fontSize": "12px",
+          "lineHeight": "1.6",
+          "letterSpacing": "0.14em",
+          "fontFamily": "Nunito Sans, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#E0A43B",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "80ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-testimonials-1",
+            "index": 0,
+            "length": 2,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-28"
+      },
+      "Text-testimonials-h2-26": {
+        "id": "Text-testimonials-h2-26",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "What our guests say",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "42px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Fraunces, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#2A1D17",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "position",
+              "from": "22px",
+              "to": "0px",
+              "duration": "650ms",
+              "delay": "170ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-testimonials-1",
+            "index": 1,
+            "length": 2,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-28"
+      },
+      "FlexContainer-testimonials-flex-27": {
+        "id": "FlexContainer-testimonials-flex-27",
+        "blockName": "Quotes",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "22px",
+          "padding": "16px 0 0",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-8"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-16"
+            ],
+            "flex": "1 1 300px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-24"
+            ],
+            "flex": "1 1 300px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-testimonials-flex-28"
+      },
+      "FlexContainer-testimonials-flex-28": {
+        "id": "FlexContainer-testimonials-flex-28",
+        "blockName": "Testimonials with portraits",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "88px 24px",
+          "wrap": false,
+          "backgroundColor": "#FBF3E6",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-testimonials-eyebrow-25"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-testimonials-h2-26"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-testimonials-flex-27"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Fraunces",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Nunito Sans",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#FBF3E6",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

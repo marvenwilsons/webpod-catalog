@@ -1,0 +1,608 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "stats-band",
+  "kind": "template",
+  "title": "Stats band",
+  "description": "Dark band of four large accent-coloured numbers with short labels that pop in one after another on scroll.",
+  "tags": [
+    "stats",
+    "metrics",
+    "numbers",
+    "social proof",
+    "scroll animation"
+  ],
+  "requires": [
+    "pod-designer-snapshot/1"
+  ],
+  "templateKind": "section",
+  "content": {
+    "title": "Library · Stats band",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "blocks": {
+      "Text-stats-band-h2-1": {
+        "id": "Text-stats-band-h2-1",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "12k",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#14B8A6",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-3"
+      },
+      "Text-stats-band-body-2": {
+        "id": "Text-stats-band-body-2",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Records managed",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-3"
+      },
+      "FlexContainer-stats-band-flex-3": {
+        "id": "FlexContainer-stats-band-flex-3",
+        "blockName": "Records managed",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-stats-band-h2-1"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-stats-band-body-2"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "40ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "40ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-stats-band-1",
+            "index": 0,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-13"
+      },
+      "Text-stats-band-h2-4": {
+        "id": "Text-stats-band-h2-4",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "98%",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#14B8A6",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-6"
+      },
+      "Text-stats-band-body-5": {
+        "id": "Text-stats-band-body-5",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Tasks on time",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-6"
+      },
+      "FlexContainer-stats-band-flex-6": {
+        "id": "FlexContainer-stats-band-flex-6",
+        "blockName": "Tasks on time",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-stats-band-h2-4"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-stats-band-body-5"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "130ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "130ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-stats-band-1",
+            "index": 1,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-13"
+      },
+      "Text-stats-band-h2-7": {
+        "id": "Text-stats-band-h2-7",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "40",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#14B8A6",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-9"
+      },
+      "Text-stats-band-body-8": {
+        "id": "Text-stats-band-body-8",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Teams onboarded",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-9"
+      },
+      "FlexContainer-stats-band-flex-9": {
+        "id": "FlexContainer-stats-band-flex-9",
+        "blockName": "Teams onboarded",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-stats-band-h2-7"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-stats-band-body-8"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "220ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "220ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-stats-band-1",
+            "index": 2,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-13"
+      },
+      "Text-stats-band-h2-10": {
+        "id": "Text-stats-band-h2-10",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "5 min",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "52px",
+          "lineHeight": "1.12",
+          "letterSpacing": "",
+          "fontFamily": "Space Grotesk, Georgia, serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "#14B8A6",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-12"
+      },
+      "Text-stats-band-body-11": {
+        "id": "Text-stats-band-body-11",
+        "blockName": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "Text",
+        "value": "Average setup per screen",
+        "fieldBinding": "",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "15px",
+          "lineHeight": "1.6",
+          "letterSpacing": "",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "alignment": "center",
+          "verticalAlignment": "top",
+          "textColor": "rgba(255,255,255,0.78)",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-12"
+      },
+      "FlexContainer-stats-band-flex-12": {
+        "id": "FlexContainer-stats-band-flex-12",
+        "blockName": "Average setup per screen",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "center",
+          "gap": "6px",
+          "padding": "0px",
+          "wrap": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-stats-band-h2-10"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-stats-band-body-11"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "visibility": {
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "310ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            },
+            {
+              "target": "scale",
+              "from": "0.88",
+              "to": "1",
+              "duration": "460ms",
+              "delay": "310ms",
+              "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+            }
+          ],
+          "sequenceAnimation": {
+            "id": "sequence-stats-band-1",
+            "index": 3,
+            "length": 4,
+            "trigger": "viewport",
+            "replayOnView": false,
+            "threshold": 0.18
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-13"
+      },
+      "FlexContainer-stats-band-flex-13": {
+        "id": "FlexContainer-stats-band-flex-13",
+        "blockName": "Stats",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "space-between",
+          "alignItems": "stretch",
+          "gap": "28px",
+          "padding": "0px",
+          "wrap": true
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-stats-band-flex-3"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-stats-band-flex-6"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "FlexContainer-stats-band-flex-9"
+            ],
+            "flex": "1 1 180px"
+          },
+          {
+            "id": "item-4",
+            "childBlockIds": [
+              "FlexContainer-stats-band-flex-12"
+            ],
+            "flex": "1 1 180px"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-stats-band-flex-14"
+      },
+      "FlexContainer-stats-band-flex-14": {
+        "id": "FlexContainer-stats-band-flex-14",
+        "blockName": "Stats band",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "center",
+          "alignItems": "stretch",
+          "gap": "20px",
+          "padding": "72px 24px",
+          "wrap": false,
+          "backgroundColor": "#3B4CCA",
+          "textColor": "#ffffff",
+          "maxWidth": "1120px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-stats-band-flex-13"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {},
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Space Grotesk",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        },
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "backgroundColor": "#F6F7FB",
+      "fullBleed": true
+    },
+    "paneDataSources": []
+  }
+}

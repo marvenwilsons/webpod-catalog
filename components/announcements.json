@@ -1,0 +1,459 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "announcements",
+  "kind": "component",
+  "title": "Announcements",
+  "description": "News or notices as cards: title, tag, date, author and summary. Data-agnostic: cards arrive through the items list prop.",
+  "tags": [],
+  "requires": [
+    "list-props",
+    "pod-designer-snapshot/1"
+  ],
+  "props": {
+    "title": {
+      "type": "string",
+      "label": "Title",
+      "defaultValue": "Announcements"
+    },
+    "items": {
+      "type": "list",
+      "label": "Announcements",
+      "description": "One card per announcement: title, summary, publishedOn (ISO date or text), author and an optional tag."
+    }
+  },
+  "content": {
+    "title": "Announcements",
+    "authoringType": "component",
+    "projectType": "component",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "12px"
+    },
+    "rootBlockIds": [
+      "Text-announcements-title-1",
+      "ListContainer-announcements-items-list-7"
+    ],
+    "blocks": {
+      "Text-announcements-title-1": {
+        "type": "Text",
+        "blockName": "",
+        "value": "Announcements",
+        "fieldBinding": "__project_inputs__::title",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "H2",
+          "fontWeight": "700",
+          "fontSize": "22px",
+          "lineHeight": "1.15",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "Text-announcements-title-1"
+      },
+      "Text-announcements-items-title-2": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{title}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 9,
+          "listContainerPlacement": {
+            "columnStart": 1,
+            "columnEnd": 10,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-announcements-items-list-7",
+        "id": "Text-announcements-items-title-2"
+      },
+      "Text-announcements-items-tag-3": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{tag}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "600",
+          "fontSize": "12px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 3,
+          "listContainerPlacement": {
+            "columnStart": 10,
+            "columnEnd": 13,
+            "rowStart": 1,
+            "rowEnd": 2
+          }
+        },
+        "parentListContainerId": "ListContainer-announcements-items-list-7",
+        "id": "Text-announcements-items-tag-3"
+      },
+      "Text-announcements-items-date-4": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{publishedOn | date}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "12px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 6,
+          "listContainerPlacement": {
+            "columnStart": 1,
+            "columnEnd": 7,
+            "rowStart": 2,
+            "rowEnd": 3
+          }
+        },
+        "parentListContainerId": "ListContainer-announcements-items-list-7",
+        "id": "Text-announcements-items-date-4"
+      },
+      "Text-announcements-items-author-5": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{author}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "text-caption",
+          "fontWeight": "400",
+          "fontSize": "12px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "right",
+          "verticalAlignment": "top",
+          "textColor": "#7f848f",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 6,
+          "listContainerPlacement": {
+            "columnStart": 7,
+            "columnEnd": 13,
+            "rowStart": 2,
+            "rowEnd": 3
+          }
+        },
+        "parentListContainerId": "ListContainer-announcements-items-list-7",
+        "id": "Text-announcements-items-author-5"
+      },
+      "Text-announcements-items-summary-6": {
+        "type": "Text",
+        "blockName": "",
+        "value": "{{summary}}",
+        "fieldBinding": "",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontWeight": "400",
+          "fontSize": "14px",
+          "lineHeight": "1.55",
+          "fontFamily": "",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "textColor": "#172033",
+          "margin": "0px",
+          "padding": "0px",
+          "isItalic": false
+        },
+        "blockWrapper": {
+          "style": {},
+          "classes": [],
+          "gridSpan": 12,
+          "listContainerPlacement": {
+            "columnStart": 1,
+            "columnEnd": 13,
+            "rowStart": 3,
+            "rowEnd": 4
+          }
+        },
+        "parentListContainerId": "ListContainer-announcements-items-list-7",
+        "id": "Text-announcements-items-summary-6"
+      },
+      "ListContainer-announcements-items-list-7": {
+        "type": "ListContainer",
+        "blockName": "Announcement cards",
+        "childBlockIds": [
+          "Text-announcements-items-title-2",
+          "Text-announcements-items-tag-3",
+          "Text-announcements-items-date-4",
+          "Text-announcements-items-author-5",
+          "Text-announcements-items-summary-6"
+        ],
+        "mediator": {
+          "sourceMap": {}
+        },
+        "listSettings": {
+          "sourceId": "__project_inputs__.items",
+          "renderMode": "list",
+          "containerType": "row-list",
+          "itemColumns": "1",
+          "masonry": false,
+          "gap": "10px",
+          "padding": "0px",
+          "itemPadding": "14px 16px",
+          "maxHeight": "",
+          "cursorPointer": false,
+          "rippleOnClick": false,
+          "backgroundColor": "transparent",
+          "itemBackgroundColor": "#ffffff",
+          "itemBorderColor": "#e3e4e7",
+          "itemBorderWidth": "1px",
+          "itemBorderStyle": "solid",
+          "itemBorderRadius": "10px",
+          "itemHoverBackgroundColor": "#eef3fd",
+          "shadow": "",
+          "borderColor": "",
+          "borderWidth": "",
+          "borderStyle": "",
+          "borderRadius": "",
+          "emptyText": "No announcements yet."
+        },
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "2",
+            "gridRowEnd": "3"
+          },
+          "classes": [],
+          "gridSpan": 12
+        },
+        "id": "ListContainer-announcements-items-list-7"
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {
+      "title": {
+        "propName": "title",
+        "label": "Title",
+        "type": "string",
+        "defaultValue": "Announcements"
+      },
+      "items": {
+        "propName": "items",
+        "label": "Announcements",
+        "type": "list",
+        "description": "One card per announcement: title, summary, publishedOn (ISO date or text), author and an optional tag.",
+        "list": {
+          "itemKind": "schema",
+          "itemSchemaId": "announcement-item"
+        },
+        "defaultValue": [
+          {
+            "title": "Benefits enrolment opens October 1",
+            "summary": "Review your health and dental options before October 15.",
+            "publishedOn": "2026-09-25",
+            "author": "People operations",
+            "tag": "Benefits"
+          },
+          {
+            "title": "New sign-in process at the main branch",
+            "summary": "Use the tablet at the front desk from Monday.",
+            "publishedOn": "2026-09-22",
+            "author": "Facilities",
+            "tag": "Operations"
+          }
+        ]
+      }
+    },
+    "previewData": {
+      "activeSource": "real-data",
+      "schema": {
+        "title": {
+          "label": "Title",
+          "type": "string",
+          "defaultValue": "Announcements"
+        },
+        "items": {
+          "label": "Announcements",
+          "type": "list",
+          "defaultValue": [
+            {
+              "title": "Benefits enrolment opens October 1",
+              "summary": "Review your health and dental options before October 15.",
+              "publishedOn": "2026-09-25",
+              "author": "People operations",
+              "tag": "Benefits"
+            },
+            {
+              "title": "New sign-in process at the main branch",
+              "summary": "Use the tablet at the front desk from Monday.",
+              "publishedOn": "2026-09-22",
+              "author": "Facilities",
+              "tag": "Operations"
+            }
+          ]
+        }
+      },
+      "inputContract": {
+        "version": 1,
+        "fields": {
+          "title": {
+            "key": "title",
+            "label": "Title",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "defaultValue": "Announcements"
+          },
+          "items": {
+            "key": "items",
+            "label": "Announcements",
+            "type": "list",
+            "required": false,
+            "description": "One card per announcement: title, summary, publishedOn (ISO date or text), author and an optional tag.",
+            "defaultValue": [
+              {
+                "title": "Benefits enrolment opens October 1",
+                "summary": "Review your health and dental options before October 15.",
+                "publishedOn": "2026-09-25",
+                "author": "People operations",
+                "tag": "Benefits"
+              },
+              {
+                "title": "New sign-in process at the main branch",
+                "summary": "Use the tablet at the front desk from Monday.",
+                "publishedOn": "2026-09-22",
+                "author": "Facilities",
+                "tag": "Operations"
+              }
+            ],
+            "list": {
+              "itemKind": "schema",
+              "itemSchemaId": "announcement-item",
+              "primitiveType": ""
+            }
+          }
+        },
+        "listItemSchemas": {
+          "announcement-item": {
+            "id": "announcement-item",
+            "label": "Announcement",
+            "fields": {
+              "title": {
+                "key": "title",
+                "label": "Title",
+                "type": "string"
+              },
+              "summary": {
+                "key": "summary",
+                "label": "Summary",
+                "type": "string"
+              },
+              "publishedOn": {
+                "key": "publishedOn",
+                "label": "Published",
+                "type": "string"
+              },
+              "author": {
+                "key": "author",
+                "label": "Author",
+                "type": "string"
+              },
+              "tag": {
+                "key": "tag",
+                "label": "Tag",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-lg",
+      "backgroundColor": "#ffffff"
+    },
+    "paneDataSources": [],
+    "runtimeSettings": {
+      "variables": {}
+    }
+  }
+}

@@ -1,0 +1,1080 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "tabs",
+  "kind": "component",
+  "title": "Tabs",
+  "description": "Three tabs of text (tab1Label/tab1Body … tab3Label/tab3Body); openTab (1, 2 or 3) sets the tab it opens on.",
+  "tags": [],
+  "requires": [
+    "initial-from-prop",
+    "pod-designer-snapshot/1",
+    "runtime-variables"
+  ],
+  "props": {
+    "tab1Label": {
+      "type": "string",
+      "label": "Tab 1 label",
+      "description": "Title of tab 1.",
+      "defaultValue": "Overview"
+    },
+    "tab1Body": {
+      "type": "string",
+      "label": "Tab 1 text",
+      "description": "What tab 1 shows.",
+      "defaultValue": "A short summary of what this is about."
+    },
+    "tab2Label": {
+      "type": "string",
+      "label": "Tab 2 label",
+      "description": "Title of tab 2.",
+      "defaultValue": "Details"
+    },
+    "tab2Body": {
+      "type": "string",
+      "label": "Tab 2 text",
+      "description": "What tab 2 shows.",
+      "defaultValue": "The finer points, steps or numbers."
+    },
+    "tab3Label": {
+      "type": "string",
+      "label": "Tab 3 label",
+      "description": "Title of tab 3.",
+      "defaultValue": "Notes"
+    },
+    "tab3Body": {
+      "type": "string",
+      "label": "Tab 3 text",
+      "description": "What tab 3 shows.",
+      "defaultValue": "Anything else worth knowing."
+    },
+    "openTab": {
+      "type": "string",
+      "label": "Open tab",
+      "description": "The tab it opens on: 1, 2 or 3.",
+      "defaultValue": "1"
+    }
+  },
+  "content": {
+    "title": "Tabs",
+    "projectType": "component",
+    "authoringType": "component",
+    "mainWrapper": {
+      "style": {},
+      "columns": 12,
+      "columnWidths": [],
+      "classes": [],
+      "gap": "0px"
+    },
+    "rootBlockIds": [
+      "FlexContainer-tabs"
+    ],
+    "blocks": {
+      "Button-tabs-1-active": {
+        "id": "Button-tabs-1-active",
+        "blockName": "Tab 1 (open)",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::tab1Label",
+        "type": "Button",
+        "value": "Overview",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "36px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "#2563eb",
+          "textColor": "#ffffff",
+          "borderColor": "#2563eb",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "8px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#1d4ed8"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-strip",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "equals",
+          "whenValue": "1",
+          "whenValueLogic": [
+            {
+              "value": "1"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "equals",
+              "value": "1"
+            }
+          ]
+        },
+        "properties": {}
+      },
+      "Button-tabs-1-rest": {
+        "id": "Button-tabs-1-rest",
+        "blockName": "Tab 1",
+        "mediator": {
+          "sourceMap": {
+            "Button-tabs-1-rest": {
+              "eventMap": {
+                "onClick": {
+                  "selfReactions": [
+                    {
+                      "id": "tabs-open-1",
+                      "reactionKey": "setRuntimeVariable",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "variableKey": "active",
+                        "value": "1",
+                        "whenKind": "always"
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onClick"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "__project_inputs__::tab1Label",
+        "type": "Button",
+        "value": "Overview",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "36px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "transparent",
+          "textColor": "#64748b",
+          "borderColor": "transparent",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "8px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#eef2ff",
+              "textColor": "#2563eb"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-strip",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "notEquals",
+          "whenValue": "1",
+          "whenValueLogic": [
+            {
+              "value": "1"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "notEquals",
+              "value": "1"
+            }
+          ]
+        },
+        "properties": {
+          "_visibilityHidden": true
+        }
+      },
+      "Text-tabs-1-body": {
+        "id": "Text-tabs-1-body",
+        "blockName": "Tab 1 text",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::tab1Body",
+        "type": "Text",
+        "value": "A short summary of what this is about.",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "textColor": "#0f172a",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "1.6"
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-panel",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "equals",
+          "whenValue": "1",
+          "whenValueLogic": [
+            {
+              "value": "1"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "equals",
+              "value": "1"
+            }
+          ],
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "320ms",
+              "delay": "0ms"
+            }
+          ],
+          "leaveAnimations": [
+            {
+              "target": "opacity",
+              "from": "1",
+              "to": "0",
+              "duration": "240ms",
+              "delay": "0ms"
+            }
+          ]
+        },
+        "properties": {}
+      },
+      "Button-tabs-2-active": {
+        "id": "Button-tabs-2-active",
+        "blockName": "Tab 2 (open)",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::tab2Label",
+        "type": "Button",
+        "value": "Details",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "36px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "#2563eb",
+          "textColor": "#ffffff",
+          "borderColor": "#2563eb",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "8px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#1d4ed8"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-strip",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "equals",
+          "whenValue": "2",
+          "whenValueLogic": [
+            {
+              "value": "2"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "equals",
+              "value": "2"
+            }
+          ]
+        },
+        "properties": {
+          "_visibilityHidden": true
+        }
+      },
+      "Button-tabs-2-rest": {
+        "id": "Button-tabs-2-rest",
+        "blockName": "Tab 2",
+        "mediator": {
+          "sourceMap": {
+            "Button-tabs-2-rest": {
+              "eventMap": {
+                "onClick": {
+                  "selfReactions": [
+                    {
+                      "id": "tabs-open-2",
+                      "reactionKey": "setRuntimeVariable",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "variableKey": "active",
+                        "value": "2",
+                        "whenKind": "always"
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onClick"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "__project_inputs__::tab2Label",
+        "type": "Button",
+        "value": "Details",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "36px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "transparent",
+          "textColor": "#64748b",
+          "borderColor": "transparent",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "8px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#eef2ff",
+              "textColor": "#2563eb"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-strip",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "notEquals",
+          "whenValue": "2",
+          "whenValueLogic": [
+            {
+              "value": "2"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "notEquals",
+              "value": "2"
+            }
+          ]
+        },
+        "properties": {}
+      },
+      "Text-tabs-2-body": {
+        "id": "Text-tabs-2-body",
+        "blockName": "Tab 2 text",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::tab2Body",
+        "type": "Text",
+        "value": "The finer points, steps or numbers.",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "textColor": "#0f172a",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "1.6"
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-panel",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "equals",
+          "whenValue": "2",
+          "whenValueLogic": [
+            {
+              "value": "2"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "equals",
+              "value": "2"
+            }
+          ],
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "320ms",
+              "delay": "0ms"
+            }
+          ],
+          "leaveAnimations": [
+            {
+              "target": "opacity",
+              "from": "1",
+              "to": "0",
+              "duration": "240ms",
+              "delay": "0ms"
+            }
+          ]
+        },
+        "properties": {
+          "_visibilityHidden": true
+        }
+      },
+      "Button-tabs-3-active": {
+        "id": "Button-tabs-3-active",
+        "blockName": "Tab 3 (open)",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::tab3Label",
+        "type": "Button",
+        "value": "Notes",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "36px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "#2563eb",
+          "textColor": "#ffffff",
+          "borderColor": "#2563eb",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "8px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#1d4ed8"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-strip",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "equals",
+          "whenValue": "3",
+          "whenValueLogic": [
+            {
+              "value": "3"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "equals",
+              "value": "3"
+            }
+          ]
+        },
+        "properties": {
+          "_visibilityHidden": true
+        }
+      },
+      "Button-tabs-3-rest": {
+        "id": "Button-tabs-3-rest",
+        "blockName": "Tab 3",
+        "mediator": {
+          "sourceMap": {
+            "Button-tabs-3-rest": {
+              "eventMap": {
+                "onClick": {
+                  "selfReactions": [
+                    {
+                      "id": "tabs-open-3",
+                      "reactionKey": "setRuntimeVariable",
+                      "methodKey": "",
+                      "globalMethodKey": "",
+                      "config": {
+                        "variableKey": "active",
+                        "value": "3",
+                        "whenKind": "always"
+                      },
+                      "methodConfig": {},
+                      "globalMethodConfig": {}
+                    }
+                  ]
+                }
+              },
+              "selectedEvents": [
+                "onClick"
+              ]
+            }
+          }
+        },
+        "fieldBinding": "__project_inputs__::tab3Label",
+        "type": "Button",
+        "value": "Notes",
+        "buttonSettings": {
+          "alignment": "center",
+          "buttonWidthMode": "custom",
+          "buttonWidth": "100%",
+          "buttonSize": "36px",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "backgroundColor": "transparent",
+          "textColor": "#64748b",
+          "borderColor": "transparent",
+          "borderWidth": "0",
+          "borderStyle": "solid",
+          "borderRadius": "8px",
+          "padding": "0px 14px",
+          "minWidth": "0",
+          "hoverEffect": "none",
+          "cursorPointer": true,
+          "rippleOnClick": true,
+          "textDecoration": "none"
+        },
+        "hoverBehavior": {
+          "enabled": true,
+          "propertyPatch": {
+            "buttonSettings": {
+              "backgroundColor": "#eef2ff",
+              "textColor": "#2563eb"
+            }
+          },
+          "transition": {
+            "durationMs": 120,
+            "easing": "ease-out"
+          }
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-strip",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "notEquals",
+          "whenValue": "3",
+          "whenValueLogic": [
+            {
+              "value": "3"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "notEquals",
+              "value": "3"
+            }
+          ]
+        },
+        "properties": {}
+      },
+      "Text-tabs-3-body": {
+        "id": "Text-tabs-3-body",
+        "blockName": "Tab 3 text",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "__project_inputs__::tab3Body",
+        "type": "Text",
+        "value": "Anything else worth knowing.",
+        "textSettings": {
+          "typographyRole": "custom",
+          "type": "Body 1",
+          "fontFamily": "Inter, system-ui, sans-serif",
+          "fontSize": "14px",
+          "textColor": "#0f172a",
+          "alignment": "left",
+          "verticalAlignment": "top",
+          "margin": "0px",
+          "padding": "0px",
+          "lineHeight": "1.6"
+        },
+        "parentFlexContainerId": "FlexContainer-tabs-panel",
+        "visibility": {
+          "mode": "runtimeVariable",
+          "effect": "showWhenMatches",
+          "runtimeVariableKey": "active",
+          "whenToken": "$payload.runtimeVariables.active",
+          "whenOp": "equals",
+          "whenValue": "3",
+          "whenValueLogic": [
+            {
+              "value": "3"
+            }
+          ],
+          "whenComparisons": [
+            {
+              "id": "cmp-primary",
+              "whenToken": "$payload.runtimeVariables.active",
+              "whenOp": "equals",
+              "value": "3"
+            }
+          ],
+          "enterAnimations": [
+            {
+              "target": "opacity",
+              "from": "0",
+              "to": "1",
+              "duration": "320ms",
+              "delay": "0ms"
+            }
+          ],
+          "leaveAnimations": [
+            {
+              "target": "opacity",
+              "from": "1",
+              "to": "0",
+              "duration": "240ms",
+              "delay": "0ms"
+            }
+          ]
+        },
+        "properties": {
+          "_visibilityHidden": true
+        }
+      },
+      "FlexContainer-tabs-strip": {
+        "id": "FlexContainer-tabs-strip",
+        "blockName": "Tab strip",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "row",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "6px",
+          "padding": "4px",
+          "wrap": false,
+          "stackOnNarrow": false,
+          "backgroundColor": "#f1f5f9",
+          "borderRadius": "10px"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Button-tabs-1-active",
+              "Button-tabs-1-rest"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Button-tabs-2-active",
+              "Button-tabs-2-rest"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Button-tabs-3-active",
+              "Button-tabs-3-rest"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-tabs"
+      },
+      "FlexContainer-tabs-panel": {
+        "id": "FlexContainer-tabs-panel",
+        "blockName": "Panel",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "0px",
+          "padding": "4px 2px",
+          "wrap": false,
+          "stackOnNarrow": false
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "Text-tabs-1-body"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "Text-tabs-2-body"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-3",
+            "childBlockIds": [
+              "Text-tabs-3-body"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "parentFlexContainerId": "FlexContainer-tabs"
+      },
+      "FlexContainer-tabs": {
+        "id": "FlexContainer-tabs",
+        "blockName": "Tabs",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "fieldBinding": "",
+        "type": "FlexContainer",
+        "flexContainerSettings": {
+          "direction": "column",
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "gap": "12px",
+          "padding": "18px 20px",
+          "wrap": false,
+          "stackOnNarrow": false,
+          "backgroundColor": "#ffffff",
+          "borderRadius": "14px",
+          "borderColor": "#e2e8f0",
+          "borderWidth": "1px",
+          "borderStyle": "solid"
+        },
+        "flexItems": [
+          {
+            "id": "item-1",
+            "childBlockIds": [
+              "FlexContainer-tabs-strip"
+            ],
+            "flex": "0 0 auto"
+          },
+          {
+            "id": "item-2",
+            "childBlockIds": [
+              "FlexContainer-tabs-panel"
+            ],
+            "flex": "0 0 auto"
+          }
+        ],
+        "blockWrapper": {
+          "style": {
+            "gridColumnStart": "1",
+            "gridColumnEnd": "13",
+            "gridRowStart": "1",
+            "gridRowEnd": "2"
+          },
+          "classes": [],
+          "gridSpan": 12
+        }
+      }
+    },
+    "staticData": {},
+    "injectedData": {},
+    "projectData": {},
+    "eventAnchors": {},
+    "theme": {},
+    "props": {
+      "tab1Label": {
+        "propName": "tab1Label",
+        "label": "Tab 1 label",
+        "type": "string",
+        "description": "Title of tab 1.",
+        "defaultValue": "Overview"
+      },
+      "tab1Body": {
+        "propName": "tab1Body",
+        "label": "Tab 1 text",
+        "type": "string",
+        "description": "What tab 1 shows.",
+        "defaultValue": "A short summary of what this is about."
+      },
+      "tab2Label": {
+        "propName": "tab2Label",
+        "label": "Tab 2 label",
+        "type": "string",
+        "description": "Title of tab 2.",
+        "defaultValue": "Details"
+      },
+      "tab2Body": {
+        "propName": "tab2Body",
+        "label": "Tab 2 text",
+        "type": "string",
+        "description": "What tab 2 shows.",
+        "defaultValue": "The finer points, steps or numbers."
+      },
+      "tab3Label": {
+        "propName": "tab3Label",
+        "label": "Tab 3 label",
+        "type": "string",
+        "description": "Title of tab 3.",
+        "defaultValue": "Notes"
+      },
+      "tab3Body": {
+        "propName": "tab3Body",
+        "label": "Tab 3 text",
+        "type": "string",
+        "description": "What tab 3 shows.",
+        "defaultValue": "Anything else worth knowing."
+      },
+      "openTab": {
+        "propName": "openTab",
+        "label": "Open tab",
+        "type": "string",
+        "description": "The tab it opens on: 1, 2 or 3.",
+        "defaultValue": "1"
+      }
+    },
+    "formulas": [],
+    "branding": {
+      "webFonts": [
+        {
+          "provider": "google",
+          "family": "Inter",
+          "weights": [
+            400,
+            500,
+            600,
+            700
+          ],
+          "styles": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    "previewData": {
+      "activeSource": "real-data",
+      "schema": {
+        "tab1Label": {
+          "label": "Tab 1 label",
+          "type": "string",
+          "defaultValue": "Overview"
+        },
+        "tab1Body": {
+          "label": "Tab 1 text",
+          "type": "string",
+          "defaultValue": "A short summary of what this is about."
+        },
+        "tab2Label": {
+          "label": "Tab 2 label",
+          "type": "string",
+          "defaultValue": "Details"
+        },
+        "tab2Body": {
+          "label": "Tab 2 text",
+          "type": "string",
+          "defaultValue": "The finer points, steps or numbers."
+        },
+        "tab3Label": {
+          "label": "Tab 3 label",
+          "type": "string",
+          "defaultValue": "Notes"
+        },
+        "tab3Body": {
+          "label": "Tab 3 text",
+          "type": "string",
+          "defaultValue": "Anything else worth knowing."
+        },
+        "openTab": {
+          "label": "Open tab",
+          "type": "string",
+          "defaultValue": "1"
+        }
+      },
+      "inputContract": {
+        "version": 1,
+        "fields": {
+          "tab1Label": {
+            "key": "tab1Label",
+            "label": "Tab 1 label",
+            "type": "string",
+            "required": false,
+            "description": "Title of tab 1.",
+            "defaultValue": "Overview"
+          },
+          "tab1Body": {
+            "key": "tab1Body",
+            "label": "Tab 1 text",
+            "type": "string",
+            "required": false,
+            "description": "What tab 1 shows.",
+            "defaultValue": "A short summary of what this is about."
+          },
+          "tab2Label": {
+            "key": "tab2Label",
+            "label": "Tab 2 label",
+            "type": "string",
+            "required": false,
+            "description": "Title of tab 2.",
+            "defaultValue": "Details"
+          },
+          "tab2Body": {
+            "key": "tab2Body",
+            "label": "Tab 2 text",
+            "type": "string",
+            "required": false,
+            "description": "What tab 2 shows.",
+            "defaultValue": "The finer points, steps or numbers."
+          },
+          "tab3Label": {
+            "key": "tab3Label",
+            "label": "Tab 3 label",
+            "type": "string",
+            "required": false,
+            "description": "Title of tab 3.",
+            "defaultValue": "Notes"
+          },
+          "tab3Body": {
+            "key": "tab3Body",
+            "label": "Tab 3 text",
+            "type": "string",
+            "required": false,
+            "description": "What tab 3 shows.",
+            "defaultValue": "Anything else worth knowing."
+          },
+          "openTab": {
+            "key": "openTab",
+            "label": "Open tab",
+            "type": "string",
+            "required": false,
+            "description": "The tab it opens on: 1, 2 or 3.",
+            "defaultValue": "1"
+          }
+        },
+        "listItemSchemas": {}
+      }
+    },
+    "pageStyling": {
+      "margin": "q-ma-none",
+      "padding": "q-pa-none",
+      "fullBleed": false
+    },
+    "paneDataSources": [],
+    "runtimeSettings": {
+      "version": 1,
+      "variables": {
+        "active": {
+          "key": "active",
+          "label": "Open tab",
+          "initialValue": "1",
+          "initialFromProp": "openTab"
+        }
+      },
+      "sessionStorage": {},
+      "localStorage": {}
+    }
+  }
+}
