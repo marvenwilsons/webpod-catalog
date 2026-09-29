@@ -3,13 +3,14 @@
   "id": "certificate",
   "kind": "document",
   "title": "Certificate",
-  "description": "A landscape certificate of completion or achievement with a border and two signature lines.",
+  "description": "A landscape certificate of completion or achievement with a border, two signature lines and a seal placed freely over the page.",
   "tags": [
     "certificate",
     "award"
   ],
   "requires": [
     "document-pages",
+    "free-position",
     "pod-designer-snapshot/1"
   ],
   "page": {
@@ -71,6 +72,31 @@
           },
           "classes": [],
           "gridSpan": 8
+        }
+      },
+      "Wysiwyg-seal": {
+        "id": "Wysiwyg-seal",
+        "type": "Wysiwyg",
+        "value": "<div style=\"width: 136px; height: 136px; margin: 0 auto; border-radius: 50%; border: 5px double #8a6d3b; background: #fbf6ea; color: #8a6d3b; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;\"><p style=\"margin: 0; font-size: 11px; letter-spacing: 0.25em;\">CERTIFIED</p><p style=\"margin: 0; font-size: 34px; line-height: 1.1;\">&#9733;</p><p style=\"margin: 0; font-size: 11px; letter-spacing: 0.25em;\">[YEAR]</p></div>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Seal",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "9",
+            "gridRowEnd": "12",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "freePosition": {
+            "x": 443,
+            "y": 0,
+            "width": 140,
+            "height": 140
+          }
         }
       }
     }

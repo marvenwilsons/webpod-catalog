@@ -18,7 +18,8 @@ const FEATURES = new Set([
   'remembered-variables',
   'mapping-functions',
   'list-props',
-  'document-pages'
+  'document-pages',
+  'free-position'
 ])
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const VERSION = /^\d+\.\d+\.\d+$/

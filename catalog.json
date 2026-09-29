@@ -2,7 +2,7 @@
   "schema": "webpod-catalog/1",
   "name": "WebPod catalog",
   "description": "Ready-made templates, components and documents for WebPod's Pod Designer.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "items": [
     {
       "id": "announcements",
@@ -301,13 +301,14 @@
       "id": "certificate",
       "kind": "document",
       "title": "Certificate",
-      "description": "A landscape certificate of completion or achievement with a border and two signature lines.",
+      "description": "A landscape certificate of completion or achievement with a border, two signature lines and a seal placed freely over the page.",
       "tags": [
         "certificate",
         "award"
       ],
       "requires": [
         "document-pages",
+        "free-position",
         "pod-designer-snapshot/1"
       ],
       "page": {
@@ -315,8 +316,8 @@
         "orientation": "landscape"
       },
       "file": "documents/certificate.json",
-      "bytes": 2699,
-      "sha256": "556f384fe7221a3b228a8a121ae5ad0339a166045681f20ac8a590f85ef8f01a"
+      "bytes": 3822,
+      "sha256": "64f8eed88466841f8a416412f3f6ea488f1595f9e816850cb978e7aebfe2fa26"
     },
     {
       "id": "invoice",
