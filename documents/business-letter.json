@@ -1,0 +1,97 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "business-letter",
+  "kind": "document",
+  "title": "Business letter",
+  "description": "A formal one-page letter: sender, date, recipient, subject, body and signature.",
+  "tags": [
+    "letter",
+    "correspondence"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Business letter",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": false,
+      "documentHeaderEnabled": false
+    },
+    "blocks": {
+      "Wysiwyg-sender": {
+        "id": "Wysiwyg-sender",
+        "type": "Wysiwyg",
+        "value": "<p style=\"text-align: right;\"><strong>[Your company]</strong><br>[Street address]<br>[City, postal code]<br>[Phone] · [Email]</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Sender",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "4",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-letter": {
+        "id": "Wysiwyg-letter",
+        "type": "Wysiwyg",
+        "value": "<p>[Month day, year]</p><p>[Recipient name]<br>[Title]<br>[Company]<br>[Street address]<br>[City, postal code]</p><p><strong>Subject: [What this letter is about]</strong></p><p>Dear [Recipient name],</p><p>[Open with the reason you are writing. One or two sentences that tell the reader what this letter is about and what you need from them.]</p><p>[Give the details: background, facts, dates and amounts the reader needs. Keep each paragraph to one idea so the letter is easy to follow.]</p><p>[Close with the next step: what you will do, what you would like the reader to do, and by when. Thank them for their time.]</p><p>Sincerely,</p><p><br><br>[Your name]<br>[Your title]</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Letter",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "4",
+            "gridRowEnd": "17",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      }
+    }
+  }
+}

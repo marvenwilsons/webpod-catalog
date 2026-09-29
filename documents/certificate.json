@@ -1,0 +1,78 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "certificate",
+  "kind": "document",
+  "title": "Certificate",
+  "description": "A landscape certificate of completion or achievement with a border and two signature lines.",
+  "tags": [
+    "certificate",
+    "award"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "landscape"
+  },
+  "content": {
+    "title": "Certificate",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "1123px",
+      "marginLeft": "",
+      "paddingTop": "48px",
+      "pageHeight": "794px",
+      "marginRight": "",
+      "paddingLeft": "48px",
+      "marginBottom": "",
+      "paddingRight": "48px",
+      "paddingBottom": "48px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "landscape",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": false,
+      "documentHeaderEnabled": false
+    },
+    "blocks": {
+      "Wysiwyg-certificate": {
+        "id": "Wysiwyg-certificate",
+        "type": "Wysiwyg",
+        "value": "<div style=\"border: 6px double #8a6d3b; padding: 96px 64px; text-align: center;\"><p style=\"letter-spacing: 0.3em; color: #8a6d3b;\">[ORGANISATION]</p><h1 style=\"font-size: 2.6em; margin-bottom: 0.2em;\">Certificate of [Completion]</h1><p>This certifies that</p><p style=\"font-size: 2em; font-family: Georgia, 'Times New Roman', serif; font-style: italic; margin: 0.3em 0;\">[Recipient name]</p><p>has successfully completed <strong>[course, programme or achievement]</strong><br>on [Month day, year].</p><p><br><br></p><table class=\"pd-doc-plain\"><tbody><tr><td style=\"width: 50%; text-align: center;\">______________________________<br>[Name]<br>[Title]</td><td style=\"text-align: center;\">______________________________<br>[Name]<br>[Title]</td></tr></tbody></table></div>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Certificate",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "15",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      }
+    }
+  }
+}

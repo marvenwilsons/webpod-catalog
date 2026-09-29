@@ -1,0 +1,78 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "memo",
+  "kind": "document",
+  "title": "Memo",
+  "description": "An internal memo: to, from, date and subject, then the message and next steps.",
+  "tags": [
+    "memo",
+    "internal"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Memo",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": false,
+      "documentHeaderEnabled": false
+    },
+    "blocks": {
+      "Wysiwyg-memo": {
+        "id": "Wysiwyg-memo",
+        "type": "Wysiwyg",
+        "value": "<h1>MEMORANDUM</h1><table class=\"pd-doc-plain\"><tbody><tr><td><strong>To</strong></td><td>[Names or team]</td></tr><tr><td><strong>From</strong></td><td>[Your name, title]</td></tr><tr><td><strong>CC</strong></td><td>[Names]</td></tr><tr><td><strong>Date</strong></td><td>[Month day, year]</td></tr><tr><td><strong>Subject</strong></td><td>[What this memo is about]</td></tr></tbody></table><hr><p>[The main point first: what is changing, what you decided or what you need.]</p><p>[The details: background, reasons, dates and who is affected.]</p><h3>What you need to do</h3><ul><li>[Action] by [date]</li><li>[Action] by [date]</li></ul><p>Questions? Contact [name] at [email or extension].</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Memo",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "11",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      }
+    }
+  }
+}

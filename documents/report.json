@@ -1,0 +1,118 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "report",
+  "kind": "document",
+  "title": "Report",
+  "description": "A multi-page report: title page, executive summary, findings with a table, recommendations and an appendix.",
+  "tags": [
+    "report",
+    "analysis"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Report",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": true,
+      "documentHeaderEnabled": true
+    },
+    "blocks": {
+      "Wysiwyg-header": {
+        "id": "Wysiwyg-header",
+        "type": "Wysiwyg",
+        "value": "<p><span style=\"font-size: 12px; color: #64748b;\">[Report title] · [Organisation]</span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Header",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "header"
+        }
+      },
+      "Wysiwyg-report": {
+        "id": "Wysiwyg-report",
+        "type": "Wysiwyg",
+        "value": "<p><br><br><br><br></p><h1>[Report title]</h1><p style=\"font-size: 1.2em;\">[A one-line subtitle that says what the report answers]</p><p><br></p><p>Prepared for [audience]<br>Prepared by [author, team]<br>[Month year]</p><hr class=\"pd-page-break\" data-page-break=\"true\"><h2>Executive summary</h2><p>[The answer first: what you found and what you recommend, in a short paragraph a busy reader can act on.]</p><ul><li>[Key finding]</li><li>[Key finding]</li><li>[Key finding]</li></ul><h2>1. Background</h2><p>[Why this report was written, the question it answers and what was in scope.]</p><h2>2. Method</h2><p>[Where the information came from, the period covered and any limits the reader should know about.]</p><h2>3. Findings</h2><h3>3.1 [Finding]</h3><p>[What the evidence shows and why it matters.]</p><table><thead><tr><th>Measure</th><th style=\"text-align: right;\">[Period 1]</th><th style=\"text-align: right;\">[Period 2]</th><th style=\"text-align: right;\">Change</th></tr></thead><tbody><tr><td>[Measure]</td><td style=\"text-align: right;\">[0]</td><td style=\"text-align: right;\">[0]</td><td style=\"text-align: right;\">[0%]</td></tr><tr><td>[Measure]</td><td style=\"text-align: right;\">[0]</td><td style=\"text-align: right;\">[0]</td><td style=\"text-align: right;\">[0%]</td></tr><tr><td>[Measure]</td><td style=\"text-align: right;\">[0]</td><td style=\"text-align: right;\">[0]</td><td style=\"text-align: right;\">[0%]</td></tr></tbody></table><h3>3.2 [Finding]</h3><p>[What the evidence shows and why it matters.]</p><h2>4. Recommendations</h2><ol><li><strong>[Recommendation]</strong> — [owner, cost, timing and expected result].</li><li><strong>[Recommendation]</strong> — [owner, cost, timing and expected result].</li></ol><h2>5. Conclusion</h2><p>[What happens next and when this will be reviewed.]</p><hr class=\"pd-page-break\" data-page-break=\"true\"><h2>Appendix A. [Supporting data]</h2><p>[Detailed tables, sources and definitions.]</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Report",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "75",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-page-numbers": {
+        "id": "Wysiwyg-page-numbers",
+        "type": "Wysiwyg",
+        "value": "<p style=\"text-align: right;\">Page <span class=\"pd-page-number\" contenteditable=\"false\"></span> of <span class=\"pd-page-count\" contenteditable=\"false\"></span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Page numbers",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "footer"
+        }
+      }
+    }
+  }
+}

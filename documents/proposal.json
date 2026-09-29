@@ -1,0 +1,99 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "proposal",
+  "kind": "document",
+  "title": "Proposal",
+  "description": "A project or sales proposal: overview, need, approach, deliverables, timeline, pricing and sign-off.",
+  "tags": [
+    "proposal",
+    "sales",
+    "project"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Proposal",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": true,
+      "documentHeaderEnabled": false
+    },
+    "blocks": {
+      "Wysiwyg-proposal": {
+        "id": "Wysiwyg-proposal",
+        "type": "Wysiwyg",
+        "value": "<p><span style=\"font-size: 12px; color: #64748b;\">PROPOSAL</span></p><h1>[Project name]</h1><p>For <strong>[Client]</strong> · From <strong>[Your company]</strong> · [Month day, year]</p><h2>Overview</h2><p>[Two or three sentences: what you propose to do, for whom, and the result they get.]</p><h2>The need</h2><p>[The client's situation and the problem or opportunity, in their words.]</p><h2>Our approach</h2><ol><li><strong>[Phase]</strong> — [what happens and what the client sees at the end].</li><li><strong>[Phase]</strong> — [what happens and what the client sees at the end].</li><li><strong>[Phase]</strong> — [what happens and what the client sees at the end].</li></ol><h2>Deliverables</h2><ul><li>[Deliverable]</li><li>[Deliverable]</li><li>[Deliverable]</li></ul><p><strong>Not included:</strong> [what is out of scope].</p><h2>Timeline</h2><table><thead><tr><th>Milestone</th><th>Date</th></tr></thead><tbody><tr><td>[Kick-off]</td><td>[Date]</td></tr><tr><td>[Milestone]</td><td>[Date]</td></tr><tr><td>[Delivery]</td><td>[Date]</td></tr></tbody></table><h2>Investment</h2><table><thead><tr><th>Item</th><th style=\"text-align: right;\">Price</th></tr></thead><tbody><tr><td>[Item]</td><td style=\"text-align: right;\">[0.00]</td></tr><tr><td>[Item]</td><td style=\"text-align: right;\">[0.00]</td></tr><tr><td><strong>Total</strong></td><td style=\"text-align: right;\"><strong>[0.00]</strong></td></tr></tbody></table><p>Payment terms: [e.g. 50% on signing, 50% on delivery]. This proposal is valid until [date].</p><h2>Why us</h2><p>[Relevant experience, a similar result you delivered, and who will do the work.]</p><h2>Acceptance</h2><p>To go ahead, sign below and return a copy.</p><table class=\"pd-doc-plain\"><tbody><tr><td style=\"width: 50%;\"><br><br>______________________________<br>[Client name, title]<br>Date:</td><td><br><br>______________________________<br>[Your name, title]<br>Date:</td></tr></tbody></table>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Proposal",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "38",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-page-numbers": {
+        "id": "Wysiwyg-page-numbers",
+        "type": "Wysiwyg",
+        "value": "<p style=\"text-align: center;\">Page <span class=\"pd-page-number\" contenteditable=\"false\"></span> of <span class=\"pd-page-count\" contenteditable=\"false\"></span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Page numbers",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "footer"
+        }
+      }
+    }
+  }
+}

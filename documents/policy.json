@@ -1,0 +1,119 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "policy",
+  "kind": "document",
+  "title": "Policy",
+  "description": "A company policy with purpose, scope, rules, responsibilities, compliance and review, with page numbers.",
+  "tags": [
+    "policy",
+    "hr",
+    "compliance"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Policy",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": true,
+      "documentHeaderEnabled": true
+    },
+    "blocks": {
+      "Wysiwyg-header": {
+        "id": "Wysiwyg-header",
+        "type": "Wysiwyg",
+        "value": "<p><span style=\"font-size: 12px; color: #64748b;\">[Organisation] · [Policy name] · Policy [no.]</span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Header",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "header"
+        }
+      },
+      "Wysiwyg-policy": {
+        "id": "Wysiwyg-policy",
+        "type": "Wysiwyg",
+        "value": "<h1>[Policy name]</h1><table class=\"pd-doc-plain\"><tbody><tr><td><strong>Policy no.</strong></td><td>[POL-000]</td><td><strong>Version</strong></td><td>[1.0]</td></tr><tr><td><strong>Effective</strong></td><td>[Month day, year]</td><td><strong>Owner</strong></td><td>[Department]</td></tr><tr><td><strong>Approved by</strong></td><td>[Name, title]</td><td><strong>Next review</strong></td><td>[Month year]</td></tr></tbody></table><h2>1. Purpose</h2><p>[Why this policy exists and the risk or goal it addresses.]</p><h2>2. Scope</h2><p>[Who and what this policy covers: people, locations, systems, activities. Say what it does not cover.]</p><h2>3. Definitions</h2><ul><li><strong>[Term]</strong> — [meaning in this policy].</li><li><strong>[Term]</strong> — [meaning in this policy].</li></ul><h2>4. Policy</h2><p>4.1 [A rule, stated plainly: who must do what, and when.]</p><p>4.2 [A rule, stated plainly: who must do what, and when.]</p><p>4.3 [A rule, stated plainly: who must do what, and when.]</p><h2>5. Responsibilities</h2><ul><li><strong>[Role]</strong> — [what they are accountable for].</li><li><strong>[Role]</strong> — [what they are accountable for].</li><li><strong>All staff</strong> — [what everyone must do].</li></ul><h2>6. Compliance</h2><p>[How compliance is checked, how to report a breach and what happens when this policy is not followed.]</p><h2>7. Exceptions</h2><p>[Who can approve an exception and how it is recorded.]</p><h2>8. Review</h2><p>This policy is reviewed every [12] months by [owner], or sooner when [law, systems or the organisation] change.</p><h2>Revision history</h2><table><thead><tr><th>Version</th><th>Date</th><th>Change</th><th>By</th></tr></thead><tbody><tr><td>1.0</td><td>[Date]</td><td>First issue</td><td>[Name]</td></tr></tbody></table>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Policy",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "35",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-page-numbers": {
+        "id": "Wysiwyg-page-numbers",
+        "type": "Wysiwyg",
+        "value": "<p style=\"text-align: center;\">Page <span class=\"pd-page-number\" contenteditable=\"false\"></span> of <span class=\"pd-page-count\" contenteditable=\"false\"></span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Page numbers",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "footer"
+        }
+      }
+    }
+  }
+}

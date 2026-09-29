@@ -2,7 +2,7 @@
   "schema": "webpod-catalog/1",
   "name": "WebPod catalog",
   "description": "Ready-made templates, components and documents for WebPod's Pod Designer.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "items": [
     {
       "id": "announcements",
@@ -275,6 +275,178 @@
       "file": "components/tabs.json",
       "bytes": 30770,
       "sha256": "74f6b45a910ee39cb6b81494fe89b0c186fbd45a34a8b676fe6e537d0ab98b2b"
+    },
+    {
+      "id": "business-letter",
+      "kind": "document",
+      "title": "Business letter",
+      "description": "A formal one-page letter: sender, date, recipient, subject, body and signature.",
+      "tags": [
+        "letter",
+        "correspondence"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/business-letter.json",
+      "bytes": 3172,
+      "sha256": "ab6faf0aba5919b507fd0d77718a7189bf560915f3c679b6fdd78b2c48b4603b"
+    },
+    {
+      "id": "certificate",
+      "kind": "document",
+      "title": "Certificate",
+      "description": "A landscape certificate of completion or achievement with a border and two signature lines.",
+      "tags": [
+        "certificate",
+        "award"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "landscape"
+      },
+      "file": "documents/certificate.json",
+      "bytes": 2699,
+      "sha256": "556f384fe7221a3b228a8a121ae5ad0339a166045681f20ac8a590f85ef8f01a"
+    },
+    {
+      "id": "invoice",
+      "kind": "document",
+      "title": "Invoice",
+      "description": "An itemised invoice with billing details, line items, totals and payment terms.",
+      "tags": [
+        "invoice",
+        "billing",
+        "finance"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/invoice.json",
+      "bytes": 5636,
+      "sha256": "57f1c40086913cace1be419a4b4c054770343286ea5ba2bf2fd791ef63dffbc2"
+    },
+    {
+      "id": "meeting-notes",
+      "kind": "document",
+      "title": "Meeting notes",
+      "description": "Date, attendees, agenda, discussion, decisions and a checklist of action items.",
+      "tags": [
+        "meeting",
+        "notes",
+        "minutes"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/meeting-notes.json",
+      "bytes": 4047,
+      "sha256": "f72b25d37f607fa8e7c13b328ee2e0a7d64c9b38808e49d025a9c8a9789e66d0"
+    },
+    {
+      "id": "memo",
+      "kind": "document",
+      "title": "Memo",
+      "description": "An internal memo: to, from, date and subject, then the message and next steps.",
+      "tags": [
+        "memo",
+        "internal"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/memo.json",
+      "bytes": 2551,
+      "sha256": "c2ab5cf7a47902938a11ac4f3d08c6aee222b62ecb67213eb0d47cf22549bb14"
+    },
+    {
+      "id": "policy",
+      "kind": "document",
+      "title": "Policy",
+      "description": "A company policy with purpose, scope, rules, responsibilities, compliance and review, with page numbers.",
+      "tags": [
+        "policy",
+        "hr",
+        "compliance"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/policy.json",
+      "bytes": 4999,
+      "sha256": "91fac6b9e2df585d6743648d9205585ae500882f3d22f86454e0dd34a979a234"
+    },
+    {
+      "id": "proposal",
+      "kind": "document",
+      "title": "Proposal",
+      "description": "A project or sales proposal: overview, need, approach, deliverables, timeline, pricing and sign-off.",
+      "tags": [
+        "proposal",
+        "sales",
+        "project"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/proposal.json",
+      "bytes": 4558,
+      "sha256": "d7a250847ea9bb9542d819d2de6dd34096d643529823c89d9fccde8ad6355be7"
+    },
+    {
+      "id": "report",
+      "kind": "document",
+      "title": "Report",
+      "description": "A multi-page report: title page, executive summary, findings with a table, recommendations and an appendix.",
+      "tags": [
+        "report",
+        "analysis"
+      ],
+      "requires": [
+        "document-pages",
+        "pod-designer-snapshot/1"
+      ],
+      "page": {
+        "pageSize": "a4",
+        "orientation": "portrait"
+      },
+      "file": "documents/report.json",
+      "bytes": 5154,
+      "sha256": "0e718280380f2c0ee5db2168f1c05f2c4a72e61382aff03a37520ce69be89e55"
     },
     {
       "id": "cta-photo",

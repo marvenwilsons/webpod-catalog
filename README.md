@@ -1,8 +1,8 @@
 # WebPod catalog
 
 Ready-made content for WebPod's Pod Designer: page and section **templates**,
-reusable **components** (widgets and data building blocks) and, soon,
-**documents**. A fresh WebPod ships without any of it. It reads this catalog
+reusable **components** (widgets and data building blocks) and print-ready
+**documents** (letters, invoices, reports and more). A fresh WebPod ships without any of it. It reads this catalog
 when someone opens the template picker or builds an app, and it saves only
 what they pick.
 
@@ -26,7 +26,7 @@ content and refuses items that need features it does not support (see
 catalog.json            index: every item, its file, size, sha256, preview or props
 templates/<id>.json     finished pages and sections (fill an empty layout)
 components/<id>.json    components (placed with props; each copy keeps its own state)
-documents/<id>.json     page-sized documents (coming)
+documents/<id>.json     page-sized documents (open as a new document; print as they look)
 scripts/validate.mjs    the check CI runs on every push
 ```
 

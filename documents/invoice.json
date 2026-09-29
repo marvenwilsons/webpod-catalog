@@ -1,0 +1,156 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "invoice",
+  "kind": "document",
+  "title": "Invoice",
+  "description": "An itemised invoice with billing details, line items, totals and payment terms.",
+  "tags": [
+    "invoice",
+    "billing",
+    "finance"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Invoice",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": true,
+      "documentHeaderEnabled": false
+    },
+    "blocks": {
+      "Wysiwyg-heading": {
+        "id": "Wysiwyg-heading",
+        "type": "Wysiwyg",
+        "value": "<table class=\"pd-doc-plain\"><tbody><tr><td><h1>INVOICE</h1><p><strong>[Your company]</strong><br>[Street address]<br>[City, postal code]<br>[Email] · [Phone]</p></td><td style=\"text-align: right;\"><p><strong>Invoice no.</strong> [INV-0001]<br><strong>Date</strong> [Month day, year]<br><strong>Due</strong> [Month day, year]</p></td></tr></tbody></table>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Heading",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "5",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-bill-to": {
+        "id": "Wysiwyg-bill-to",
+        "type": "Wysiwyg",
+        "value": "<p><strong>Bill to</strong><br>[Client name]<br>[Company]<br>[Street address]<br>[City, postal code]</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Bill to",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "5",
+            "gridRowEnd": "8",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-items": {
+        "id": "Wysiwyg-items",
+        "type": "Wysiwyg",
+        "value": "<table><thead><tr><th>Description</th><th style=\"text-align: right;\">Qty</th><th style=\"text-align: right;\">Unit price</th><th style=\"text-align: right;\">Amount</th></tr></thead><tbody><tr><td>[Service or product]</td><td style=\"text-align: right;\">1</td><td style=\"text-align: right;\">[0.00]</td><td style=\"text-align: right;\">[0.00]</td></tr><tr><td>[Service or product]</td><td style=\"text-align: right;\">1</td><td style=\"text-align: right;\">[0.00]</td><td style=\"text-align: right;\">[0.00]</td></tr><tr><td>[Service or product]</td><td style=\"text-align: right;\">1</td><td style=\"text-align: right;\">[0.00]</td><td style=\"text-align: right;\">[0.00]</td></tr></tbody></table><table class=\"pd-doc-plain\"><tbody><tr><td style=\"width: 60%;\"></td><td>Subtotal</td><td style=\"text-align: right;\">[0.00]</td></tr><tr><td></td><td>Tax ([rate]%)</td><td style=\"text-align: right;\">[0.00]</td></tr><tr><td></td><td><strong>Total due</strong></td><td style=\"text-align: right;\"><strong>[0.00]</strong></td></tr></tbody></table>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Line items",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "8",
+            "gridRowEnd": "14",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-terms": {
+        "id": "Wysiwyg-terms",
+        "type": "Wysiwyg",
+        "value": "<h3>Payment</h3><p>Please pay within [30] days. Bank: [Bank name] · Account name: [Name] · Account no.: [Number]. Include the invoice number with your payment.</p><p>Thank you for your business.</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Payment terms",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "14",
+            "gridRowEnd": "17",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-footer": {
+        "id": "Wysiwyg-footer",
+        "type": "Wysiwyg",
+        "value": "<p style=\"text-align: center;\"><span style=\"font-size: 12px; color: #64748b;\">[Your company] · [Registration or tax number] · [Website]</span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Footer",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "footer"
+        }
+      }
+    }
+  }
+}

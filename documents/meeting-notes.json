@@ -1,0 +1,99 @@
+{
+  "schema": "webpod-catalog-item/1",
+  "id": "meeting-notes",
+  "kind": "document",
+  "title": "Meeting notes",
+  "description": "Date, attendees, agenda, discussion, decisions and a checklist of action items.",
+  "tags": [
+    "meeting",
+    "notes",
+    "minutes"
+  ],
+  "requires": [
+    "document-pages",
+    "pod-designer-snapshot/1"
+  ],
+  "page": {
+    "pageSize": "a4",
+    "orientation": "portrait"
+  },
+  "content": {
+    "title": "Meeting notes",
+    "authoringType": "document",
+    "projectType": "pane-view",
+    "mainWrapper": {
+      "gap": "16px",
+      "style": {},
+      "classes": [],
+      "columns": 8,
+      "columnWidths": []
+    },
+    "pageStyling": {
+      "margin": "",
+      "padding": "",
+      "pageSize": "a4",
+      "marginTop": "",
+      "pageWidth": "794px",
+      "marginLeft": "",
+      "paddingTop": "96px",
+      "pageHeight": "1123px",
+      "marginRight": "",
+      "paddingLeft": "96px",
+      "marginBottom": "",
+      "paddingRight": "96px",
+      "paddingBottom": "96px",
+      "backgroundSize": "cover",
+      "backgroundColor": "",
+      "backgroundImage": "",
+      "contentMaxWidth": "",
+      "pageOrientation": "portrait",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center center",
+      "documentFooterHeight": "48px",
+      "documentHeaderHeight": "72px",
+      "documentFooterEnabled": true,
+      "documentHeaderEnabled": false
+    },
+    "blocks": {
+      "Wysiwyg-notes": {
+        "id": "Wysiwyg-notes",
+        "type": "Wysiwyg",
+        "value": "<h1>[Meeting name]</h1><table class=\"pd-doc-plain\"><tbody><tr><td><strong>Date</strong></td><td>[Month day, year] · [Start]–[End]</td></tr><tr><td><strong>Where</strong></td><td>[Room or link]</td></tr><tr><td><strong>Attendees</strong></td><td>[Names]</td></tr><tr><td><strong>Notes by</strong></td><td>[Name]</td></tr></tbody></table><h2>Agenda</h2><ol><li>[Topic]</li><li>[Topic]</li><li>[Topic]</li></ol><h2>Discussion</h2><h3>[Topic]</h3><p>[What was said, the options considered and any open questions.]</p><h3>[Topic]</h3><p>[What was said, the options considered and any open questions.]</p><h2>Decisions</h2><ul><li>[Decision and who made it]</li><li>[Decision and who made it]</li></ul><h2>Action items</h2><ul data-wysiwyg-checklist=\"true\" class=\"pd-wysiwyg-checklist\"><li data-wysiwyg-checklist-item=\"true\" data-wysiwyg-checklist-id=\"action-1\" data-checked=\"false\"><label><input type=\"checkbox\" data-wysiwyg-checklist-toggle=\"true\" data-wysiwyg-checklist-id=\"action-1\"><span data-wysiwyg-checklist-label=\"true\">[Task] — [Owner], due [date]</span></label></li><li data-wysiwyg-checklist-item=\"true\" data-wysiwyg-checklist-id=\"action-2\" data-checked=\"false\"><label><input type=\"checkbox\" data-wysiwyg-checklist-toggle=\"true\" data-wysiwyg-checklist-id=\"action-2\"><span data-wysiwyg-checklist-label=\"true\">[Task] — [Owner], due [date]</span></label></li></ul><p><strong>Next meeting:</strong> [Month day, year]</p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Notes",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "19",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8
+        }
+      },
+      "Wysiwyg-page-numbers": {
+        "id": "Wysiwyg-page-numbers",
+        "type": "Wysiwyg",
+        "value": "<p style=\"text-align: right;\">Page <span class=\"pd-page-number\" contenteditable=\"false\"></span> of <span class=\"pd-page-count\" contenteditable=\"false\"></span></p>",
+        "mediator": {
+          "sourceMap": {}
+        },
+        "blockName": "Page numbers",
+        "blockWrapper": {
+          "style": {
+            "gridRowStart": "1",
+            "gridRowEnd": "2",
+            "gridColumnStart": "1",
+            "gridColumnEnd": "9"
+          },
+          "classes": [],
+          "gridSpan": 8,
+          "documentRegion": "footer"
+        }
+      }
+    }
+  }
+}
